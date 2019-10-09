@@ -1,0 +1,41 @@
+{
+    "appTitle": "Office UI Fabric",
+    "pages": [
+      {
+        "title": "Fabric",
+        "url": "#/",
+        "className": "fabricPage",
+        "isHomePage": true,
+        "isUhfLink": true,
+        "component": "../../pages/HomePage/HomePage"
+      },
+      {
+        "title": "Get started",
+        "url": "#/get-started",
+        "className": "getStartedPage",
+        "isUhfLink": true,
+        "component": "../../pages/GetStarted/GetStartedPage"
+      },
+      {
+        "title": "Styles",
+        "url": "#/styles",
+        "className": "stylesPage",
+        "isUhfLink": true,
+        "getComponent": "../../pages/Overviews/StylesPage",
+        "pages": [
+          {
+            "title": "Animations",
+            "url": "#/styles/animations",
+            "component": "() => <StylesLoadingComponent title='Animations' />",
+            "getComponent": "'../../pages/Styles/AnimationsPage/AnimationsPage"
+          },
+          {
+            "title": "Brand icons",
+            "url": "#/styles/brand-icons",
+            "component": "<StylesLoadingComponent title='Brand icons' />",
+            "getComponent": "../../pages/Styles/BrandIconsPage/BrandIconsPage"
+          }
+        ]
+      }
+    ]
+}

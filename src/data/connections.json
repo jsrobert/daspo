@@ -1,0 +1,34 @@
+[
+    {
+      "type": "d365",
+      "name": "Org. Name One",
+      "props":{
+        "orgid": "org787878",
+        "connectionString":"OrgUrl=;UserName=;AuthType=;"
+      }
+    },
+    {
+      "type":"azure",
+      "name": "Azure Blob Storage One",
+      "props":{
+        "AuthType":"OAuth",
+        "Username":"jeffrey.roberts4@va.gov",
+        "Url":"https://dvagov-btsss-dev.crm9.dynamics.com",
+        "AppId":"e95f1b23-abaf-45ee-821d-b7ab251ab3bf",
+        "ClientId":"2ad88395-b77d-4561-9441-d0e40824f9bc",
+        "RedirectUri":"app://5d3e90d6-aa8e-48a8-8f2c-58b45cc67315", 
+        "TokenCacheStorePath": "c:\\MyTokenCache",
+        "LoginPrompt":"Auto",
+        "RequireNewInstance":"True",
+        "ConnectionString":"AuthType={AuthType};Username={Username};Url{Url};AppId={AppId};ClientId={ClientId};RedirectUri={RedirectUrl};TokenCacheStorePath={okenCacheStorePath};LoginPrompt={LoginPrompt};RequireNewInstance={RequireNewInstance}"
+      }
+    },
+    {
+      "type":"sp",
+      "name":"SharePoint Site One",
+      "props":{
+        "user":"user@sharepoint.com",
+        "siteUrl":"https://NAME-HERE.sharepoint.com"
+      }
+    }
+]

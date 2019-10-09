@@ -1,0 +1,67 @@
+@import '../../common/common';
+
+:global {
+  .DetailList-customCheck.ms-DetailsRow-check.is-any-selected {
+    opacity: 1;
+  }
+
+  .DetailList-customHeader {
+    border-top: 1px solid $ms-color-neutralQuaternary;
+    border-bottom: 1px solid $ms-color-neutralQuaternary;
+    padding: 8px;
+    margin: 8px 0;
+    background: $ms-color-neutralLighterAlt;
+    box-shadow: 0 0 20px -8px $ms-color-black;
+
+    /* Overlay the sizer bars */
+    position: relative;
+    z-index: 100;
+  }
+
+  .DetailList-customHeaderTitle {
+    @include ms-font-xl;
+    padding: 4px 0;
+  }
+
+  .DetailList-customHeaderLinkSet {
+    margin: 4px -8px;
+  }
+
+  .DetailList-customHeaderLink {
+    margin: 0 8px;
+  }
+
+  .DetailList-header--FileIcon {
+    .DetailList-Header-FileTypeIcon {
+      padding: 0;
+      font-size: 16px;
+    }
+  }
+
+  .DetailList-cell--FileIcon {
+    text-align: center;
+
+    &:before {
+      content: '.';
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+      width: 0px;
+      visibility: hidden;
+    }
+  }
+
+  .DetailList-documentIconImage {
+    vertical-align: middle;
+    max-height: 16px;
+    max-width: 16px;
+  }
+
+  .DetailList-toggleControl {
+    vertical-align: top;
+    text-align: left;
+    background-color: aquamarine;
+    border-color: blue;
+    display: table;
+  }
+}
