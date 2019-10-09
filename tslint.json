@@ -1,0 +1,15 @@
+{
+  "defaultSeverity": "warning",
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules",
+      "coverage/lcov-report/*.js"
+    ]
+  },
+  "rules": {
+    "class-name": true,
+    "curly": true,
+    "indent": [true, "spaces"]
+  }
+}
