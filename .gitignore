@@ -5022,3 +5022,8 @@ node_modules/babel-plugin-macros/node_modules/resolve/test/node_path/x/aaa/index
 node_modules/babel-plugin-macros/node_modules/resolve/test/node_path/x/ccc/index.js
 node_modules/babel-plugin-macros/node_modules/resolve/test/node_path/y/bbb/index.js
 node_modules/babel-plugin-macros/node_modules/resolve/test/node_path/y/ccc/index.js
+package-lock.json
+.vs/ProjectSettings.json
+.vs/slnx.sqlite
+.vs/VSWorkspaceState.json
+.vs/daspo/v16/.suo
