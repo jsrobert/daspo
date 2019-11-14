@@ -5022,8 +5022,16 @@ node_modules/babel-plugin-macros/node_modules/resolve/test/node_path/x/aaa/index
 node_modules/babel-plugin-macros/node_modules/resolve/test/node_path/x/ccc/index.js
 node_modules/babel-plugin-macros/node_modules/resolve/test/node_path/y/bbb/index.js
 node_modules/babel-plugin-macros/node_modules/resolve/test/node_path/y/ccc/index.js
+<<<<<<< HEAD
 yarn-error.log
 yarn.lock
 yarn.lock
 yarn.lock
 yarn.lock
+=======
+package-lock.json
+.vs/ProjectSettings.json
+.vs/slnx.sqlite
+.vs/VSWorkspaceState.json
+.vs/daspo/v16/.suo
+>>>>>>> 51e5ce14cd9ea430db38a4ce11f216f1756c96a9
