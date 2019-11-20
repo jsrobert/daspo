@@ -3,105 +3,70 @@ import { Nav, INavLink, INavProps, INavState, INav, INavLinkGroup, INavStyles, I
 import { Link }  from 'office-ui-fabric-react/lib/Link';
 import './Nav.Basic.Example.scss';
 
-const link: INavLink = {
-  name: 'Link One',
-  url: 'http://localhost:3000/'
-}
-
-const links: INavLink[] = [{
-  name: 'Link One',
-  url: 'http://localhost:3000/'
-}];
-
-const group: INavLinkGroup = {
-  name: 'Group One',
-  links: [],
-}
-
-const groups: INavLinkGroup[] = [{
-  name: 'Group One',
-  links: [],
-}]
-
-const props: INavProps = {
-  groups: [],
-}
-
-export class LeftNav extends React.Component<any, INavState> {
-  constructor(public props:any){
+export class LeftNav extends React.Component<INavProps, INavState> {
+  constructor(public props:INavProps){
     super(props)
-    this.onLinkClick.bind(this);
+    //this.onLinkClick.bind(this);
     this.getSelectedKey.bind(this);
-    let selectedKey = this.getSelectedKey();
+    
     this.state = {
-      selectedKey: selectedKey,
+      selectedKey: this.props.selectedKey,
+      isGroupCollapsed: { "one": true },
     }
+    
   }
 
-  public readonly state: INavState = {
-    selectedKey: 'homeLink',
-  }
+  // public readonly state: INavState = {
+  //   selectedKey: 'homeLink',
+  // }
 
   private getSelectedKey = () => {
     let path = window.location.pathname;
     //alert('location path = ' + path);
     return path;
   }
-  public onLinkClick = (ev: React.MouseEvent<HTMLElement>, item?: INavLink) => {
-    if (item && item.name === 'News') {
-      // React. item.url
-      ev.preventDefault();
-    }
-    if(item){
-      this.setState({
-        selectedKey: item.key,
-      })
-    }
-  };
 
-  // private accountLink: NavLink 
+  // public onLinkClick = (ev: React.MouseEvent<HTMLElement> | undefined, item?: INavLink | undefined) => {
+  //   if (item && item.name === 'News') {
+  //     // React. item.url
+  //     ev ? ev.preventDefault() : null;
+  //   }
+  //   if(item){
+  //     this.setState({
+  //       selectedKey: item.key,
+  //     })
+  //   }
+  // };
+
+  // public localLinkClick = (ev: React.MouseEvent<HTMLElement> | undefined, item?: INavLink | undefined) => {
+  //   console.log('local link click');
+  //   if(this.props.onLinkClick){
+  //     console.warn('this.props.onLinkClick being called');
+  //     this.props.onLinkClick(ev, item);
+  //   }
+  //   else {
+  //     console.error('this.props.onLinkClick NOT called');
+  //   }
+  // }
+
 
   public render(): JSX.Element {
-    const { onLinkClick } = this;
+    // const { onLinkClick, defaultProps, defaultGroups } = this;
+    // const { groups }: Array<INavLinkGroup>  = [ ...this.props, ...defaultGroups];
+    // const { name, age }: Person = params || {}
+    // const { localLinkClick } = this;
+    const { groups, onLinkClick } = this.props;
+    
+    // const defaultGroups = defaultProps.groups || new Array<INavLinkGroup>();
+    // const combinedGroups: Array<INavLinkGroup> = instanceof groups === Array ? groups.concat(defaultGroups) : defaultGroups; // defaultGroups ; // 
     return (
       <div className="ms-NavExample-LeftPane">
         <Nav
-          groups={[
-            {
-              links: [
-                {
-                  name: 'Home',
-                  url: 'http://localhost:3000',
-                  key: '/', // 'homeLink',
-                },
-                { name: 'Solutions', url: 'http://localhost:3000/Solutions', key: '/Solutions', isExpanded: true },
-                { name: 'Entities',  url: 'http://localhost:3000/Entities',  key: '/Entities',  isExpanded: true,
-                    links: [
-                        {
-                          name: 'Accounts',
-                          url: 'http://localhost:3000/Accounts',
-                          key: '/Accounts'
-                        },
-                        {
-                          name: 'Contacts',
-                          url: 'http://localhost:3000/Contacts',
-                          key: '/Contacts',
-                        }
-                    ]
-                },
-                {
-                  name: 'News',
-                  url: 'http://cnn.com',
-                  icon: 'News',
-                  key: '/News'
-                }
-              ]
-            }
-          ]}
+          groups={groups}
           onLinkClick={onLinkClick}
-          expandedStateText={'expanded'}
-          collapsedStateText={'collapsed'}
-          selectedKey={this.state.selectedKey}
+          //expandedStateText={'expanded'}
+          //collapsedStateText={'collapsed'}
+          selectedKey={this.props.selectedKey}
           expandButtonAriaLabel={'Expand or collapse'}
         />
       </div>

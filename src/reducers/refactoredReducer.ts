@@ -1,9 +1,10 @@
+import * as actions from '../actions'
 // Reusable reducer utility functions
 
 const updateObject = (oldObject: any, newValues: any) => {
   // Encapsulate the idea of passing a new object as the first parameter
   // to Object.assign to ensure we correctly copy data instead of mutating
-  return Object.assign({}, oldObject, newValues)
+  return {...oldObject, newValues}
 }
   
 const updateItemInArray = (array: [], itemId: any, updateItemCallback: Function) => {
@@ -40,3 +41,10 @@ const setVisibilityFilter = (visibilityState: any, action: any) => {
 const visibilityReducer = createReducer('SHOW_ALL', {
   SET_VISIBILITY_FILTER: setVisibilityFilter
 })
+
+const actionReducer = createReducer({}, actions);
+
+
+const testReducer = (reducer: any) => {
+  return reducer;
+}

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './Start.css';
-import { Logging } from 'adal-node';
+// import { Logging } from 'adal-node';
 
 const logo = require('../logo.svg');
 
@@ -36,9 +36,9 @@ function Hello({ name, enthusiasmLevel = 1, onIncrement, onDecrement, user }: Pr
 function _getName(pUser:any){
     let _name:string = 'NOT LOGGED IN';
     
-    if(window.AuthContext){
-        pUser = window.AuthContext.getCachedUser();
-        _name = 'AuthContext is not null';
+    if(window.authContext){
+        pUser = window.authContext.getCachedUser();
+        _name = 'authContext is not null';
         if(pUser){
             _name = pUser.profile.name;
         }

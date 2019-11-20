@@ -1,6 +1,3 @@
-// import MessageBarMessage from '../model/MessageBarBasic'
-// import MessageBarStoreState from '../model/MessageBarBasic'
-
 export const ADD_MESSAGE = 'ADD_MESSAGE';
 export type ADD_MESSAGE = typeof ADD_MESSAGE;
 
@@ -16,21 +13,18 @@ export interface AddMessage {
     messageIndex: number;
     messageText: string;
     showMessage: boolean;
-    //messageBar: MessageBarMessage;
 }
 
 export interface ShowMessage {
     type: SHOW_MESSAGE;
     messageIndex: number,
     showMessage: boolean
-    // messageBar: MessageBarMessage;
 }
 
 export interface ClearMessage {
     type: CLEAR_MESSAGE;
     messageIndex: number;
     showMessage: boolean;
-    // messageBar: MessageBarMessage;
 }
 
 export type MessageBarActionType = AddMessage | ClearMessage | ShowMessage;
@@ -41,11 +35,6 @@ export const addMessageText = (newText: string): AddMessage => {
         messageIndex: nextId++,
         messageText: newText,
         showMessage: true
-        // messageBar: {
-        //     messageIndex: nextId++,
-        //     messageText: messageText,
-        //     showMessage: true
-        // }
     };
 }
 
@@ -54,11 +43,6 @@ export const clearMessageText = (index: number): ClearMessage => {
         type: CLEAR_MESSAGE,
         messageIndex: index,
         showMessage: false
-        // messageBar: {
-        //     messageIndex: nextId--,
-        //     messageText: "__CLEAR__",
-        //     showMessage: false
-        // }
     }
 }
 
@@ -67,8 +51,5 @@ export const showMessageText = (index: number): ShowMessage => {
         type: SHOW_MESSAGE,
         messageIndex: index,
         showMessage: true
-        // messageBar: {
-        //     showMessage: true
-        // }
     }
 }

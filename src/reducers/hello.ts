@@ -1,6 +1,6 @@
 
-import { EnthusiasmAction } from '../actions/Enthusiasm';
-import HelloStoreState from '../model/Hello';
+import { EnthusiasmActionType } from '../actions/Enthusiasm';
+import { HelloStoreState } from '../model/Hello';
 import { INCREMENT_ENTHUSIASM, DECREMENT_ENTHUSIASM } from '../constants';
 
 let initialState: HelloStoreState = {
@@ -8,7 +8,7 @@ let initialState: HelloStoreState = {
   languageName: 'eng'
 }
 
-const enthusiasm = (state: HelloStoreState = initialState, action: EnthusiasmAction): HelloStoreState => {
+const enthusiasm = (state: HelloStoreState = initialState, action: EnthusiasmActionType): HelloStoreState => {
   switch (action.type) {
     case INCREMENT_ENTHUSIASM:
       return { ...state, enthusiasmLevel: state.enthusiasmLevel + 1 };

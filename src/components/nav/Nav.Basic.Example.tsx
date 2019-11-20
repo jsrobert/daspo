@@ -52,8 +52,8 @@ export class NavBasicExample extends React.Component<any, any> {
     return (
       <div className="ms-NavExample-LeftPane">
         <Nav groups={this.linkgroups}
-          expandedStateText={'expanded'}
-          collapsedStateText={'collapsed'}
+          //expandedStateText={'expanded'}
+          //collapsedStateText={'collapsed'}
           selectedKey={'key3'}
         />
       </div>

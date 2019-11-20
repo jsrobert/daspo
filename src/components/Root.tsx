@@ -9,7 +9,6 @@ import { createBrowserHistory } from 'history'
 // import { BrowserRouter as Router, Route } from 'react-router-dom'
 import configureStore from '../store'
 import App from './App'
-import { Store } from 'tough-cookie';
 
 const history = createBrowserHistory();
 const store = configureStore({});

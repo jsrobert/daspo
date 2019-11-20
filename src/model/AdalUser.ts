@@ -7,14 +7,14 @@ export interface AdalUser {
     iat: Date;
     ipaddr: string; /* ip address */
     iss: string;
-    name: string;
+    name: string; /* full name */
     nbf: Date;
     nonce: string; /* guid */
     oid: string; /* guid */
     sub: string; /* token */
     tid: string; /* guid */
     unique_name: string; /* sign in user name or UPN */
-    upn: string;
+    upn: string; /* user principal name */
     uti: string; /* token */
     ver: string; /** version */
 }

@@ -1,14 +1,12 @@
-import { createStore, applyMiddleware, compose } from 'redux'
-import thunk from 'redux-thunk'
-import { createLogger } from 'redux-logger'
-import { composeWithDevTools } from 'redux-devtools-extension/developmentOnly'
-import { routerMiddleware } from 'react-router-redux'
-import createHistory from 'history/createBrowserHistory'
+import { createStore, applyMiddleware, compose } from 'redux';
+import thunkMiddleware from 'redux-thunk';
+import { createLogger } from 'redux-logger';
+import { routerMiddleware } from 'react-router-redux';
+import createHistory from 'history/createBrowserHistory';
+import * as middleware from '../middleware';
+import rootReducer from '../reducers';
 
-import * as middleware from '../middleware'
-import rootReducer from '../reducers'
-import DevTools from '../containers/DevTools'
-
+// create the history 
 export const history = createHistory();
 
 // Build the middleware for intercepting and dispatching navigation actions
@@ -20,7 +18,8 @@ const getMiddleware = () => {
         myRouterMiddleware,
         middleware.promiseMiddleware,
         middleware.localStorageMiddleware,
-        thunk
+        middleware.dataFormattingMiddleware,
+        thunkMiddleware,
       );
   } else {
       // Enable additional logging in non-production environments.
@@ -28,20 +27,30 @@ const getMiddleware = () => {
         myRouterMiddleware,
         middleware.promiseMiddleware,
         middleware.localStorageMiddleware,
-        thunk,
-        createLogger()
+        middleware.dataFormattingMiddleware,
+        thunkMiddleware,
+        createLogger(),
       );
   }
 };
+
+const composeEnhancers =
+  typeof window === 'object' &&
+  window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?   
+    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
+      // Specify extension’s options like name, actionsBlacklist, actionsCreators, serialize...
+    }) : compose;
+
+const enhancer = composeEnhancers(
+    getMiddleware(),
+    // other store enhancers if any
+);
 
 const configureStore = (preloadedState: any) => {
     const store = createStore(
         rootReducer,
         preloadedState,
-        compose(
-            composeWithDevTools(getMiddleware()),
-            DevTools.instrument()
-        )
+        enhancer
     )
 
     // if (module.hot) {
@@ -52,6 +61,6 @@ const configureStore = (preloadedState: any) => {
     //     });
     // }
 
-    return store
+    return store;
 }
-export default configureStore
+export default configureStore;

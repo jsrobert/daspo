@@ -1,3 +1,5 @@
 import * as constants from '../constants';
-import { EnthusiasmAction } from './Enthusiasm';
-import { ConnectionAction } from './Connection';
+import { EnthusiasmActionType } from './Enthusiasm';
+import { ConnectionActionType } from './Connection';
+import { MessageBarActionType } from './MessageBarBasic'
+

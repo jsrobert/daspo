@@ -1,0 +1,14 @@
+{
+    "@odata.context": "https://btsssdev1.crm.dynamics.com/api/data/v9.1/$metadata#contacts",
+    "value": [{
+        "@odata.etag": "W/2223194",
+        "accountrolecode": null,
+        "address1_addressid": "4b71c2cb-a66a-408c-85c0-d9325114a633",
+        "address1_city": "Redmond",
+        "address1_name": null,
+        "address1_postalcode": "98052",
+        "company": null,
+        "contactid": "99db51a2-c34e-e111-bb8d-00155d03a715",
+        "createdon": "2017-05-09T23:04:12Z",
+    }]
+}

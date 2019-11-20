@@ -1,15 +1,13 @@
 {
-  "defaultSeverity": "warning",
-  "linterOptions": {
-    "exclude": [
-      "config/**/*.js",
-      "node_modules",
-      "coverage/lcov-report/*.js"
-    ]
-  },
-  "rules": {
-    "class-name": true,
-    "curly": true,
-    "indent": [true, "spaces"]
-  }
+    "defaultSeverity": "warning",
+    "extends": [
+        "tslint:recommended", "tslint-react"
+    ],
+    "jsRules": {},
+    "rules": {
+        "quotemark":false,
+        "no-const-enum": false,
+        "max-line-length": false
+    },
+    "rulesDirectory": []
 }

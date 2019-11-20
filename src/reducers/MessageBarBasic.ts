@@ -4,13 +4,13 @@ import {
     ADD_MESSAGE,
     CLEAR_MESSAGE,
     SHOW_MESSAGE } from '../actions/MessageBarBasic'
-import { MessageBarBasicStoreState } from '../model/MessageBarBasic'
+import { MessageBarStoreState } from '../model/MessageBarBasic'
 
 // import merge from 'lodash/merge'
 // import { routerReducer as routing } from 'react-router-redux'
 // import { combineReducers } from 'redux'
 
-export const initialState: MessageBarBasicStoreState = {
+export const initialState: MessageBarStoreState = {
     messageIndex: 0,
     messageText: "loading...",
     showMessage: true
@@ -19,7 +19,7 @@ export const initialState: MessageBarBasicStoreState = {
 let nextId: number = 0;
 
 // Updates error message to notify about the failed fetches.
-const messageBarReducer = (state: MessageBarBasicStoreState = initialState, action: MessageBarActionType): MessageBarBasicStoreState => {
+const messageBarReducer = (state: MessageBarStoreState = initialState, action: MessageBarActionType): MessageBarStoreState => {
     //const { messageBar } = action
     switch (action.type) {
         case ADD_MESSAGE:

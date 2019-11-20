@@ -8,7 +8,7 @@ export interface Disconnect {
     type: constants.DISCONNECT;
 }
 
-export type ConnectionAction = Connect | Disconnect;
+export type ConnectionActionType = Connect | Disconnect;
 
 export function connect(): Connect {
     return {

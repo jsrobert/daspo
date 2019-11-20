@@ -74,13 +74,13 @@ export class LayerCustomizedExample extends React.Component<{}, ILayerCustomized
     });
   };
 
-  private _onShowPanelChange = (event: React.FormEvent<HTMLElement | HTMLInputElement>, checked?: boolean): void => {
+  private _onShowPanelChange = (event: React.FormEvent<HTMLElement | HTMLInputElement> | undefined, checked?: boolean | undefined): void => {
     this.setState({
       showPanel: !!checked
     });
   };
 
-  private _onTrapPanelChange = (event: React.FormEvent<HTMLElement | HTMLInputElement>, checked?: boolean): void => {
+  private _onTrapPanelChange = (event: React.FormEvent<HTMLElement | HTMLInputElement> | undefined, checked?: boolean | undefined): void => {
     this.setState({
       trapPanel: !!checked
     });

@@ -3,7 +3,7 @@ import { TextField } from 'office-ui-fabric-react/lib/TextField';
 import { DetailsList, DetailsListLayoutMode, Selection, IColumn, IDetailsList, IDetailsListProps } from 'office-ui-fabric-react/lib/DetailsList';
 import { MarqueeSelection } from 'office-ui-fabric-react/lib/MarqueeSelection';
 import { Checkbox } from 'office-ui-fabric-react/lib/Checkbox';
-import { createRef } from 'office-ui-fabric-react/lib/Utilities';
+//import { createRef } from 'office-ui-fabric-react/lib/Utilities';
 
 const _items: any[] = [];
 
@@ -43,7 +43,7 @@ export default class DetailsListBasic extends React.Component<
   }
 > {
   private _selection: Selection;
-  private _detailsList = createRef<IDetailsList>();
+  //private _detailsList: IDetailsList;
 
   constructor(props: {}) {
     super(props);
@@ -80,7 +80,7 @@ export default class DetailsListBasic extends React.Component<
         <TextField label="Filter by name:" onChange={this._onChange} />
         <MarqueeSelection selection={this._selection}>
           <DetailsList
-            componentRef={this._detailsList}
+            //componentRef={this._detailsList}
             items={items}
             columns={_columns}
             setKey="set"
@@ -98,8 +98,8 @@ export default class DetailsListBasic extends React.Component<
 
   public componentWillUnmount() {
     if (this.state.showItemIndexInView) {
-      const itemIndexInView = this._detailsList!.current!.getStartItemIndexInView();
-      alert('unmounting, getting first item index that was in view: ' + itemIndexInView);
+      //const itemIndexInView = this.state!.selectionDetails.getStartItemIndexInView();
+      //alert('unmounting, getting first item index that was in view: ' + itemIndexInView);
     }
   }
 
@@ -116,7 +116,7 @@ export default class DetailsListBasic extends React.Component<
     }
   }
 
-  private _onChange = (ev: React.FormEvent<HTMLInputElement | HTMLTextAreaElement>, text: string): void => {
+  private _onChange = (ev: React.FormEvent<HTMLInputElement | HTMLTextAreaElement>, text: string | undefined): void => {
     this.setState({ items: text ? _items.filter(i => i.name.toLowerCase().indexOf(text) > -1) : _items });
   };
 
@@ -124,16 +124,17 @@ export default class DetailsListBasic extends React.Component<
     alert(`Item invoked: ${item.name}`);
   }
 
-  private _onShowItemIndexInViewChanged = (event: React.FormEvent<HTMLInputElement>, checked: boolean): void => {
+  private _onShowItemIndexInViewChanged = (event: React.FormEvent<HTMLInputElement>, checked: boolean | undefined): void => {
+    const isChecked: boolean = checked || false;
     this.setState({
-      showItemIndexInView: checked
+      showItemIndexInView: isChecked
     });
   };
 
   private getAccountsTwo() {
     // this._detailsList.
     let _self: DetailsListBasic = this;
-    let organizationURI = window.AuthContext.config.endpoints.orgUri;
+    let organizationURI = window.authContext.config.endpoints.orgUri;
     //let getAccountsButton = document.getElementById('getAccountsButton') || document.createElement('input');
     let message = document.getElementById('message') || document.createElement('div');
     //messageBar = React.createRef<React.RefObject<IMessageBar>>();
@@ -145,12 +146,12 @@ export default class DetailsListBasic extends React.Component<
     message.appendChild(retrievingAccountsMessage);
 
     // Function to perform operation is passed as a parameter to the aquireToken method
-    window.AuthContext.acquireToken(
+    window.authContext.acquireToken(
         organizationURI,
         (error: any, token: any) => {
             let _self: DetailsListBasic = this;
             let errorMessage = document.getElementById('errorMessage') || document.createElement('input');
-            let organizationURI = window.AuthContext.config.endpoints.orgUri;
+            let organizationURI = window.authContext.config.endpoints.orgUri;
             // Handle ADAL Errors.
             if (error || !token) {
                 errorMessage.textContent = 'ADAL error occurred: ' + error;
@@ -170,7 +171,7 @@ export default class DetailsListBasic extends React.Component<
                     req.onreadystatechange = null;
                     if (this.status == 200) {
                         let accounts = JSON.parse(this.response).value;
-                        window.DaspoData = accounts;
+                        window.setDaspoData(accounts);
                         // let accountsTable = document.getElementById('accountsTable') || document.createElement("table");
                         // let accountsTableBody = document.getElementById('accountsTableBody') || document.createElement("tbody");
                         // accounts.forEach(function (account: any) {

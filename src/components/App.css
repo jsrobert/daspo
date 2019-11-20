@@ -22,6 +22,10 @@
   color: #61dafb;
 }
 
+.App-div {
+  background-color: #282c34;
+}
+
 .hidden {
     display:none;
 }

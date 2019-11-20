@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { DefaultButton, PrimaryButton } from 'office-ui-fabric-react/lib/Button';
 import { Panel, PanelType, IPanelProps } from 'office-ui-fabric-react/lib/Panel';
-import { LeftNav } from 'components/nav/LeftNav';
 
 export class PanelSmallLeftExample extends React.Component<
   {},
@@ -32,7 +31,6 @@ export class PanelSmallLeftExample extends React.Component<
           headerText="Panel - Small, left-aligned, fixed"
           onRenderFooterContent={this._onRenderFooterContent}
         >
-          <LeftNav/>
         </Panel>
       </div>
     );

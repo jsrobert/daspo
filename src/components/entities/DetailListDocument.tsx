@@ -1,76 +1,45 @@
 import * as React from 'react';
 import { TextField } from 'office-ui-fabric-react/lib/TextField';
 import { Toggle } from 'office-ui-fabric-react/lib/Toggle';
-import { DetailsList, DetailsListLayoutMode, Selection, SelectionMode, IColumn, IDetailsListProps, IDetailsListState } from 'office-ui-fabric-react/lib/DetailsList';
+import { DetailsList,
+  DetailsListLayoutMode,
+  Selection,
+  SelectionMode,
+  IColumn,
+  IDetailsListProps,
+  IDetailsListState,
+  buildColumns
+} from 'office-ui-fabric-react/lib/DetailsList';
 import { MarqueeSelection } from 'office-ui-fabric-react/lib/MarqueeSelection';
 import { lorem } from 'office-ui-fabric-react/lib/utilities/exampleData';
+import ButtonPanel from '../commandbar/ButtonPanel';
+import { IQueryListState, IQueryListProps, IDocument } from '../../model/DetailsList'
+import { fileIcons } from '../../constants/FileIcons'
 import './DetailList.scss';
-import './DetailList.css';
-
+// import './DetailList.css';
 
 let _items: IDocument[] = [];
 
-const fileIcons: { name: string }[] = [
-  { name: 'accdb' },
-  { name: 'csv' },
-  { name: 'docx' },
-  { name: 'dotx' },
-  { name: 'mpp' },
-  { name: 'mpt' },
-  { name: 'odp' },
-  { name: 'ods' },
-  { name: 'odt' },
-  { name: 'one' },
-  { name: 'onepkg' },
-  { name: 'onetoc' },
-  { name: 'potx' },
-  { name: 'ppsx' },
-  { name: 'pptx' },
-  { name: 'pub' },
-  { name: 'vsdx' },
-  { name: 'vssx' },
-  { name: 'vstx' },
-  { name: 'xls' },
-  { name: 'xlsx' },
-  { name: 'xltx' },
-  { name: 'xsn' }
-];
-
-export interface IDetailListDocumentState extends IDetailsListState {
-  columns: IColumn[];
-  items: IDocument[];
-  selectionDetails: string;
-  isModalSelection: boolean;
-  isCompactMode: boolean;
-  focusedItemIndex: number;
-}
-
-export interface IDocument {
-  [key: string]: any;
-  name: string;
-  value: string;
-  iconName: string;
-  modifiedBy: string;
-  dateModified: string;
-  dateModifiedValue: number;
-  fileSize: string;
-  fileSizeRaw: number;
-}
-
-export interface IAccount {
-  [key: string]: any;
-  name: string;
-  value: string;
-  iconName: string;
-  address1_city: string;
-}
-
-export class DetailListDocument extends React.Component<IDetailsListProps, IDetailListDocumentState> {
+export class DetailListDocument extends React.Component<IQueryListProps, IQueryListState> {
   private _selection: Selection;
 
-  constructor(props: IDetailsListProps) {
+  constructor(props: IQueryListProps) {
     super(props);
+    let test = this.props.query;
+    //_items = this.props.data;
 
+    /********************************* 
+     buildColumns(items, canResizeColumns, onColumnClick, sortedColumnKey, isSortedDescending, groupedColumnKey, isMultiline)
+    *****/
+    // let canResizeColumns = false;
+    // onColumnClick
+    // sortedColumnKey
+    // isSortedDescending 
+    // groupedColumnKey
+    // isMultiline
+    // buildColumns( this.props.items, canResizeColumns, onColumnClick, sortedColumnKey, isSortedDescending, groupedColumnKey, isMultiline)
+
+    
     //  Populate with items for demos.
     if (_items.length === 0) {
       for (let i = 0; i < 50; i++) {
@@ -104,7 +73,7 @@ export class DetailListDocument extends React.Component<IDetailsListProps, IDeta
       onSelectionChanged: () => {
         this.setState({
           selectionDetails: this._getSelectionDetails(),
-          isModalSelection: this._selection.isModal()
+          // isModalSelection: this._selection.isModal()
         });
       }
     });
@@ -113,58 +82,56 @@ export class DetailListDocument extends React.Component<IDetailsListProps, IDeta
       items: _items,
       columns: this._getColumns(),
       selectionDetails: this._getSelectionDetails(),
-      isModalSelection: this._selection.isModal(),
-      isCompactMode: false,
+      isModalSelection: true, //this._selection.isModal(),
+      isCompactMode: true, //false,
       focusedItemIndex: 1,
       adjustedColumns: [],
+      query: '',
+      inProgress: false,
+      data: {},
+      error: '',
+      version: '',
     };
   }
-
+  
   public render() {
-    const { columns, isCompactMode, items, selectionDetails } = this.state;
-
+    const { columns, isCompactMode, items, selectionDetails, isModalSelection, data } = this.state;
+    const { _onChangeCompactMode, _onChangeModalSelection, _selection, _onItemInvoked, _onChangeText } = this;
     return (
       <div>
         <div >
-          <table>
-            <tr>
-              <td>
-                <Toggle
-                  label="Enable Compact Mode"
-                  checked={isCompactMode}
-                  onChange={this._onChangeCompactMode}
-                  onText="Compact"
-                  offText="Normal"
-                  className="DetailList-toggleControl"
-                />
-              </td>
-              <td>
-                <Toggle
-                label="Enable Modal Selection"
-                checked={this.state.isModalSelection}
-                onChange={this._onChangeModalSelection}
-                onText="Modal"
-                offText="Normal"
-                className="DetailList-toggleControl"
-              />
-              </td>
-            </tr>
-          </table>
+        { /*         
+          <ButtonPanel/>
+          <Toggle
+            label="Enable Compact Mode"
+            checked={isCompactMode}
+            onChange={_onChangeCompactMode}
+            onText="Compact"
+            offText="Normal"
+            className="DetailList-toggleControl"/>
+          <Toggle
+            label="Enable Modal Selection"
+            checked={isModalSelection}
+            onChange={_onChangeModalSelection}
+            onText="Modal"
+            offText="Normal"
+            className="DetailList-toggleControl"
+        />*/}
         </div>
         <div>{selectionDetails}</div>
-        <TextField label="Filter by name:" onChange={this._onChangeText} />
-        <MarqueeSelection selection={this._selection} >
+        <TextField label="Filter by name:" onChange={_onChangeText} />
+        <MarqueeSelection selection={_selection} >
           <DetailsList
-            items={items}
+            items={this.props.items}
             compact={isCompactMode}
-            columns={columns}
+            // columns={columns}
             selectionMode={this.state.isModalSelection ? SelectionMode.multiple : SelectionMode.none}
             setKey="set"
             layoutMode={DetailsListLayoutMode.justified}
             isHeaderVisible={true}
-            selection={this._selection}
+            selection={_selection}
             selectionPreservedOnEmptyClick={true}
-            onItemInvoked={this._onItemInvoked}
+            onItemInvoked={_onItemInvoked}
             enterModalSelectionOnTouch={true}
             ariaLabelForSelectionColumn="Toggle selection"
             ariaLabelForSelectAllCheckbox="Toggle selection for all items"
@@ -174,21 +141,44 @@ export class DetailListDocument extends React.Component<IDetailsListProps, IDeta
     );
   }
 
-  public componentDidUpdate(previousProps: any, previousState: IDetailListDocumentState) {
-    if (previousState.isModalSelection !== this.state.isModalSelection) {
-      this._selection.setModal(this.state.isModalSelection);
+  public componentDidMount(){
+    
+  }
+
+  public componentDidUpdate(previousProps: IQueryListProps, previousState: IQueryListState) {
+    if (previousState.isModalSelection && this.state.isModalSelection){
+      if(previousState.isModalSelection !== this.state.isModalSelection) {
+        this._selection.setModal(this.state.isModalSelection);
+      }
+    }
+    let previousQuery = previousProps.query || '';
+    let currentQuery = this.props.query || '';
+    if(previousQuery !== currentQuery){
+      // only add the header if it's not metadata
+      let headers: Headers = new Headers();
+      if(currentQuery.indexOf('EntityDefinitions') < 0){
+        headers.append(
+          "Prefer", "odata.include-annotations=OData.Community.Display.V1.FormattedValue"
+        );
+      };
+      
+      if(this.props.fetchData) {
+        this.props.fetchData(window.authContext, currentQuery, headers || null);
+      }
     }
   }
 
-  private _onChangeCompactMode = (ev: React.MouseEvent<HTMLElement>, checked: boolean): void => {
-    this.setState({ isCompactMode: checked });
+  private _onChangeCompactMode = (ev: React.MouseEvent<HTMLElement>, checked: boolean | undefined): void => {
+    const isChecked:boolean = checked ? checked : false;
+    this.setState({ isCompactMode: isChecked });
   };
 
-  private _onChangeModalSelection = (ev: React.MouseEvent<HTMLElement>, checked: boolean): void => {
-    this.setState({ isModalSelection: checked });
+  private _onChangeModalSelection = (ev: React.MouseEvent<HTMLElement>, checked: boolean | undefined): void => {
+    const isChecked:boolean = checked ? checked : false;
+    this.setState({ isModalSelection: isChecked });
   };
 
-  private _onChangeText = (ev: React.FormEvent<HTMLInputElement | HTMLTextAreaElement>, text: string): void => {
+  private _onChangeText = (ev: React.FormEvent<HTMLInputElement | HTMLTextAreaElement>, text: string | undefined): void => {
     this.setState({ items: text ? _items.filter(i => i.name.toLowerCase().indexOf(text) > -1) : _items });
   };
 
@@ -277,10 +267,10 @@ export class DetailListDocument extends React.Component<IDetailsListProps, IDeta
         maxWidth: 90,
         isResizable: true,
         onColumnClick: this._onColumnClick,
-        data: 'number',
-        onRender: (item: IDocument) => {
-          return <span>{item.address1_city}</span>;
-        },
+        data: 'string',
+        // onRender: (item: IDocument) => {
+        //   return <span>{item.address1_city}</span>;
+        // },
         isPadded: true
       },
       // {
@@ -315,6 +305,7 @@ export class DetailListDocument extends React.Component<IDetailsListProps, IDeta
     ];
     return _columns;
   }
+
   private _onColumnClick = (ev: React.MouseEvent<HTMLElement>, column: IColumn): void => {
     const { columns, items } = this.state;
     let newItems: IDocument[] = items.slice();
@@ -322,6 +313,7 @@ export class DetailListDocument extends React.Component<IDetailsListProps, IDeta
     const currColumn: IColumn = newColumns.filter((currCol: IColumn, idx: number) => {
       return column.key === currCol.key;
     })[0];
+
     newColumns.forEach((newCol: IColumn) => {
       if (newCol === currColumn) {
         currColumn.isSortedDescending = !currColumn.isSortedDescending;
