@@ -1,3 +1,6 @@
 {
-    "eslint.enable": false
+    "eslint.enable": false,
+    "npm.enableScriptExplorer": true,
+    "npm.enableRunFromFolder": true,
+    "debug.node.autoAttach": "on"
 }

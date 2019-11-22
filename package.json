@@ -88,12 +88,10 @@
     "whatwg-fetch": "2.0.3"
   },
   "scripts": {
-    "start" : "yarn start",
-    "start-custom": "node scripts/start.js",
-    "build" : "yarn build",
-    "build-custom": "node scripts/build.js",
-    "test" : "yarn test",
-    "test-custom": "node scripts/test.js --env=jsdom"
+    "start": "scripts/start.js",
+    "start-inspect": "npx scripts/start.js",
+    "build": "scripts/build.js",
+    "test": "scripts/test.js --env=jsdom"
   },
   "jest": {
     "collectCoverageFrom": [
