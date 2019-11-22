@@ -28,3 +28,5 @@ yarn-error.log*
 .vs/ProjectSettings.json
 AMD_Radeon_Vega_OpenCL.config
 .vs/config/applicationhost.config
+yarn.lock
+package-lock.json
