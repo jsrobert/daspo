@@ -4,7 +4,7 @@
     "lib": [
       "dom",
       "dom.iterable",
-      "esnext"
+      "esnext",
     ],
     "allowJs": true,
     "skipLibCheck": true,
@@ -18,9 +18,9 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react",
-    "baseUrl": "http://127.0.0.1:3000"
+    "baseUrl": "http://127.0.0.1:3000",
   },
   "include": [
-    "src"
+    "src",
   ]
 }
