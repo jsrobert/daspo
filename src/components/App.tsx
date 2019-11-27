@@ -1,23 +1,11 @@
+import { DefaultButton, Fabric, IMessageBar } from 'office-ui-fabric-react';
 import * as React from 'react';
-import { Router, Route, Switch } from 'react-router-dom';
-import { PrimaryButton, DefaultButton } from 'office-ui-fabric-react/lib/Button';
-import { MessageBar, MessageBarType, IMessageBar } from 'office-ui-fabric-react/lib/MessageBar';
-import { Fabric } from 'office-ui-fabric-react/lib/Fabric';
-import { PanelSmallRightExample } from './panel/PanelSmallRightExample';
-import { PanelSmallLeftExample } from './panel/PanelSmallLeftExample';
-import { LeftNav } from './nav/LeftNav';
-import { Navigation } from '../data/Navigation';
 import CommandBarBasic from '../containers/CommandBar';
-import Hello from '../containers/Hello';
-// import configureStore, { history } from '../store';
-import DetailListDocument  from '../containers/DetailListDocument';
-import DetailsListBasic  from '../containers/DetailsListBasic';
-import MessageBarBasic from '../containers/MessageBarBasic';
-// import DevTools from '../containers/DevTools';
+import DetailListDocument from '../containers/DetailListDocument';
+import { Navigation } from '../data/Navigation';
 import './App.scss';
- 
-// const store = configureStore({});
- 
+import { LeftNav } from './nav/LeftNav';
+
 declare global {
     // tslint:disable-next-line:interface-name
     interface Window {
@@ -28,84 +16,62 @@ declare global {
 }
 window.authContext = window.authContext || null;
 
-interface ApiParams {
+interface IApiParams {
     currentComponent: string;
     uri: string;
 }
 
-export interface AppState {
+export interface IAppState {
     authContext?: any;
     messages?: string[];
-    apiParams?: ApiParams;
+    apiParams?: IApiParams;
     appView?: string;
     appData?: any;
 }
 
-export interface AppProps {
+export interface IAppProps {
     authContext?: any;
     messages?: string[];
-    apiParams?: ApiParams;
+    apiParams?: IApiParams;
     appView?: string;
     appData?: any;
     history: any;
 }
 
-class App extends React.Component<AppProps, AppState> {
-    constructor(props: AppProps) {
-        super(props)
+class App extends React.Component<IAppProps, IAppState> {
+    private detailListDocument: any;
+    constructor(props: IAppProps) {
+        super(props);
 
         this.detailListDocument = React.createRef();
         this.getUser.bind(this);
         this.executeAction.bind(this);
         this.loadComponent.bind(this);
         this.renderDataView.bind(this);
-        this.handleNavigation.bind(this); 
+        this.handleNavigation.bind(this);
         this.state = {
+            appData: {},
+            appView: '/',
             authContext: window.authContext,
             messages: ['message one'],
-            appView: '/',
-            appData: {},
-        }
+        };
         window.setDaspoData = (data: any) => {
             console.log('window.setDaspoData fired');
             this.setState({
                 appData: data,
-            })
+            });
         };
     }
- 
-    executeAction = (ev: React.MouseEvent<HTMLElement> | undefined) => {
-        let _messageBar = React.createRef<IMessageBar>();
-        let _type = typeof _messageBar;
-        //React.useState()
 
-        //_messageBar.addMessage('this is the message');
+    executeAction = () => {
+        // let _messageBar = React.createRef<IMessageBar>();
+        // React.useState()
+
+        // _messageBar.addMessage('this is the message');
         // alert('execute action' + _type);
     }
-    private detailListDocument:any;
 
-    private loadComponent = () => {
-        //this.props.
-        //let _currentMessageBar = React.createRef<IMessageBar>();
-        // _currentMessageBar.
-        // this.setState(
-        //     {
-        //         apiParams: {
-        //             currentComponent: '',
-        //             uri: ''
-        //         }        
-        //     }
-        // );
-    }
-
-    // public setDataView = (view: string) => {
-    //     this.setState({
-    //         appView: view
-    //     })
-    // }
-
-    private responseData: any = {};
-    public renderDataView = (view?: string, data?: any) => {
+    public renderDataView = () => {
         // // let { dataView } = this.state;
         // if (view === 'Accounts'){
         //     return (
@@ -136,19 +102,19 @@ class App extends React.Component<AppProps, AppState> {
         // })
     }
 
-    public getUser = (ev: React.MouseEvent<HTMLElement> | undefined) => {
-        //window.authContext = window.authContext || null;
-        //let user = window.authContext ? window.authContext.getCachedUser() : {};
-        //let name = user.profile ? user.profile.name : 'no name yet';
-        //console.log('app global did mount ' + name);
+    public getUser = () => {
+        // window.authContext = window.authContext || null;
+        // let user = window.authContext ? window.authContext.getCachedUser() : {};
+        // let name = user.profile ? user.profile.name : 'no name yet';
+        // console.log('app global did mount ' + name);
 
         let message = window.authContext ? 'auth context exists\r\n' : 'auth context is NOTHING\n';
-        let tempUser = window.authContext ? window.authContext.getCachedUser() : {};
+        const tempUser = window.authContext ? window.authContext.getCachedUser() : {};
         message += tempUser ? 'temp user exists\r\n' : 'temp user is NOTHING\n';
         message += tempUser.userName ? 'user.userName = ' + tempUser.userName + '\n' : 'user.userName is NOTHING\n';
         message += tempUser.profile ? 'user.profile.upn = ' + tempUser.profile.upn + '\n': 'user.profile is NOTHING\n';
 
-        if(tempUser.profile){
+        if( tempUser.profile ) {
             // for(var i=0; i < tempUser.profile.length; i++) {
             //     message += tempUser.profile[i];
             // }
@@ -165,12 +131,10 @@ class App extends React.Component<AppProps, AppState> {
                 appView: item.url,
             })
         }
-        const trigger = ev ? ev.preventDefault() : null;
         return true;
     }
 
     public componentDidMount(): void {
-        let cachedUser = window.authContext ? window.authContext.getCachedUser() : {};
         let user = window.authContext ? window.authContext.getUser() : {};
         let name = user.profile ? user.profile.name : 'no name yet';
         // window.setDaspoData = (data: any) => {
@@ -180,13 +144,13 @@ class App extends React.Component<AppProps, AppState> {
         // }
         console.log('app component did mount ' + name);
         // this.loadComponent();
-        if(window.top){
+        if( window.top ) {
             console.log("window.top exists");
         }
-        if(window === window.top){
+        if ( window === window.top ) {
             console.log("this is the top window");
         }
-        //this.authContextCallApi(this.authContextCallback);
+        // this.authContextCallApi(this.authContextCallback);
     }
 
     public componentWillUnmount() : void {
@@ -194,11 +158,10 @@ class App extends React.Component<AppProps, AppState> {
     }
 
     public render() {
-        let user = window.authContext ? window.authContext.getCachedUser() : {};
         // const {messageIndex, messageText, showMessage} = this.state;
         // const { appView } = this.state.appView ? this.state : { appView:  '/' };
         const { appData } = this.props.appData ? this.props : { appData:  {} };
-        const { renderDataView, executeAction, getUser, handleNavigation } = this;
+        const { executeAction, getUser, handleNavigation } = this;
         // let user = authContext.getCachedUser();
         return (
             <Fabric className="App">
@@ -210,16 +173,15 @@ class App extends React.Component<AppProps, AppState> {
                                     <div id="message"></div>
                                     {/* <MessageBarBasic /> */}
                                     <LeftNav groups={Navigation.defaultGroups} onLinkClick={handleNavigation} selectedKey={this.state.appView} />
-                                    <p><DefaultButton name="executeActionButton" id="executeActionButton" text="Execute Action" onClick={(e) => executeAction}/></p>
-                                    <p><DefaultButton name="getUserButton" id="getUser" text="Get User" onClick={(e) => getUser}/></p>
+                                    <p><DefaultButton name="executeActionButton" id="executeActionButton" text="Execute Action" onClick={() => executeAction}/></p>
+                                    <p><DefaultButton name="getUserButton" id="getUser" text="Get User" onClick={() => getUser}/></p>
                                 </div>
                                 <div className="ms-Grid-col ms-sm6 ms-md8 ms-lg10">
-                                    <div id="errorMessage"></div>
+                                    <div id="errorMessage"/>
                                     <CommandBarBasic items={[]} />
                                     <table id="accountsTable" className='hidden'>
                                         <thead><tr><th>Name</th><th>City</th></tr></thead>
-                                        <tbody id="accountsTableBody">                                          
-                                        </tbody>
+                                        <tbody id="accountsTableBody"/>
                                     </table> 
                                     <DetailListDocument ref={this.detailListDocument} items={appData} data={this.state.appView} query={this.state.appView}/>
                                 </div>
@@ -230,32 +192,23 @@ class App extends React.Component<AppProps, AppState> {
             </Fabric>
         );
     }
+
+    private loadComponent = () => {
+        // this.props.
+        // let _currentMessageBar = React.createRef<IMessageBar>();
+        // _currentMessageBar.
+        // this.setState(
+        //     {
+        //         apiParams: {
+        //             currentComponent: '',
+        //             uri: ''
+        //         }
+        //     }
+        // );
+    }
 }
 
-let checked: boolean = false;
-function buttonClicked(){
-  checked = !checked;
-  alert('clicked');
-}
+const checked: boolean = false;
 
-function ResultsMessageBarDismiss(ev: React.MouseEvent<HTMLButtonElement>): boolean {
-  let button: any = ev.button;
-    console.log('results message bar dismiss clicked');
-    return true;
-}
-
-function ResultsMessageBarOnLoad(ev: any) {
-    let message = typeof ev;
-    alert(message);
-}
-
-function ResultsMessageBarOnClick(ev: any) {
-    let message = typeof ev;
-    alert(message);
-}
-
-function ShowMessage() {
-
-}
 export default App;
 
