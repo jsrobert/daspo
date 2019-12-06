@@ -1,19 +1,39 @@
+import { INavProps, INavState, Nav } from 'office-ui-fabric-react/lib/Nav';
 import * as React from 'react';
-import { Nav, INavLink, INavProps, INavState, INav, INavLinkGroup, INavStyles, INavStyleProps } from 'office-ui-fabric-react/lib/Nav';
-import { Link }  from 'office-ui-fabric-react/lib/Link';
 import './Nav.Basic.Example.scss';
 
 export class LeftNav extends React.Component<INavProps, INavState> {
-  constructor(public props:INavProps){
+  constructor(public props: INavProps){
     super(props)
-    //this.onLinkClick.bind(this);
+    // this.onLinkClick.bind(this);
     this.getSelectedKey.bind(this);
-    
+
     this.state = {
       selectedKey: this.props.selectedKey,
-      isGroupCollapsed: { "one": true },
+      isGroupCollapsed: { one: true },
     }
-    
+  }
+
+  public render(): JSX.Element {
+    // const { onLinkClick, defaultProps, defaultGroups } = this;
+    // const { groups }: Array<INavLinkGroup>  = [ ...this.props, ...defaultGroups];
+    // const { name, age }: Person = params || {}
+    // const { localLinkClick } = this;
+    const { groups, onLinkClick } = this.props;
+    // const defaultGroups = defaultProps.groups || new Array<INavLinkGroup>();
+    // const combinedGroups: Array<INavLinkGroup> = instanceof groups === Array ? groups.concat(defaultGroups) : defaultGroups; // defaultGroups ; // 
+    return (
+      <div className="ms-NavExample-LeftPane">
+        <Nav
+          groups={groups}
+          onLinkClick={onLinkClick}
+          // expandedStateText={'expanded'}
+          // collapsedStateText={'collapsed'}
+          selectedKey={this.props.selectedKey}
+          expandButtonAriaLabel={'Expand or collapse'}
+        />
+      </div>
+    );
   }
 
   // public readonly state: INavState = {
@@ -21,8 +41,8 @@ export class LeftNav extends React.Component<INavProps, INavState> {
   // }
 
   private getSelectedKey = () => {
-    let path = window.location.pathname;
-    //alert('location path = ' + path);
+    const path = window.location.pathname;
+    // alert('location path = ' + path);
     return path;
   }
 
@@ -48,28 +68,4 @@ export class LeftNav extends React.Component<INavProps, INavState> {
   //     console.error('this.props.onLinkClick NOT called');
   //   }
   // }
-
-
-  public render(): JSX.Element {
-    // const { onLinkClick, defaultProps, defaultGroups } = this;
-    // const { groups }: Array<INavLinkGroup>  = [ ...this.props, ...defaultGroups];
-    // const { name, age }: Person = params || {}
-    // const { localLinkClick } = this;
-    const { groups, onLinkClick } = this.props;
-    
-    // const defaultGroups = defaultProps.groups || new Array<INavLinkGroup>();
-    // const combinedGroups: Array<INavLinkGroup> = instanceof groups === Array ? groups.concat(defaultGroups) : defaultGroups; // defaultGroups ; // 
-    return (
-      <div className="ms-NavExample-LeftPane">
-        <Nav
-          groups={groups}
-          onLinkClick={onLinkClick}
-          //expandedStateText={'expanded'}
-          //collapsedStateText={'collapsed'}
-          selectedKey={this.props.selectedKey}
-          expandButtonAriaLabel={'Expand or collapse'}
-        />
-      </div>
-    );
-  }
 }

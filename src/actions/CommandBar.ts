@@ -42,46 +42,46 @@ export const hideButton = (): IHideButton => {
         type: HIDE_BUTTON,
         hideButton: true,
     };
-}
+};
 
 export const showButton = (): IShowButton => {
     return {
         type: SHOW_BUTTON,
         hideButton: false,
-    }
-}
+    };
+};
 
 export const loginClick = (): ILoginClick => {
-    if(window && window.authContext){
+    if (window && window.authContext) {
         window.authContext.login();
     }
     return {
         type: LOGIN_CLICK,
-    }
-}
+    };
+};
 
 export const logoutClick = (): ILogoutClick => {
-    if(window && window.authContext){
+    if (window && window.authContext) {
         window.authContext.logout();
     }
     return {
         type: LOGOUT_CLICK,
         isAuthenticated: false,
-    }
-}
+    };
+};
 
 export const checkAuth = (): ICheckAuth => {
     return {
         type: CHECK_AUTH,
-        isAuthenticated: checkUserAuth()
-    }
-}
+        isAuthenticated: checkUserAuth(),
+    };
+};
 
 export const checkUserAuth = () => {
-    if(window && window.authContext){
+    if (window && window.authContext) {
         const user = window.authContext.getCachedUser();
         const userName = user.userName;
         return true;
     }
     return false;
-}
+};

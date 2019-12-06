@@ -1,11 +1,11 @@
-import { Dispatch, AnyAction } from 'redux';
 import { AuthenticationContext, TokenResponse } from 'adal-node';
 import { string } from 'prop-types';
+import { AnyAction, Dispatch } from 'redux';
 
 export interface IApiCallProps {
-    InProgressFunc: (status: boolean) => AnyAction,
-    successFunc: (data: any) => AnyAction,
-    failureFunc: (error: any) => AnyAction,
+    InProgressFunc: (status: boolean) => AnyAction;
+    successFunc: (data: any) => AnyAction;
+    failureFunc: (error: any) => AnyAction;
 }
 
 export interface IHeaderEntry {
@@ -19,62 +19,54 @@ export interface IHeaderEntries {
 
 export class ApiCall<T extends IApiCallProps> {
 
-    constructor(private props: T){
-        if(this.props.InProgressFunc && this.props.successFunc && this.props.failureFunc)
-            this.isInitialized = true;
-        else
-            this.isInitialized = false;
-    }
-
     public isInitialized: boolean;
-
-    private initHeaders = (headers: any, token: string) => {
-        return {
-            ...headers,
-            Authorization : "Bearer " + token,
-        }
-    };
 
     private baseHeaders = {
         "Accept": "application/json",
         "Content-Type": "application/json; charset=utf-8",
         "OData-MaxVersion": "4.0",
-        "OData-Version": "4.0"
-    }
+        "OData-Version": "4.0",
+    };
 
     private baseHeadersWithFormattedValues = {
         "Accept": "application/json",
         "Content-Type": "application/json; charset=utf-8",
         "OData-MaxVersion": "4.0",
         "OData-Version": "4.0",
-        "Prefer": "odata.include-annotations=OData.Community.Display.V1.FormattedValue"
+        "Prefer": "odata.include-annotations=OData.Community.Display.V1.FormattedValue",
+    };
+
+    constructor(private props: T) {
+        if (this.props.InProgressFunc && this.props.successFunc && this.props.failureFunc) {
+            this.isInitialized = true;
+        } else {
+            this.isInitialized = false;
+        }
     }
 
     public FetchData = (authContext: any, query: string, additionalHeaders: any) => {
-        let organizationURI = authContext.config.endpoints.orgUri;
-        let queryUrl = organizationURI + query;
+        const organizationURI = authContext.config.endpoints.orgUri;
+        const queryUrl = organizationURI + query;
         // Function to perform operation is passed as a parameter to the aquireToken method
         return (dispatch: Dispatch, getState: any) => {
             authContext.acquireToken(
                 organizationURI,
                 (error: any, token: any) => {
-                    if(error || !token){
+                    if (error || !token) {
                         dispatch(this.props.failureFunc(error));
-                        console.error("FetchData authContext.acquireToken error: " + error)
-                    }
-                    else {
+                        console.error("FetchData authContext.acquireToken error: " + error);
+                    } else {
                         dispatch(this.props.InProgressFunc(true));
 
-                        let reqHeaders = additionalHeaders ?
+                        const reqHeaders = additionalHeaders ?
                             this.initHeaders(
-                                this.baseHeadersWithFormattedValues, 
-                                token
+                                this.baseHeadersWithFormattedValues,
+                                token,
                             ) :
                             this.initHeaders(
                                 this.baseHeaders,
-                                token
+                                token,
                             );
-                        
                         const reqInit: RequestInit = {
                             method: "GET",
                             mode: "cors",
@@ -97,29 +89,28 @@ export class ApiCall<T extends IApiCallProps> {
                             .then((data) => dispatch(this.props.successFunc(data.value)))
                             .catch(() => dispatch(this.props.failureFunc(true)));
                     }
-                }
+                },
             );
-        }
+        };
     }
 
     public FetchMetaData = (authContext: any, query: string) => {
-        const _top = window.top;
-        let organizationURI = authContext.config.endpoints.orgUri;
+        const winTop = window.top;
+        const organizationURI = authContext.config.endpoints.orgUri;
 
-        let queryUrl = organizationURI + query;
+        const queryUrl = organizationURI + query;
         // Function to perform operation is passed as a parameter to the aquireToken method
         return (dispatch: Dispatch, getState: any) => {
             authContext.acquireToken(
                 organizationURI,
                 (error: any, token: any) => {
-                    if(error || !token){
+                    if (error || !token) {
                         dispatch(this.props.failureFunc(error));
-                        console.log("FetchData authContext.acquireToken error: " + error)
-                    }
-                    else {
+                        console.log("FetchData authContext.acquireToken error: " + error);
+                    } else {
                         dispatch(this.props.InProgressFunc(true));
 
-                        //console.log("Bearer token = " + token);
+                        // console.log("Bearer token = " + token);
                         const reqInit: RequestInit = {
                             method: "GET",
                             mode: "cors",
@@ -130,12 +121,12 @@ export class ApiCall<T extends IApiCallProps> {
                                 "Authorization": "Bearer " + token,
                                 "Accept": "application/json",
                                 "OData-MaxVersion": "4.0",
-                                "OData-Version": "4.0"
+                                "OData-Version": "4.0",
                             },
                             redirect: "follow",
                             referrer: "no-referrer",
                         };
-                    
+
                         fetch(queryUrl, reqInit)
                             .then((response) => {
                                 if (!response.ok) {
@@ -148,14 +139,21 @@ export class ApiCall<T extends IApiCallProps> {
                             .then((data) => dispatch(this.props.successFunc(data.value)))
                             .catch(() => dispatch(this.props.failureFunc(true)));
                     }
-                }
+                },
             );
-        }
+        };
+    }
+
+    private initHeaders = (headers: any, token: string) => {
+        return {
+            ...headers,
+            Authorization : "Bearer " + token,
+        };
     }
 }
 
     // private authContextCallApi = (renderCallBack: any) => {
-    //     const _top = window.top;
+    //     const wintop = window.top;
     //     let organizationURI = window.authContext.config.endpoints.orgUri;
     //     console.log("authContextCallApi => Retrieving 10 accounts from ${organizationURI} /api/data/v9.1/accounts")
     //     // Function to perform operation is passed as a parameter to the aquireToken method
@@ -199,7 +197,7 @@ export class ApiCall<T extends IApiCallProps> {
     //         response => response.json()
     //     )
     //     .then(
-    //         data => { 
+    //         data => {
     //             // console.log("fetch then " + JSON.stringify(data));
     //             //this.responseData = data;
     //             console.log("responseData then " + JSON.stringify(data));

@@ -1,8 +1,8 @@
-import * as React from 'react';
 import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
-import { Dialog, DialogType, DialogFooter } from 'office-ui-fabric-react/lib/Dialog';
 import { PrimaryButton } from 'office-ui-fabric-react/lib/Button';
+import { Dialog, DialogFooter, DialogType } from 'office-ui-fabric-react/lib/Dialog';
 import { Panel, PanelType } from 'office-ui-fabric-react/lib/Panel';
+import * as React from 'react';
 
 export interface ILayerNestedLayersExampleState {
   hideDialog: boolean;
@@ -15,42 +15,42 @@ export class LayerNestedLayersExample extends React.Component<{}, ILayerNestedLa
 
     this.state = {
       hideDialog: true,
-      showPanel: false
+      showPanel: false,
     };
   }
 
-  public render() : JSX.Element {
+  public render(): JSX.Element {
     return (
       <div>
-        <DefaultButton secondaryText="Opens the Sample Panel" onClick={this._onShowPanel} text="Open Panel" />
+        <DefaultButton secondaryText="Opens the Sample Panel" onClick={this.onShowPanel} text="Open Panel" />
         <Panel
           isOpen={this.state.showPanel}
           type={PanelType.smallFixedFar}
-          onDismiss={this._onClosePanel}
+          onDismiss={this.onClosePanel}
           headerText="This panel makes use of Layer and FocusTrapZone. Focus should be trapped in the panel."
           closeButtonAriaLabel="Close" >
-          <DefaultButton secondaryText="Opens the Sample Dialog" onClick={this._showDialog} text="Open Dialog" />
+          <DefaultButton secondaryText="Opens the Sample Dialog" onClick={this.showDialog} text="Open Dialog" />
           <Dialog
             hidden={this.state.hideDialog}
-            onDismiss={this._closeDialog}
+            onDismiss={this.closeDialog}
             isBlocking={true}
             dialogContentProps={{
               type: DialogType.normal,
               title:
                 'This dialog uses Modal, which also makes use of Layer and FocusTrapZone. Focus should be trapped in the dialog.',
-              subText: "Focus will move back to the panel if you press 'OK' or 'Cancel'."
+              subText: "Focus will move back to the panel if you press 'OK' or 'Cancel'.",
             }}
             modalProps={{
               titleAriaId: 'myLabelId',
               subtitleAriaId: 'mySubTextId',
               isBlocking: false,
-              containerClassName: 'ms-dialogMainOverride'
+              containerClassName: 'ms-dialogMainOverride',
             }}
           >
             {null /** You can also include null values as the result of conditionals */}
             <DialogFooter>
-              <PrimaryButton onClick={this._closeDialog} text="OK" />
-              <DefaultButton onClick={this._closeDialog} text="Cancel" />
+              <PrimaryButton onClick={this.closeDialog} text="OK" />
+              <DefaultButton onClick={this.closeDialog} text="Cancel" />
             </DialogFooter>
           </Dialog>
         </Panel>
@@ -58,28 +58,28 @@ export class LayerNestedLayersExample extends React.Component<{}, ILayerNestedLa
     );
   }
 
-  private _closeDialog = (): void => {
+  private closeDialog = (): void => {
     this.setState({
-      hideDialog: true
+      hideDialog: true,
     });
-  };
+  }
 
-  private _showDialog = (): void => {
+  private showDialog = (): void => {
     this.setState({
-      hideDialog: false
+      hideDialog: false,
     });
-  };
-  
-  private _onShowPanel = (): void => {
-    this.setState({
-      showPanel: true
-    });
-  };
+  }
 
-  private _onClosePanel = (): void => {
+  private onShowPanel = (): void => {
     this.setState({
-      showPanel: false
+      showPanel: true,
     });
-  };
-  
+  }
+
+  private onClosePanel = (): void => {
+    this.setState({
+      showPanel: false,
+    });
+  }
+
 }
