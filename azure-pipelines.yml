@@ -12,10 +12,10 @@ variables:
   azureSubscription: '6c3de5eb-403e-4ebb-ae49-1977733ede56'
 
   # Web app name
-  webAppName: ''
+  webAppName: 'daspo'
   
   # Environment name
-  environmentName: ''
+  environmentName: 'dev'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -39,7 +39,7 @@ stages:
         archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
         replaceExistingArchive: true
 
-    - upload: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+    - publish: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
       artifact: drop
 
 - stage: Deploy
