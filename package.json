@@ -1,6 +1,7 @@
 {
   "name": "daspo",
   "version": "0.1.0",
+  "homepage" : "http://jsrobert.github.io/myapp",
   "private": true,
   "dependencies": {
     "@types/enzyme": "^3.10.3",
