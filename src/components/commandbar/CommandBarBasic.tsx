@@ -1,16 +1,11 @@
+import { CommandBar, ICommandBarItemProps } from 'office-ui-fabric-react/lib/CommandBar';
 import * as React from 'react';
-import { Link, RouteComponentProps } from 'react-router-dom';
-import { CommandBar, ICommandBarProps, ICommandBarItemProps, ICommandBarData } from 'office-ui-fabric-react/lib/CommandBar';
-import { CommandBarButton } from 'office-ui-fabric-react/lib/Button';
-import { MessageBarActionType, AddMessage } from '../../actions/MessageBarBasic';
-import { isElementVisible } from '@uifabric/utilities';
 import {CommandBarProps, CommandBarState} from '../../model/CommandBar';
 
-const fs = require('fs')
-
 export default class CommandBarBasic extends React.Component<CommandBarProps, CommandBarState> {
+
     constructor(
-        public props: CommandBarProps){
+        public props: CommandBarProps) {
             super(props);
             this.getItems = this.getItems.bind(this);
             this.getFarItems = this.getFarItems.bind(this);
@@ -25,26 +20,8 @@ export default class CommandBarBasic extends React.Component<CommandBarProps, Co
 
     }
 
-    componentDidMount():void {
-        
-    }
-
-    componentWillUpdate(nextProps: CommandBarProps) {
-        
-    }
-
-    public componentDidUpdate(previousProps: CommandBarProps, previousState: CommandBarState) {
-        let prevIsAuthenticated = previousProps.isAuthenticated ? previousProps.isAuthenticated : false;
-        let stateIsAuthenticated = previousState.isAuthenticated ? previousState.isAuthenticated : false;
-        let prevItems = previousProps.items ? previousProps.items : new Array<ICommandBarItemProps>();
-    }
-
     public render(): JSX.Element {
         const items = this.getItems();
-        const { isAuthenticated, checkAuth } = this.props;
-        const nextItems = this.props || [];
-        const { onHideButton, onShowButton } = this.props;
-        const { getItems } = this;
         return (
             <div>
             <CommandBar
@@ -55,9 +32,9 @@ export default class CommandBarBasic extends React.Component<CommandBarProps, Co
                 title={this.props.cbTitle}
                 >
                 {/* {isAuthenticated &&
-                <CommandBarButton key='login' name='Log In' 
+                <CommandBarButton key='login' name='Log In'
                     disabled={this.props.isAuthenticated}
-                    iconProps={{iconName:'PlugConnected'}} 
+                    iconProps={{iconName:'PlugConnected'}}
                     onClick={this.logInClick}/>
                 } */}
                 {/* key : 'login',
@@ -72,94 +49,84 @@ export default class CommandBarBasic extends React.Component<CommandBarProps, Co
         );
     }
 
-    // private cbItems: ICommandBarItemProps[];
-    private cbTitle: string = "Command Bar Title HERE<-"
-    private excludeItem = (keyToExclude: string) => {
-        if(this.props.cbItems){
-            return this.props.cbItems.filter(cbItem => cbItem.key !== keyToExclude);
-        }
-        return [];
-    }
-
     // Data for CommandBar
     private getItems = (): ICommandBarItemProps[] => {
-        let _items: ICommandBarItemProps[] = [];
-        if(this.props.isAuthenticated === false){
-            _items.push({
+        const items: ICommandBarItemProps[] = [];
+        if (this.props.isAuthenticated === false) {
+            items.push({
                 key : 'login',
                 name: 'Log In',
                 iconProps: {
-                    iconName: 'PlugConnected'
+                    iconName: 'PlugConnected',
                 },
                 disabled: this.props.isAuthenticated,
-                onClick: () => { 
-                    if(this.props.loginClick){
+                onClick: () => {
+                    if (this.props.loginClick) {
                         this.props.loginClick();
-                    };
+                    }
                 },
             });
-        }
-        else {
-            _items.push({
+        } else {
+            items.push({
                 key : 'logout',
                 name: 'Log Out',
                 iconProps: {
-                    iconName: 'PlugDisconnected'
+                    iconName: 'PlugDisconnected',
                 },
                 disabled: !this.props.isAuthenticated,
-                onClick: () => { 
-                    if(this.props.loginClick){
+                onClick: () => {
+                    if (this.props.loginClick) {
                         this.props.loginClick();
-                    };
-                }
+                    }
+                },
             });
         }
-        _items.push({
+        items.push({
             key: 'upload',
             name: 'Upload',
             iconProps: {
-                iconName: 'Upload'
+                iconName: 'Upload',
             },
+
             onClick: () => console.log('Upload'),
             href: 'https://dev.office.com/fabric',
-            ['data-automation-id']: 'uploadButton'
+            ['data-automation-id']: 'uploadButton',
         });
-        _items.push({
+        items.push({
             key: 'accounts',
             name: 'Accounts',
             iconProps: {
-            iconName: 'ContactInfo'
+            iconName: 'ContactInfo',
             },
-            onClick:this.getAccountsTwo
+            onClick: this.getAccountsTwo,
         });
-        _items.push({
+        items.push({
             key: 'testStateButton',
             name: 'Test State',
             iconProps: {
-            iconName: 'CommandPrompt'
+            iconName: 'CommandPrompt',
             },
-            onClick:() => {
-                const user = this.props.checkAuth ? this.props.checkAuth() : false;
-                if(this.props.onShowButton){
+            onClick: () => {
+                if (this.props.onShowButton) {
                     this.props.onShowButton();
                 }
                 // this.setState({
                 //     isAuthenticated: !this.props.isAuthenticated
                 // })
-            }
+            },
         });
-        if(this.state.canDownload){
-            _items.push({
+        if (this.state.canDownload) {
+            items.push({
                 key: 'download',
                 name: 'Download',
                 iconProps: {
-                iconName: 'Download'
+                iconName: 'Download',
                 },
-                onClick: () => this.setState({ canDownload: false })
-            })
+                onClick: () => this.setState({ canDownload: false }),
+            });
         }
-        return _items;
-    };
+        return items;
+    }
 
     private getOverlflowItems = () => {
         return [
@@ -168,27 +135,27 @@ export default class CommandBarBasic extends React.Component<CommandBarProps, Co
             name: 'Move to...',
             onClick: () => console.log('Move to'),
             iconProps: {
-                iconName: 'MoveToFolder'
-            }
+                iconName: 'MoveToFolder',
+            },
             },
             {
             key: 'copy',
             name: 'Copy to...',
             onClick: () => console.log('Copy to'),
             iconProps: {
-                iconName: 'Copy'
-            }
+                iconName: 'Copy',
+            },
             },
             {
             key: 'rename',
             name: 'Rename...',
             onClick: () => console.log('Rename'),
             iconProps: {
-                iconName: 'Edit'
-            }
-            }
+                iconName: 'Edit',
+            },
+            },
         ];
-    };
+    }
 
     private getFarItems = () => {
         return [
@@ -196,41 +163,40 @@ export default class CommandBarBasic extends React.Component<CommandBarProps, Co
             key: 'sort',
             name: 'Sort',
             iconProps: {
-                iconName: 'SortLines'
+                iconName: 'SortLines',
             },
-            onClick: () => console.log('Sort')
+            onClick: () => console.log('Sort'),
             },
             {
             key: 'tile',
             name: 'Grid view',
             iconProps: {
-                iconName: 'Tiles'
+                iconName: 'Tiles',
             },
             iconOnly: true,
-            onClick: () => console.log('Tiles')
+            onClick: () => console.log('Tiles'),
             },
             {
             key: 'info',
             name: 'Info',
             iconProps: {
-                iconName: 'Info'
+                iconName: 'Info',
             },
             iconOnly: true,
-            onClick: () => console.log('Info')
-            }
+            onClick: () => console.log('Info'),
+            },
         ];
-    };
+    }
 
     private getAccountsTwo() {
-        let _self: any = this;
-        let organizationURI = window.authContext.config.endpoints.orgUri;
-        //let getAccountsButton = document.getElementById('getAccountsButton') || document.createElement('input');
-        let message = document.getElementById('message') || document.createElement('div');
-        //messageBar = React.createRef<React.RefObject<IMessageBar>>();
+        const organizationURI = window.authContext.config.endpoints.orgUri;
+        // let getAccountsButton = document.getElementById('getAccountsButton') || document.createElement('input');
+        const message = document.getElementById('message') || document.createElement('div');
+        // messageBar = React.createRef<React.RefObject<IMessageBar>>();
 
-        //let _messageBar = messageBar;
-        //getAccountsButton.disabled = true;
-        let retrievingAccountsMessage = document.createElement("p");
+        // let _messageBar = messageBar;
+        // getAccountsButton.disabled = true;
+        const retrievingAccountsMessage = document.createElement("p");
         retrievingAccountsMessage.textContent = "Retrieving 10 accounts from " + organizationURI + "/api/data/v9.1/accounts";
         message.appendChild(retrievingAccountsMessage);
 
@@ -238,67 +204,62 @@ export default class CommandBarBasic extends React.Component<CommandBarProps, Co
         window.authContext.acquireToken(
             organizationURI,
             (error: any, token: any) => {
-                let _self: CommandBarBasic = this;
-                let errorMessage = document.getElementById('errorMessage') || document.createElement('input');
-                let organizationURI = window.authContext.config.endpoints.orgUri;
+                const errorMessage = document.getElementById('errorMessage') || document.createElement('input');
+                const orgUrl = window.authContext.config.endpoints.orgUri;
                 // Handle ADAL Errors.
                 if (error || !token) {
                     errorMessage.textContent = 'ADAL error occurred: ' + error;
                     return;
                 }
 
-                var req = new XMLHttpRequest()
+                const req = new XMLHttpRequest();
                 req.open("GET", encodeURI(organizationURI + "/api/data/v9.1/accounts?$select=name,address1_city&$top=10"), true);
-                //Set Bearer token
+                // Set Bearer token
                 req.setRequestHeader("Authorization", "Bearer " + token);
                 req.setRequestHeader("Accept", "application/json");
                 req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
                 req.setRequestHeader("OData-MaxVersion", "4.0");
                 req.setRequestHeader("OData-Version", "4.0");
-                req.onreadystatechange = function () {
-                    if (this.readyState == 4 /* complete */) {
+                req.onreadystatechange = function() {
+                    if (this.readyState === 4 /* complete */) {
                         req.onreadystatechange = null;
-                        if (this.status == 200) {
-                            var accounts = JSON.parse(this.response).value;
+                        if (this.status === 200) {
+                            const accounts = JSON.parse(this.response).value;
                             // send the data to the global method
                             window.setDaspoData(accounts);
                             // save the data to disk
-                            // fs.writeFile("accounts_output.json", accounts, 'utf8', (err: any) => { 
-                            //     if (err) { 
-                            //         console.log("An error occured while writing JSON Object to File."); 
-                            //         return err; 
-                            //     } 
-                            //     console.log("JSON file has been saved."); 
+                            // fs.writeFile("accounts_output.json", accounts, 'utf8', (err: any) => {
+                            //     if (err) {
+                            //         console.log("An error occured while writing JSON Object to File.");
+                            //         return err;
+                            //     }
+                            //     console.log("JSON file has been saved.");
                             // });
-                            let accountsTable = document.getElementById('accountsTable') || document.createElement("table");
-                            let accountsTableBody = document.getElementById('accountsTableBody') || document.createElement("tbody");
-                            accounts.forEach(function (account: any) {
-                                var name = account.name;
-                                var city = account.address1_city;
-                                var nameCell = document.createElement("td");
+                            const accountsTable = document.getElementById('accountsTable') || document.createElement("table");
+                            const accountsTableBody = document.getElementById('accountsTableBody') || document.createElement("tbody");
+                            accounts.forEach((account: any) => {
+                                const name = account.name;
+                                const city = account.address1_city;
+                                const nameCell = document.createElement("td");
                                 nameCell.textContent = name;
-                                var cityCell = document.createElement("td");
+                                const cityCell = document.createElement("td");
                                 cityCell.textContent = city;
-                                var row = document.createElement("tr");
+                                const row = document.createElement("tr");
                                 row.appendChild(nameCell);
                                 row.appendChild(cityCell);
                                 accountsTableBody.appendChild(row);
                             });
                             accountsTable.style.display = "block";
-                        }
-                        else {
-                            var error = JSON.parse(this.response).error;
-                            console.log(error.message);
-                            errorMessage.textContent = error.message;
+                        } else {
+                            const aquireTokenError = JSON.parse(this.response).error;
+                            console.log(aquireTokenError.message);
+                            errorMessage.textContent = aquireTokenError.message;
                         }
                     }
                 };
                 req.send();
-            }
+            },
         );
-    }
-    public getAccountsTwoCallback = (resp: any, err: any) => {
-
     }
 /*
     //Function that actually retrieves the accounts

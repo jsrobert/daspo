@@ -1,8 +1,8 @@
-import * as React from 'react';
 import { Customizer } from '@uifabric/utilities';
-import { Panel } from 'office-ui-fabric-react/lib/Panel';
 import { Checkbox } from 'office-ui-fabric-react/lib/Checkbox';
 import { LayerHost } from 'office-ui-fabric-react/lib/Layer';
+import { Panel } from 'office-ui-fabric-react/lib/Panel';
+import * as React from 'react';
 
 export interface ILayerCustomizedExampleState {
   showPanel: boolean;
@@ -15,7 +15,7 @@ export class LayerCustomizedExample extends React.Component<{}, ILayerCustomized
 
     this.state = {
       showPanel: false,
-      trapPanel: false
+      trapPanel: false,
     };
   }
 
@@ -27,15 +27,15 @@ export class LayerCustomizedExample extends React.Component<{}, ILayerCustomized
           A <code>Panel</code> is rendered, trapped in a specified container. Use 'Show panel' to show/hide the panel
           (or click the X to dismiss it). Use 'Trap panel' to release the panel from its bounds.
         </p>
-        <Checkbox label="Show panel" checked={showPanel} onChange={this._onShowPanelChange} />
-        <Checkbox label="Trap panel" checked={trapPanel} onChange={this._onTrapPanelChange} />
+        <Checkbox label="Show panel" checked={showPanel} onChange={this.onShowPanelChange} />
+        <Checkbox label="Trap panel" checked={trapPanel} onChange={this.onTrapPanelChange} />
         <Customizer
           scopedSettings={
             this.state.trapPanel
               ? {
                   Layer: {
-                    hostId: 'panelLayerHost'
-                  }
+                    hostId: 'panelLayerHost',
+                  },
                 }
               : {}
           }
@@ -47,9 +47,9 @@ export class LayerCustomizedExample extends React.Component<{}, ILayerCustomized
               headerText="Test"
               focusTrapZoneProps={{
                 isClickableOutsideFocusTrap: true,
-                forceFocusInsideTrap: false
+                forceFocusInsideTrap: false,
               }}
-              onDismissed={this._onDismissPanel}
+              onDismissed={this.onDismissPanel}
             />
           ) : (
             <div />
@@ -61,28 +61,28 @@ export class LayerCustomizedExample extends React.Component<{}, ILayerCustomized
             position: 'relative',
             height: '400px',
             overflow: 'hidden',
-            border: '1px solid #ccc'
+            border: '1px solid #ccc',
           }}
         />
       </div>
     );
   }
 
-  private _onDismissPanel = (): void => {
+  private onDismissPanel = (): void => {
     this.setState({
-      showPanel: false
+      showPanel: false,
     });
-  };
+  }
 
-  private _onShowPanelChange = (event: React.FormEvent<HTMLElement | HTMLInputElement> | undefined, checked?: boolean | undefined): void => {
+  private onShowPanelChange = (event: React.FormEvent<HTMLElement | HTMLInputElement> | undefined, checked?: boolean | undefined): void => {
     this.setState({
-      showPanel: !!checked
+      showPanel: !!checked,
     });
-  };
+  }
 
-  private _onTrapPanelChange = (event: React.FormEvent<HTMLElement | HTMLInputElement> | undefined, checked?: boolean | undefined): void => {
+  private onTrapPanelChange = (event: React.FormEvent<HTMLElement | HTMLInputElement> | undefined, checked?: boolean | undefined): void => {
     this.setState({
-      trapPanel: !!checked
+      trapPanel: !!checked,
     });
-  };
+  }
 }

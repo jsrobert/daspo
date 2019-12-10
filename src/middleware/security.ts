@@ -1,10 +1,10 @@
 import { Configuration } from '../configuration';
-import { LoopedTask } from './common/LoopedTask';
+import { UserProfile } from '../model/UserProfile';
 // import { DuctRole }               from '../model/enums/DuctRole'
 import { UserRole } from '../model/UserRole';
-import { UserProfile } from '../model/UserProfile';
 // import { LoggingService }         from '../services/logging.service';
-import { ApiCall }                from './ApiCall';
+import { ApiCall, IApiCallProps } from './ApiCall';
+import { LoopedTask } from './common/LoopedTask';
 // import { NumberDeserializer }     from '../shared/NumberDeserializer';
 // import { Router }                 from "@angular/router";
 // import { LoopedTask }             from '../shared/LoopedTask';
@@ -31,6 +31,12 @@ declare var AuthenticationContext: any;
  * @property lastPollTime - The last time the adal token renewal was executed..
  */
 export class SecurityService {
+    public isRunning: boolean | undefined;
+
+    public userProfile: UserProfile | undefined;
+
+    protected lastPollTime: Date | undefined;
+
     private authContext: any;
 
     private cachedUser: any;
@@ -39,17 +45,11 @@ export class SecurityService {
 
     private userRoles: UserRole[] | undefined;
 
-    private callGetUserRoles: ApiCall<number> | undefined;
+    private callGetUserRoles: ApiCall<IApiCallProps> | undefined;
 
     private callRenewTokenLoop: LoopedTask;
 
     private userRolesString: string | undefined;
-
-    public isRunning: boolean | undefined;
-
-    public userProfile: UserProfile | undefined;
-
-    protected lastPollTime: Date | undefined;
 
     // /**
     //  * @constructor
@@ -67,10 +67,10 @@ export class SecurityService {
     //         Configuration.global.updateActiveDuctCaseInMilliseconds
     //     );
     // }
-    constructor(){
+    constructor() {
         this.callRenewTokenLoop = new LoopedTask(
             this.callRenewTokenLoopAction.bind(this),
-            Configuration.global.updateActiveDuctCaseInMilliseconds
+            Configuration.global.updateActiveDuctCaseInMilliseconds,
         );
     }
     /**
@@ -82,10 +82,10 @@ export class SecurityService {
         redirectUri: string,
         cacheLocation: string): any {
         return {
-            tenant: tenant,
-            clientId: clientId,
-            redirectUri: redirectUri,
-            cacheLocation: cacheLocation
+            tenant,
+            clientId,
+            redirectUri,
+            cacheLocation,
         };
     }
 
@@ -99,7 +99,7 @@ export class SecurityService {
             this.loginWithNoAuthorization();
         } else {
 
-            let redirectUri: string = window.location.origin.concat(window.location.pathname);
+            const redirectUri: string = window.location.origin.concat(window.location.pathname);
             const hash: string = window.location.hash;
             this.authContext = new AuthenticationContext(this.adalConfig(Configuration.global.tenant,
                 Configuration.global.clientId,
@@ -107,12 +107,12 @@ export class SecurityService {
                 this.getCacheStorage()));
             // save the token if it is in the hash
             if (hash) {
-                const requestInfo : any = this.authContext.getRequestInfo(hash);
+                const requestInfo: any = this.authContext.getRequestInfo(hash);
                 this.authContext.saveTokenFromHash(requestInfo);
             }
 
             if (!this.getCachedToken(Configuration.global.clientId)) {
-                var isCallback: any = this.authContext.isCallback(window.location.hash);
+                const isCallback: any = this.authContext.isCallback(window.location.hash);
                 this.authContext.clearCache();
                 this.authContext.login();
             } else {
@@ -137,25 +137,29 @@ export class SecurityService {
      * @param clientId - Resource identifying the target resource.
      * @returns - Token if exists and not expired or null.
      */
-    public acquireToken(clientId: string, callback: Function): void {
-        let _self = this;
+    public acquireToken(clientId: string, callback: (accessToken: any) => void): void {
+        const winSelf = this;
         if (this.skipAuthentication()) {
-            //_self.loggingService.log.AddDebug("Authorization is disabled. ", SECURITY_SERVICE_SOURCE);
+            // winSelf.loggingService.log.AddDebug("Authorization is disabled. ", SECURITY_SERVICE_SOURCE);
             callback("NoToken");
         }
 
         if (!this.authContext) {
-            this.authContext = new AuthenticationContext(this.adalConfig(Configuration.global.tenant,
-                Configuration.global.clientId,
-                window.location.origin.concat(window.location.pathname), this.getCacheStorage()));
+            this.authContext = new AuthenticationContext(
+                this.adalConfig(
+                    Configuration.global.tenant,
+                    Configuration.global.clientId,
+                    window.location.origin.concat(window.location.pathname),
+                    this.getCacheStorage(),
+                ),
+            );
         }
 
-        this.authContext.acquireToken(clientId, function (error: any, token: any) {
+        this.authContext.acquireToken(clientId, (error: any, token: any) => {
             if (error) {
-                //_self.loggingService.log.AddError("Error acquiring token: '".concat(error).concat("'"), SECURITY_SERVICE_SOURCE);
-            }
-            else {
-                //_self.loggingService.log.AddDebug("Successfully acquired token: '".concat(token).concat("'"), SECURITY_SERVICE_SOURCE);
+                // winSelf.loggingService.log.AddError("Error acquiring token: '".concat(error).concat("'"), SECURITY_SERVICE_SOURCE);
+            } else {
+                // winSelf.loggingService.log.AddDebug("Successfully acquired token: '".concat(token).concat("'"), SECURITY_SERVICE_SOURCE);
                 callback(token);
             }
         });
@@ -267,11 +271,11 @@ export class SecurityService {
      * Executed when the callRenewTokenLoop periodically executes.
      */
     private callRenewTokenLoopAction(): void {
-        var self = this;
+        const self = this;
         this.acquireToken(
             Configuration.global.clientId,
             (accessToken: any): void => {
-                //self.loggingService.log.AddDebug("Successfully renewed token: '".concat(accessToken).concat("'"), SECURITY_SERVICE_SOURCE);
+                // self.loggingService.log.AddDebug("Successfully renewed token: '".concat(accessToken).concat("'"), SECURITY_SERVICE_SOURCE);
                 console.log("Successfully renewed token: '".concat(accessToken).concat("'"), SECURITY_SERVICE_SOURCE);
                 self.callRenewTokenLoop.LoopAgain();
                 self.lastPollTime = self.callRenewTokenLoop.lastLoopTime;
@@ -289,7 +293,7 @@ export class SecurityService {
         //     SECURITY_SERVICE_SOURCE
         // );
         this.isRunning = false;
-        //this.router.navigate([window.location.pathname]);
+        // this.router.navigate([window.location.pathname]);
     }
 
     /**
@@ -307,10 +311,10 @@ export class SecurityService {
      */
     private loginWithNoAuthorization(): any {
         this.userProfile = this.getLoggedInUserProfile(Configuration.global.clientId);
-        //this.userRoles = 1; // admin
+        // this.userRoles = 1; // admin
         this.getUserRoleStrings();
         this.isRunning = false;
-        //this.router.navigate([window.location.pathname]);
+        // this.router.navigate([window.location.pathname]);
     }
 
     /**
