@@ -90,7 +90,7 @@
   "scripts": {
     "start": "scripts/start.js",
     "start-inspect": "npx scripts/start.js",
-    "build": "scripts/build.js",
+    "build": "./scripts/build.js",
     "test": "scripts/test.js --env=jsdom"
   },
   "jest": {
