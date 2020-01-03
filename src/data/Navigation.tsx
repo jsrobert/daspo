@@ -1,44 +1,73 @@
 import * as React from 'react';
-import { INavLink, INavProps, INavState, INav, INavLinkGroup, INavStyles, INavStyleProps } from 'office-ui-fabric-react/lib/Nav';
-import { Link }  from 'office-ui-fabric-react/lib/Link';
+import { Nav, INavLink, INavProps, INavState, INav, INavLinkGroup, INavStyles, INavStyleProps } from 'office-ui-fabric-react/lib/Nav';
+import { Link } from 'office-ui-fabric-react/lib/Link';
 import { IconNames } from '../constants/IconNames';
+import * as NavData from './Navigation.json';
+
+// const NavData: any = require('./Navigation.json');
+
 export class Navigation {
 
-    public static SharePointGroup: INavLinkGroup = {
-        name: "SharePoint", 
+    public static OneDriveGroup: INavLinkGroup = {
+        name: "OneDrive",
+        expandAriaLabel: "Expand",
+        collapseAriaLabel: "Collapse",
+        collapseByDefault: true,
         links: [
-            { 
+            {
                 name: 'Documents',
-                url: 'http://localhost:3000/Documents',
+                url: './Documents',
                 key: '/Documents',
                 icon: IconNames.DocLibrary,
                 isExpanded: true,
-                automationId: "sharepoint-documents-nav", 
-            }
-        ]
+                automationId: "onedrive-documents-nav",
+            },
+        ],
     };
-    
-    public static AzureGroup: INavLinkGroup = {
-        name: "Azure", 
+    public static SharePointGroup: INavLinkGroup = {
+        name: "SharePoint",
+        expandAriaLabel: "Expand",
+        collapseAriaLabel: "Collapse",
+        collapseByDefault: true,
         links: [
-            { 
+            {
+                name: 'Documents',
+                url: './Documents',
+                key: '/Documents',
+                icon: IconNames.DocLibrary,
+                isExpanded: true,
+                automationId: "sharepoint-documents-nav",
+            },
+        ],
+    };
+
+    public static AzureGroup: INavLinkGroup = {
+        name: "Azure",
+        expandAriaLabel: "Expand",
+        collapseAriaLabel: "Collapse",
+        collapseByDefault: true,
+        links: [
+            {
                 name: 'Blob Storage',
-                url: 'http://localhost:3000/Blob',
+                url: '/Blob',
                 key: '/Blob',
-                icon: IconNames.BlowingSnow //'Tiles' 
-            }, 
-            { 
+                icon: IconNames.BlowingSnow, // 'Tiles'
+            },
+            {
                 name: 'File Storage',
-                url: 'http://localhost:3000/File',
+                url: '/File',
                 key: '/File',
                 icon: IconNames.FileTemplate,
-                isExpanded: true 
-            }
-        ]
+                isExpanded: true,
+            },
+        ],
     };
-    
+
     public static DynamicsGroup: INavLinkGroup = {
         name: "Dynamics 365",
+        expandAriaLabel: "Expand",
+        collapseAriaLabel: "Collapse",
+        collapseByDefault: true,
         links: [
             {
                 name: 'Home',
@@ -47,20 +76,20 @@ export class Navigation {
                 icon: IconNames.Home,
                 automationId: "dynamics-home-nav",
             },
-            { 
+            {
                 name: 'Solutions',
                 url: 'http://localhost:3000/Solutions',
                 key: '/Solutions',
                 icon: IconNames.FileTypeSolution,
-                isExpanded: true,
-                automationId: "dynamics-solutions-nav", 
+                isExpanded: false,
+                automationId: "dynamics-solutions-nav",
             },
-            { 
+            {
                 name: 'Entities',
                 // url: '/api/data/v9.1/entitydefinitions?$top=10',
                 url: "/api/data/v9.1/EntityDefinitions?$select=*",
                 key: '/Entities',
-                isExpanded: true,
+                isExpanded: false,
                 links: [
                     {
                         name: 'Accounts',
@@ -81,21 +110,21 @@ export class Navigation {
                         url: "/api/data/v9.1/attachments",
                         key: "/Attachments",
                         icon: IconNames.Attach,
-                    }
-                ]
+                    },
+                ],
             },
             {
-                name: "Metadata", 
-                url: "/api/data/v9.1/$metadata", 
-                key:"/MetaData", 
+                name: "Metadata",
+                url: "/api/data/v9.1/$metadata",
+                key: "/MetaData",
                 isExpanded: false,
-                icon: IconNames.ProcessMetaTask
+                icon: IconNames.ProcessMetaTask,
             },
             {
                 name: 'Business Processes',
                 url: 'http://localhost:3000/BusinessProcesses',
                 icon: IconNames.Processing,
-                key: '/BusinessProcesses'
+                key: '/BusinessProcesses',
             },
             {
                 name: "Relationship Metadata",
@@ -118,34 +147,39 @@ export class Navigation {
             {
                 name: 'App Modules',
                 // url: '/api/data/v9.1/$metadata#appmodules(*)',
-                url: "/api/data/v9.1/appmodules?$select=name,appmoduleversion&$orderby=name asc", // $filter=_appmoduleid_value eq " + selectedAppId; 
+                url: "/api/data/v9.1/appmodules?$select=name,appmoduleversion&$orderby=name asc", // $filter=_appmoduleid_value eq " + selectedAppId;
                 icon: IconNames.PowerApps,
-                key: '/AppModules'
+                key: '/AppModules',
             },
             {
                 name: "App Configs",
                 url: "/api/data/v9.1/appconfigs?$select=*",
                 icon: IconNames.AllAppsMirrored,
                 key: "/AppConfigs",
-            }
-        ]
+            },
+        ],
     };
 
-    public static defaultGroups: Array<INavLinkGroup> = [
+    public static defaultGroups: INavLinkGroup[] = [
         Navigation.DynamicsGroup,
         Navigation.AzureGroup,
         Navigation.SharePointGroup,
+        Navigation.OneDriveGroup,
     ];
 
     public static defaultProps: INavProps = {
-        groups: Navigation.defaultGroups
-    }
+        groups: Navigation.defaultGroups,
+    };
 
-    public static getDefaultGroups = (): Array<INavLinkGroup> => {
+    public static getDefaultGroups = (): INavLinkGroup[] => {
         return Navigation.defaultGroups;
     }
 
     public static getDefaultProps = (): INavProps => {
         return Navigation.defaultProps;
+    }
+
+    private static load = () => {
+        const page0 = NavData.pages[0];
     }
 }

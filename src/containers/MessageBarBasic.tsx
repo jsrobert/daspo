@@ -1,7 +1,7 @@
-import { connect } from 'react-redux'
-import * as actions from '../actions/MessageBarBasic'
-import MessageBarBasic from '../components/messagebar/MessageBarBasic'
-import { MessageBarBasicStoreState } from '../model/MessageBarBasic'
+import { connect } from 'react-redux';
+import * as actions from '../actions/MessageBarBasic';
+import MessageBarBasic from '../components/messagebar/MessageBarBasic';
+import { MessageBarBasicStoreState } from '../model/MessageBarBasic';
 import { Dispatch } from 'redux';
 
 // MapStateToPropsFactory<any, any, {}>
@@ -23,8 +23,8 @@ const mapDispatchToProps = (dispatch: Dispatch<actions.MessageBarActionType>) =>
     return {
         onClearMessage: (messageIndex: number) => dispatch(actions.clearMessageText(messageIndex)),
         onShowMessage: (messageIndex: number) => dispatch(actions.showMessageText(messageIndex)),
-        onAddMessage: (messageText: string) => dispatch(actions.addMessageText(messageText))
+        onAddMessage: (messageText: string) => dispatch(actions.addMessageText(messageText)),
     };
-}
+};
 // <any, any, any>
-export default connect(mapStateToProps, mapDispatchToProps)(MessageBarBasic)
+export default connect(mapStateToProps, mapDispatchToProps)(MessageBarBasic);

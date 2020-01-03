@@ -1,72 +1,97 @@
-import { DefaultButton, Fabric, IMessageBar } from 'office-ui-fabric-react';
-import * as React from 'react';
-import CommandBarBasic from '../containers/CommandBar';
-import DetailListDocument from '../containers/DetailListDocument';
-import { Navigation } from '../data/Navigation';
-import './App.scss';
-import { LeftNav } from './nav/LeftNav';
+import * as React from 'react'
+import input from 'react-dom'
+import CommandBarBasic from '../containers/CommandBar'
+import DetailListDocument from '../containers/DetailListDocument'
+import { Navigation } from '../data/Navigation'
+// import './App.scss';
+import { LeftNav } from './nav/LeftNav'
+import {
+    DefaultButton,
+    Fabric,
+    IMessageBar,
+    initializeIcons,
+    IconNames,
+    Customizer,
+    IPalette,
+    IPartialTheme,
+    ITheme,
+    createTheme,
+} from 'office-ui-fabric-react'
+import { TeamsCustomizations } from 'office-ui-fabric-react/lib/customizations/TeamsCustomizations'
+
+// tslint:disable-next-line: no-var-requires
+const paletteDark: IPartialTheme = require('../theme/palette.dark.json')
+
+// const appTheme: ITheme = createTheme(paletteDark);
+
+const appTheme = createTheme({
+    palette: {
+        themePrimary: 'red',
+    },
+})
+
+initializeIcons()
 
 declare global {
     // tslint:disable-next-line:interface-name
     interface Window {
-        authContext: any;
-        setDaspoData: (data: any) => void;
-        __REDUX_DEVTOOLS_EXTENSION_COMPOSE__: any;
+        authContext: any
+        setDaspoData: (data: any) => void
+        __REDUX_DEVTOOLS_EXTENSION_COMPOSE__: any
     }
 }
-window.authContext = window.authContext || null;
+window.authContext = window.authContext || null
 
 interface IApiParams {
-    currentComponent: string;
-    uri: string;
+    currentComponent: string
+    uri: string
 }
 
 export interface IAppState {
-    authContext?: any;
-    messages?: string[];
-    apiParams?: IApiParams;
-    appView?: string;
-    appData?: any;
+    authContext?: any
+    messages?: string[]
+    apiParams?: IApiParams
+    appView?: string
+    appData?: any
 }
 
 export interface IAppProps {
-    authContext?: any;
-    messages?: string[];
-    apiParams?: IApiParams;
-    appView?: string;
-    appData?: any;
-    history: any;
+    authContext?: any
+    messages?: string[]
+    apiParams?: IApiParams
+    appView?: string
+    appData?: any
+    history?: any
 }
 
 class App extends React.Component<IAppProps, IAppState> {
-    private detailListDocument: any;
+    private detailListDocument: any
     constructor(props: IAppProps) {
-        super(props);
+        super(props)
 
-        this.detailListDocument = React.createRef();
-        this.getUser.bind(this);
-        this.executeAction.bind(this);
-        this.loadComponent.bind(this);
-        this.renderDataView.bind(this);
-        this.handleNavigation.bind(this);
+        this.detailListDocument = React.createRef()
+        this.getUser.bind(this)
+        this.executeAction.bind(this)
+        this.loadComponent.bind(this)
+        this.renderDataView.bind(this)
+        this.handleNavigation.bind(this)
         this.state = {
             appData: {},
             appView: '/',
             authContext: window.authContext,
             messages: ['message one'],
-        };
+        }
         window.setDaspoData = (data: any) => {
-            console.log('window.setDaspoData fired');
+            console.log('window.setDaspoData fired')
             this.setState({
                 appData: data,
-            });
-        };
+            })
+        }
     }
 
-    executeAction = () => {
+    public executeAction = () => {
         // let _messageBar = React.createRef<IMessageBar>();
         // React.useState()
-
         // _messageBar.addMessage('this is the message');
         // alert('execute action' + _type);
     }
@@ -103,94 +128,134 @@ class App extends React.Component<IAppProps, IAppState> {
     }
 
     public getUser = () => {
-        // window.authContext = window.authContext || null;
-        // let user = window.authContext ? window.authContext.getCachedUser() : {};
-        // let name = user.profile ? user.profile.name : 'no name yet';
-        // console.log('app global did mount ' + name);
+        let message = window.authContext
+            ? 'auth context exists\r\n'
+            : 'auth context is NOTHING\n'
+        const tempUser = window.authContext
+            ? window.authContext.getCachedUser()
+            : {}
+        message += tempUser ? 'temp user exists\r\n' : 'temp user is NOTHING\n'
+        message += tempUser.userName
+            ? 'user.userName = ' + tempUser.userName + '\n'
+            : 'user.userName is NOTHING\n'
+        message += tempUser.profile
+            ? 'user.profile.upn = ' + tempUser.profile.upn + '\n'
+            : 'user.profile is NOTHING\n'
 
-        let message = window.authContext ? 'auth context exists\r\n' : 'auth context is NOTHING\n';
-        const tempUser = window.authContext ? window.authContext.getCachedUser() : {};
-        message += tempUser ? 'temp user exists\r\n' : 'temp user is NOTHING\n';
-        message += tempUser.userName ? 'user.userName = ' + tempUser.userName + '\n' : 'user.userName is NOTHING\n';
-        message += tempUser.profile ? 'user.profile.upn = ' + tempUser.profile.upn + '\n': 'user.profile is NOTHING\n';
-
-        if( tempUser.profile ) {
+        if (tempUser.profile) {
             // for(var i=0; i < tempUser.profile.length; i++) {
             //     message += tempUser.profile[i];
             // }
-            message += 'if statement was true\n';
+            message += 'if statement was true\n'
         }
-        alert(message);
+        alert(message)
     }
 
     public handleNavigation = (ev: any, item: any) => {
-        console.warn('handleNavigation *************');
-        if(item){
-            console.warn('handleNavigation ****** item *******');
+        console.warn('handleNavigation *************')
+        if (item) {
+            console.warn('handleNavigation ****** item *******')
             this.setState({
                 appView: item.url,
             })
         }
-        return true;
+        return true
     }
 
     public componentDidMount(): void {
-        let user = window.authContext ? window.authContext.getUser() : {};
-        let name = user.profile ? user.profile.name : 'no name yet';
+        const user = window.authContext ? window.authContext.getUser() : {}
+        const name = user.profile ? user.profile.name : 'no name yet'
         // window.setDaspoData = (data: any) => {
         //     this.setState({
         //         appData: data,
         //     })
         // }
-        console.log('app component did mount ' + name);
+        console.log('app component did mount ' + name)
         // this.loadComponent();
-        if( window.top ) {
-            console.log("window.top exists");
+        if (window.top) {
+            console.log('window.top exists')
         }
-        if ( window === window.top ) {
-            console.log("this is the top window");
+        if (window === window.top) {
+            console.log('this is the top window')
         }
         // this.authContextCallApi(this.authContextCallback);
     }
 
-    public componentWillUnmount() : void {
-        console.log('app component will unmount');
+    public componentWillUnmount(): void {
+        console.log('app component will unmount')
     }
 
     public render() {
-        // const {messageIndex, messageText, showMessage} = this.state;
-        // const { appView } = this.state.appView ? this.state : { appView:  '/' };
-        const { appData } = this.props.appData ? this.props : { appData:  {} };
-        const { executeAction, getUser, handleNavigation } = this;
-        // let user = authContext.getCachedUser();
+        const { appData } = this.props.appData ? this.props : { appData: {} }
+        const { executeAction, getUser, handleNavigation } = this
+
         return (
-            <Fabric className="App">
-                <div className="App-wrapper">
-                    <div className="App-content">
-                        <div className="ms-Grid" dir="ltr">
-                            <div className="ms-Grid-row">
-                                <div className="ms-Grid-col ms-sm6 ms-md4 ms-lg2">
-                                    <div id="message"></div>
-                                    {/* <MessageBarBasic /> */}
-                                    <LeftNav groups={Navigation.defaultGroups} onLinkClick={handleNavigation} selectedKey={this.state.appView} />
-                                    <p><DefaultButton name="executeActionButton" id="executeActionButton" text="Execute Action" onClick={() => executeAction}/></p>
-                                    <p><DefaultButton name="getUserButton" id="getUser" text="Get User" onClick={() => getUser}/></p>
-                                </div>
-                                <div className="ms-Grid-col ms-sm6 ms-md8 ms-lg10">
-                                    <div id="errorMessage"/>
-                                    <CommandBarBasic items={[]} />
-                                    <table id="accountsTable" className='hidden'>
-                                        <thead><tr><th>Name</th><th>City</th></tr></thead>
-                                        <tbody id="accountsTableBody"/>
-                                    </table> 
-                                    <DetailListDocument ref={this.detailListDocument} items={appData} data={this.state.appView} query={this.state.appView}/>
+            <Customizer settings={{ appTheme }}>
+                <Fabric applyThemeToBody>
+                    {/* <div className="App-wrapper">
+                        <div className="App-content">
+                            <div className="ms-Grid" dir="ltr">
+                                <div className="ms-Grid-row">
+                                    <div className="ms-Grid-col ms-sm6 ms-md4 ms-lg2">
+                                        <div id="message"></div>
+                                        <LeftNav groups={Navigation.defaultGroups} onLinkClick={handleNavigation} selectedKey={this.state.appView} />
+                                        <p><DefaultButton name="executeActionButton" id="executeActionButton" text="Execute Action" onClick={() => executeAction}/></p>
+                                        <p><DefaultButton name="getUserButton" id="getUser" text="Get User" onClick={() => getUser}/></p>
+                                    </div>
+                                    <div className="ms-Grid-col ms-sm6 ms-md8 ms-lg10">
+                                        <div id="errorMessage"/>
+                                        <CommandBarBasic items={[]} />
+                                        <table id="accountsTable" className='hidden'>
+                                            <thead><tr><th>Name</th><th>City</th></tr></thead>
+                                            <tbody id="accountsTableBody"/>
+                                        </table>
+                                        <DetailListDocument items={appData} data={this.state.appView} query={this.state.appView}/>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </div>*/}
+                    <div className="ms-Grid" dir="ltr">
+                        <div className="ms-Grid-row">
+                            <div className="ms-Grid-col ms-sm6 ms-md4 ms-lg2">
+                                <LeftNav
+                                    groups={Navigation.defaultGroups}
+                                    onLinkClick={handleNavigation}
+                                    selectedKey={this.state.appView}
+                                />
+                                <p>
+                                    <DefaultButton
+                                        name="executeActionButton"
+                                        id="executeActionButton"
+                                        text="Execute Action"
+                                        onClick={() => executeAction}
+                                    />
+                                </p>
+                                <p>
+                                    <DefaultButton
+                                        name="getUserButton"
+                                        id="getUser"
+                                        text="Get User"
+                                        onClick={() => getUser}
+                                    />
+                                </p>
+                                <p>
+                                    <input type="time" />
+                                </p>
+                            </div>
+                            <div>
+                                <CommandBarBasic items={[]} />
+                                <DetailListDocument
+                                    items={appData}
+                                    data={this.state.appView}
+                                    query={this.state.appView}
+                                />
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </Fabric>
-        );
+                </Fabric>
+            </Customizer>
+        )
     }
 
     private loadComponent = () => {
@@ -208,7 +273,6 @@ class App extends React.Component<IAppProps, IAppState> {
     }
 }
 
-const checked: boolean = false;
+const checked: boolean = false
 
-export default App;
-
+export default App

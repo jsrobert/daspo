@@ -3,5 +3,9 @@
     "npm.enableScriptExplorer": true,
     "npm.enableRunFromFolder": true,
     "debug.node.autoAttach": "on",
-    "npm.packageManager": "yarn"
+    "npm.packageManager": "yarn",
+    "tslint.packageManager": "yarn",
+    "prettier.packageManager": "yarn",
+    "jshint.packageManager": "yarn",
+    "eslint.packageManager": "yarn"
 }

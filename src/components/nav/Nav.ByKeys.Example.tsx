@@ -11,9 +11,9 @@ export class NavByKeysExample extends React.Component<any, any> {
               { name: 'Home', key: 'Home', url: '' },
               { name: 'Activity', key: 'Activity', url: '' },
               { name: 'News', key: 'News', url: '' },
-              { name: 'Documents', key: 'Documents', url: '' }
-            ]
-          }
+              { name: 'Documents', key: 'Documents', url: '' },
+            ],
+          },
         ]}
       />
     );

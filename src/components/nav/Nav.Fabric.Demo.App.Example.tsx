@@ -9,103 +9,99 @@ const AppDefinition = {
         {
           key: 'ActivityItem',
           name: 'ActivityItem',
-          url: '#/examples/activityitem'
+          url: '#/examples/activityitem',
         },
         {
           key: 'Breadcrumb',
           name: 'Breadcrumb',
-          url: '#/examples/breadcrumb'
+          url: '#/examples/breadcrumb',
         },
         {
           key: 'Button',
           name: 'Button',
-          url: '#/examples/button'
-        }
+          url: '#/examples/button',
+        },
       ],
-      name: 'Basic components'
+      name: 'Basic components',
     },
     {
       links: [
         {
           key: 'ColorPicker',
           name: 'ColorPicker',
-          url: '#/examples/colorpicker'
+          url: '#/examples/colorpicker',
         },
         {
           key: 'ExtendedPeoplePicker',
           name: 'ExtendedPeoplePicker',
-          url: '#examples/extendedpeoplepicker'
+          url: '#examples/extendedpeoplepicker',
         },
         {
           key: 'GroupedList',
           name: 'GroupedList',
-          url: '#examples/groupedlist'
-        }
+          url: '#examples/groupedlist',
+        },
       ],
-      name: 'Extended components'
+      name: 'Extended components',
     },
     {
       links: [
         {
           key: 'FocusTrapZone',
           name: 'FocusTrapZone',
-          url: '#examples/focustrapzone'
+          url: '#examples/focustrapzone',
         },
         {
           key: 'FocusZone',
           name: 'FocusZone',
-          url: '#examples/focuszone'
+          url: '#examples/focuszone',
         },
         {
           key: 'MarqueeSelection',
           name: 'MarqueeSelection',
-          url: '#examples/marqueeselection'
-        }
+          url: '#examples/marqueeselection',
+        },
       ],
-      name: 'Utilities'
-    }
-  ]
+      name: 'Utilities',
+    },
+  ],
 };
 
-export interface NavProps extends INavProps {
-
-}
-
-const link: INavLink = {
+const navlink: INavLink = {
   name: 'Link One',
-  url: 'http://localhost:3000/'
-}
+  url: 'http://localhost:3000/',
+};
 
 const links: INavLink[] = [{
   name: 'Link One',
-  url: 'http://localhost:3000/'
+  url: 'http://localhost:3000/',
 }];
 
 const group: INavLinkGroup = {
   name: 'Group One',
-  links: []
-}
+  links: [],
+};
 
 const groups: INavLinkGroup[] = [{
   links: [],
-}]
+}];
 
 const props: INavProps = {
   groups: [],
-}
+};
 
 export class NavFabricDemoAppExample extends React.Component<any, any> {
   public render(): JSX.Element {
-    return <Nav groups={AppDefinition.examplePages} onRenderLink={this._onRenderLink} expandButtonAriaLabel={'Expand or collapse'} />;
+    return <Nav groups={AppDefinition.examplePages} onRenderLink={this.onRenderLink} expandButtonAriaLabel={'Expand or collapse'} />;
   }
 
-  private _onRenderLink = (link: any): JSX.Element | null => {
+  private onRenderLink = (navlinkprops: any): JSX.Element | null => {
     return (
       <span>
         <span key={1} className="Nav-linkText">
-          {link.name}
+          {navlinkprops.name}
         </span>
       </span>
     );
-  };
+  }
 }

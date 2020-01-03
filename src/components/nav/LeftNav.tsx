@@ -3,15 +3,15 @@ import * as React from 'react';
 import './Nav.Basic.Example.scss';
 
 export class LeftNav extends React.Component<INavProps, INavState> {
-  constructor(public props: INavProps){
-    super(props)
+  constructor(public props: INavProps) {
+    super(props);
     // this.onLinkClick.bind(this);
     this.getSelectedKey.bind(this);
 
     this.state = {
       selectedKey: this.props.selectedKey,
       isGroupCollapsed: { one: true },
-    }
+    };
   }
 
   public render(): JSX.Element {
@@ -21,7 +21,7 @@ export class LeftNav extends React.Component<INavProps, INavState> {
     // const { localLinkClick } = this;
     const { groups, onLinkClick } = this.props;
     // const defaultGroups = defaultProps.groups || new Array<INavLinkGroup>();
-    // const combinedGroups: Array<INavLinkGroup> = instanceof groups === Array ? groups.concat(defaultGroups) : defaultGroups; // defaultGroups ; // 
+    // const combinedGroups: Array<INavLinkGroup> = instanceof groups === Array ? groups.concat(defaultGroups) : defaultGroups; // defaultGroups ; //
     return (
       <div className="ms-NavExample-LeftPane">
         <Nav

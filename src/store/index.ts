@@ -2,12 +2,13 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import thunkMiddleware from 'redux-thunk';
 import { createLogger } from 'redux-logger';
 import { routerMiddleware } from 'react-router-redux';
-import createHistory from 'history/createBrowserHistory';
+// import createHistory from 'history/createBrowserHistory';
+import * as History from 'history'; // `require("history").createBrowserHistory`
 import * as middleware from '../middleware';
 import rootReducer from '../reducers';
 
-// create the history 
-export const history = createHistory();
+// create the history
+export const history = History.createBrowserHistory();
 
 // Build the middleware for intercepting and dispatching navigation actions
 const myRouterMiddleware = routerMiddleware(history);
@@ -36,7 +37,7 @@ const getMiddleware = () => {
 
 const composeEnhancers =
   typeof window === 'object' &&
-  window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?   
+  window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?
     window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
       // Specify extension’s options like name, actionsBlacklist, actionsCreators, serialize...
     }) : compose;
@@ -50,8 +51,8 @@ const configureStore = (preloadedState: any) => {
     const store = createStore(
         rootReducer,
         preloadedState,
-        enhancer
-    )
+        enhancer,
+    );
 
     // if (module.hot) {
     //     // Enable Webpack hot module replacement for reducers
@@ -62,5 +63,5 @@ const configureStore = (preloadedState: any) => {
     // }
 
     return store;
-}
+};
 export default configureStore;

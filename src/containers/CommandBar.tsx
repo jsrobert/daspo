@@ -1,22 +1,20 @@
-import { connect } from 'react-redux'
-import * as actions from '../actions/CommandBar'
-import CommandBarBasic from '../components/commandbar/CommandBarBasic'
-import { CommandBarState, CommandBarActionProps, CommandBarValueProps } from '../model/CommandBar'
+import { connect } from 'react-redux';
+import * as actions from '../actions/CommandBar';
+import CommandBarBasic from '../components/commandbar/CommandBarBasic';
+import { CommandBarState, CommandBarActionProps, CommandBarValueProps } from '../model/CommandBar';
 import { Dispatch } from 'redux';
-
 
 const initialState: CommandBarState = {
     canDownload: false,
     isAuthenticated: false,
-    hideButton: false
+    hideButton: false,
 };
-
 
 export const mapStateToProps = (state: any) => {
     return {
         hideButton: state.commandBar.hideButton,
         isAuthenticated: state.commandBar.isAuthenticated,
-    }
+    };
 };
 
 export const mapDispatchToProps = (dispatch: Dispatch<actions.CommandBarActionType>) => {
@@ -27,7 +25,6 @@ export const mapDispatchToProps = (dispatch: Dispatch<actions.CommandBarActionTy
         loginClick: () => dispatch(actions.loginClick()),
         logoutClick: () => dispatch(actions.logoutClick()),
     };
-}
+};
 
-export default connect<any,any,any>(mapStateToProps, mapDispatchToProps)(CommandBarBasic);
-
+export default connect<any, any, any>(mapStateToProps, mapDispatchToProps)(CommandBarBasic);

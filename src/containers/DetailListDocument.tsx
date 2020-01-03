@@ -17,22 +17,20 @@ const initialState: IQueryListState = {
   data: {},
   error: {},
   version: '1.0.0',
-}
+};
 
 export const mapStateToProps = (state: any) => {
   return {
     data: state.queryList.data,
     items: state.queryList.items,
     inProgress: state.queryList.inProgress,
-  }
-}
+  };
+};
 
 export const mapDispatchToProps = (dispatch: Dispatch<actions.DetailListActionType>) => {
   return {
     fetchData: (token: any, query: string, headers: any) => dispatch(actions.LoadData(token, query, headers)),
-  }
-}
+  };
+};
 
 export default connect<any, any, any>(mapStateToProps, mapDispatchToProps)(DetailListDocument);
-
-

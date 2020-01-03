@@ -1,4 +1,4 @@
-import { withRouter } from 'react-router-dom'
+import { withRouter } from 'react-router-dom';
 import DetailsListBasic from '../components/list/DetailsListBasic';
 import * as actions from '../actions/Enthusiasm';
 import { HelloStoreState } from '../model/Hello';
@@ -20,4 +20,4 @@ export function mapDispatchToProps(dispatch: Dispatch<actions.EnthusiasmActionTy
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(DetailsListBasic);
-//export default withRouter(connect(mapStateToProps, mapDispatchToProps)(DetailsListBasic));
+// export default withRouter(connect(mapStateToProps, mapDispatchToProps)(DetailsListBasic));
