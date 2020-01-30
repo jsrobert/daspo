@@ -8,6 +8,7 @@ import { LeftNav } from './nav/LeftNav'
 import {
     DefaultButton,
     Fabric,
+    MessageBar,
     IMessageBar,
     initializeIcons,
     IconNames,
@@ -16,11 +17,19 @@ import {
     IPartialTheme,
     ITheme,
     createTheme,
+    MessageBarType,
+    IMessageBarProps,
 } from 'office-ui-fabric-react'
 import { TeamsCustomizations } from 'office-ui-fabric-react/lib/customizations/TeamsCustomizations'
+import { AnyMxRecord } from 'dns'
 
 // tslint:disable-next-line: no-var-requires
 const paletteDark: IPartialTheme = require('../theme/palette.dark.json')
+
+const messageBarProps: IMessageBarProps = {
+    messageBarType: MessageBarType.severeWarning,
+    ariaLabel: "This is a severe warning."
+}
 
 // const appTheme: ITheme = createTheme(paletteDark);
 
@@ -53,6 +62,7 @@ export interface IAppState {
     apiParams?: IApiParams
     appView?: string
     appData?: any
+    messageExists?: boolean
 }
 
 export interface IAppProps {
@@ -65,11 +75,11 @@ export interface IAppProps {
 }
 
 class App extends React.Component<IAppProps, IAppState> {
-    private detailListDocument: any
+    private detailListDocument: any;
     constructor(props: IAppProps) {
         super(props)
 
-        this.detailListDocument = React.createRef()
+        // this.detailListDocument = React.createRef()
         this.getUser.bind(this)
         this.executeAction.bind(this)
         this.loadComponent.bind(this)
@@ -80,6 +90,7 @@ class App extends React.Component<IAppProps, IAppState> {
             appView: '/',
             authContext: window.authContext,
             messages: ['message one'],
+            messageExists: false,
         }
         window.setDaspoData = (data: any) => {
             console.log('window.setDaspoData fired')
@@ -89,11 +100,12 @@ class App extends React.Component<IAppProps, IAppState> {
         }
     }
 
-    public executeAction = () => {
+    public executeAction = (event: any) => {
         // let _messageBar = React.createRef<IMessageBar>();
         // React.useState()
         // _messageBar.addMessage('this is the message');
         // alert('execute action' + _type);
+        
     }
 
     public renderDataView = () => {
@@ -217,6 +229,9 @@ class App extends React.Component<IAppProps, IAppState> {
                     </div>*/}
                     <div className="ms-Grid" dir="ltr">
                         <div className="ms-Grid-row">
+                            <MessageBar messageBarType={messageBarProps.messageBarType} />
+                        </div>
+                        <div className="ms-Grid-row">
                             <div className="ms-Grid-col ms-sm6 ms-md4 ms-lg2">
                                 <LeftNav
                                     groups={Navigation.defaultGroups}
@@ -227,8 +242,8 @@ class App extends React.Component<IAppProps, IAppState> {
                                     <DefaultButton
                                         name="executeActionButton"
                                         id="executeActionButton"
-                                        text="Execute Action"
-                                        onClick={() => executeAction}
+                                        text="Create Message"
+                                        onClick={executeAction}
                                     />
                                 </p>
                                 <p>
