@@ -19,7 +19,7 @@
     "enzyme": "^3.10.0",
     "history": "^4.10.1",
     "jest": "^24.9.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "office-ui-fabric-core": "^11.0.0",
     "office-ui-fabric-react": "^7.68.0",
     "react": "^16.12.0",
