@@ -5,7 +5,7 @@ import { MessageBar,
     IMessageBarProps,
     IMessageBarState,
     IMessageBarStyleProps,
-    IMessageBarStyles } from 'office-ui-fabric-react/lib/MessageBar';
+    IMessageBarStyles } from '@fluentui/react/lib/MessageBar';
     import { AddMessage, ShowMessage, ClearMessage, ADD_MESSAGE } from '../../actions/MessageBarBasic'
 
 export interface Props extends IMessageBarProps {

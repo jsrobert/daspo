@@ -5055,3 +5055,5 @@ package-lock.json
 .vs/slnx.sqlite
 .vs/VSWorkspaceState.json
 .vs/daspo/v16/.suo
+
+.fake

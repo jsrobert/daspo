@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { TextField } from 'office-ui-fabric-react/lib/TextField';
-import { Toggle } from 'office-ui-fabric-react/lib/Toggle';
+import { TextField } from '@fluentui/react/lib/TextField';
+import { Toggle } from '@fluentui/react/lib/Toggle';
 import { DetailsList,
   DetailsListLayoutMode,
   Selection,
@@ -9,14 +9,12 @@ import { DetailsList,
   IDetailsListProps,
   IDetailsListState,
   buildColumns
-} from 'office-ui-fabric-react/lib/DetailsList';
-import { MarqueeSelection } from 'office-ui-fabric-react/lib/MarqueeSelection';
-import { lorem } from 'office-ui-fabric-react/lib/utilities/exampleData';
+} from '@fluentui/react/lib/DetailsList';
+import { MarqueeSelection } from '@fluentui/react/lib/MarqueeSelection';
 import ButtonPanel from '../commandbar/ButtonPanel';
 import { IQueryListState, IQueryListProps, IDocument } from '../../model/DetailsList'
 import { fileIcons } from '../../constants/FileIcons'
 import './DetailList.scss';
-// import './DetailList.css';
 
 let _items: IDocument[] = [];
 
@@ -41,33 +39,31 @@ export class DetailListDocument extends React.Component<IQueryListProps, IQueryL
 
     
     //  Populate with items for demos.
-    if (_items.length === 0) {
-      for (let i = 0; i < 50; i++) {
-        const randomDate = this._randomDate(new Date(2012, 0, 1), new Date());
-        const randomFileSize = this._randomFileSize();
-        const randomFileType = this._randomFileIcon();
-        let fileName: string = lorem(2).replace(/\W/g, '');
-        let userName: string = lorem(2).replace(/[^a-zA-Z ]/g, '');
-        fileName = fileName.charAt(0).toUpperCase() + fileName.slice(1).concat(`.${randomFileType.docType}`);
-        userName = userName
-          .split(' ')
-          .map((name: string) => name.charAt(0).toUpperCase() + name.slice(1))
-          .join(' ');
-        _items.push({
-          name: fileName,
-          value: fileName,
-          iconName: randomFileType.url,
-          modifiedBy: userName,
-          dateModified: randomDate.dateFormatted,
-          dateModifiedValue: randomDate.value,
-          fileSize: randomFileSize.value,
-          fileSizeRaw: randomFileSize.rawSize
-        });
-      }
-      _items = this._sortItems(_items, 'name');
-    }
-
-   
+    // if (_items.length === 0) {
+    //   for (let i = 0; i < 50; i++) {
+    //     const randomDate = this._randomDate(new Date(2012, 0, 1), new Date());
+    //     const randomFileSize = this._randomFileSize();
+    //     const randomFileType = this._randomFileIcon();
+    //     let fileName: string = lorem(2).replace(/\W/g, '');
+    //     let userName: string = lorem(2).replace(/[^a-zA-Z ]/g, '');
+    //     fileName = fileName.charAt(0).toUpperCase() + fileName.slice(1).concat(`.${randomFileType.docType}`);
+    //     userName = userName
+    //       .split(' ')
+    //       .map((name: string) => name.charAt(0).toUpperCase() + name.slice(1))
+    //       .join(' ');
+    //     _items.push({
+    //       name: fileName,
+    //       value: fileName,
+    //       iconName: randomFileType.url,
+    //       modifiedBy: userName,
+    //       dateModified: randomDate.dateFormatted,
+    //       dateModifiedValue: randomDate.value,
+    //       fileSize: randomFileSize.value,
+    //       fileSizeRaw: randomFileSize.rawSize
+    //     });
+    //   }
+    //   _items = this._sortItems(_items, 'name');
+    // }
 
     this._selection = new Selection({
       onSelectionChanged: () => {

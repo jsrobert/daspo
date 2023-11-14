@@ -1,0 +1,4877 @@
+{
+    "@odata.context": "https://parkplacetechdev2.crm.dynamics.com/api/data/v9.2/$metadata#EntityDefinitions(PrimaryNameAttribute,LogicalName,EntitySetName)",
+    "value": [
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "account",
+            "EntitySetName": "accounts",
+            "MetadataId": "70816501-edb9-4740-a16c-6a5efbc05d84"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "accountleads",
+            "EntitySetName": "accountleadscollection",
+            "MetadataId": "f7fb806f-c31c-4028-a264-26167c938517"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "aciviewmapper",
+            "EntitySetName": "aciviewmappers",
+            "MetadataId": "7634d589-4baa-471b-add7-892f27108731"
+        },
+        {
+            "PrimaryNameAttribute": "title",
+            "LogicalName": "actioncard",
+            "EntitySetName": "actioncards",
+            "MetadataId": "03d2c2d7-f19e-4e42-a207-861d601763c1"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "actioncardusersettings",
+            "EntitySetName": "actioncardusersettingsset",
+            "MetadataId": "08e364fb-c780-45c5-8db8-df0271d12f5b"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "actioncarduserstate",
+            "EntitySetName": "actioncarduserstates",
+            "MetadataId": "ca9fe43d-fc3e-4685-8303-1a9d66b68336"
+        },
+        {
+            "PrimaryNameAttribute": "filename",
+            "LogicalName": "activityfileattachment",
+            "EntitySetName": "activityfileattachments",
+            "MetadataId": "54bb1ceb-6ea4-471e-ac1c-51e08b68f59d"
+        },
+        {
+            "PrimaryNameAttribute": "filename",
+            "LogicalName": "activitymimeattachment",
+            "EntitySetName": "activitymimeattachments",
+            "MetadataId": "d8e5d57b-ff7a-46b4-b4c0-78662b068e57"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "activitymonitor",
+            "EntitySetName": "activitymonitors",
+            "MetadataId": "16cc9e9c-271d-4971-8d48-b6ddc661fdad"
+        },
+        {
+            "PrimaryNameAttribute": "partyidname",
+            "LogicalName": "activityparty",
+            "EntitySetName": "activityparties",
+            "MetadataId": "fee29d46-b7ce-4dc0-97a0-e382afbca7c6"
+        },
+        {
+            "PrimaryNameAttribute": "subject",
+            "LogicalName": "activitypointer",
+            "EntitySetName": "activitypointers",
+            "MetadataId": "c821cd41-f315-43d1-8fa6-82787b6f06e7"
+        },
+        {
+            "PrimaryNameAttribute": "new_name",
+            "LogicalName": "adminsettingsentity",
+            "EntitySetName": "new_admin_settings_entities",
+            "MetadataId": "6524b755-273f-4aab-b671-18d39d8425b8"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "advancedsimilarityrule",
+            "EntitySetName": "advancedsimilarityrules",
+            "MetadataId": "42e58b37-184a-48c3-a639-e51a8915a6b2"
+        },
+        {
+            "PrimaryNameAttribute": "subject",
+            "LogicalName": "annotation",
+            "EntitySetName": "annotations",
+            "MetadataId": "c1961a14-d4e6-470c-8d1e-23ae6b1bbb8d"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "annualfiscalcalendar",
+            "EntitySetName": "annualfiscalcalendars",
+            "MetadataId": "0e8878a1-a4a1-492b-8545-f9aa981c5874"
+        },
+        {
+            "PrimaryNameAttribute": "parententitylogicalname",
+            "LogicalName": "apisettings",
+            "EntitySetName": "apisettingscollection",
+            "MetadataId": "9a882c7e-adee-e911-a81e-000d3afd4b57"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "appconfig",
+            "EntitySetName": "appconfigs",
+            "MetadataId": "e14f8609-039d-4ebc-9640-bd8b898a5c59"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "appconfiginstance",
+            "EntitySetName": "appconfiginstances",
+            "MetadataId": "c7fd5de6-96db-4b8c-a7d1-8be72d36bba3"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "appconfigmaster",
+            "EntitySetName": "appconfigmasters",
+            "MetadataId": "697176c4-66a7-45e2-a58a-2e10e9344528"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "appelement",
+            "EntitySetName": "appelements",
+            "MetadataId": "bd05b396-0b7a-4f53-8e89-360ca0c2f53a"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "applicationfile",
+            "EntitySetName": "applicationfiles",
+            "MetadataId": "21315527-0c71-db11-8f1d-0017a41f0de7"
+        },
+        {
+            "PrimaryNameAttribute": "applicationname",
+            "LogicalName": "applicationuser",
+            "EntitySetName": "applicationusers",
+            "MetadataId": "e0941bb6-1ca9-451e-9746-0d6384c1e0c1"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "applicationuserprofile",
+            "EntitySetName": "applicationuserprofileset",
+            "MetadataId": "b1f60b34-f010-eb11-a815-000d3a5988c5"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "applicationuserrole",
+            "EntitySetName": "applicationuserroleset",
+            "MetadataId": "31579791-7db3-ea11-a813-000d3a598def"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "appmodule",
+            "EntitySetName": "appmodules",
+            "MetadataId": "efa9957b-4344-40d0-95f5-05f97e464d5b"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "appmodulecomponent",
+            "EntitySetName": "appmodulecomponents",
+            "MetadataId": "106f991e-47a4-4c0a-8dbb-dc561742c5d8"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "appmodulecomponentedge",
+            "EntitySetName": "appmodulecomponentedges",
+            "MetadataId": "4fe093f3-e0f9-4541-a495-4ce2bc32b3bc"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "appmodulecomponentnode",
+            "EntitySetName": "appmodulecomponentnodes",
+            "MetadataId": "d0733934-7314-4f08-b4b8-54d7ef003c92"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "appmodulemetadata",
+            "EntitySetName": "appmodulemetadatacollection",
+            "MetadataId": "dc7842e4-7186-4193-88cf-573bd5aa0859"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "appmodulemetadatadependency",
+            "EntitySetName": "appmodulemetadatadependencycollection",
+            "MetadataId": "556b1578-1cdb-4794-bbcd-cbcc7bbc7c15"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "appmodulemetadataoperationlog",
+            "EntitySetName": "appmodulemetadataoperationlogcollection",
+            "MetadataId": "6c47e250-405b-4b97-903b-0547575568b6"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "appmoduleroles",
+            "EntitySetName": "appmodulerolescollection",
+            "MetadataId": "42dd5681-6a4a-47f2-8169-5efede47689d"
+        },
+        {
+            "PrimaryNameAttribute": "title",
+            "LogicalName": "appnotification",
+            "EntitySetName": "appnotifications",
+            "MetadataId": "2fefde4d-b3de-4f62-bf3d-156829078052"
+        },
+        {
+            "PrimaryNameAttribute": "subject",
+            "LogicalName": "appointment",
+            "EntitySetName": "appointments",
+            "MetadataId": "95e930c5-812a-44e8-85c9-154cd5f59465"
+        },
+        {
+            "PrimaryNameAttribute": "displayname",
+            "LogicalName": "appsetting",
+            "EntitySetName": "appsettings",
+            "MetadataId": "45a23916-ee76-40b5-9f54-080b9ec3f9c2"
+        },
+        {
+            "PrimaryNameAttribute": "displayname",
+            "LogicalName": "appusersetting",
+            "EntitySetName": "appusersettings",
+            "MetadataId": "77250866-e301-4bea-a443-d3f526398bd8"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "asyncoperation",
+            "EntitySetName": "asyncoperations",
+            "MetadataId": "13394a90-c97d-4a73-8f7e-cbce80f8102f"
+        },
+        {
+            "PrimaryNameAttribute": "atrio_name",
+            "LogicalName": "atrio_alert",
+            "EntitySetName": "atrio_alerts",
+            "MetadataId": "0a672153-9ffc-4c3f-8c7d-ddd7c3fe0590"
+        },
+        {
+            "PrimaryNameAttribute": "atrio_name",
+            "LogicalName": "atrio_atrioglobepin",
+            "EntitySetName": "atrio_atrioglobepins",
+            "MetadataId": "df1abaf7-81b5-497b-933a-e880aa2be09b"
+        },
+        {
+            "PrimaryNameAttribute": "atrio_name",
+            "LogicalName": "atrio_atrioglobesetting",
+            "EntitySetName": "atrio_atrioglobesettings",
+            "MetadataId": "b92727b9-6e6b-4a84-a4b9-0c83fc02ea88"
+        },
+        {
+            "PrimaryNameAttribute": "atrio_name",
+            "LogicalName": "atrio_emailattachment",
+            "EntitySetName": "atrio_emailattachments",
+            "MetadataId": "d7467258-2cf3-4f42-ba96-91c556e2a926"
+        },
+        {
+            "PrimaryNameAttribute": "atrio_name",
+            "LogicalName": "atrio_eventlog",
+            "EntitySetName": "atrio_eventlogs",
+            "MetadataId": "9ce406bf-c86e-4f02-ace0-9e5d18991eaa"
+        },
+        {
+            "PrimaryNameAttribute": "atrio_objectname",
+            "LogicalName": "atrio_settings",
+            "EntitySetName": "atrio_settingses",
+            "MetadataId": "c7e0614a-59ed-40d6-9297-286d81a82cee"
+        },
+        {
+            "PrimaryNameAttribute": "filename",
+            "LogicalName": "attachment",
+            "EntitySetName": "attachments",
+            "MetadataId": "47209b73-775e-4cb1-9364-3ae615288fe6"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "attribute",
+            "EntitySetName": "attributes",
+            "MetadataId": "fbf2b5e1-1523-41db-9d3e-b81af45bc293"
+        },
+        {
+            "PrimaryNameAttribute": "attributelogicalname",
+            "LogicalName": "attributeimageconfig",
+            "EntitySetName": "attributeimageconfigs",
+            "MetadataId": "caed8210-aed0-4007-8aa9-c6df08c79a78"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "attributemap",
+            "EntitySetName": "attributemaps",
+            "MetadataId": "56662660-0e05-42b6-8445-3b9422ce4975"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "audit",
+            "EntitySetName": "audits",
+            "MetadataId": "f7969ad7-67aa-44af-8f20-b9c590cb1939"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "authorizationserver",
+            "EntitySetName": "authorizationservers",
+            "MetadataId": "f34afc8a-de73-4cdc-ae0d-22852588f952"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "availabletimes",
+            "EntitySetName": "availabletimescollection",
+            "MetadataId": "6c410ddb-b5c7-4b88-a0e9-1f0edbc31040"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "availabletimesdatasource",
+            "EntitySetName": "availabletimesdatasources",
+            "MetadataId": "1c437ab7-21e7-4eff-8f4f-e6347dfef0ee"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "azureserviceconnection",
+            "EntitySetName": "azureserviceconnections",
+            "MetadataId": "9b7832ef-8664-4087-8a45-7c20521ff0af"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "bookableresource",
+            "EntitySetName": "bookableresources",
+            "MetadataId": "e9669024-7945-4a2e-a81d-3cc7bef71d7e"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "bookableresourcebooking",
+            "EntitySetName": "bookableresourcebookings",
+            "MetadataId": "ea019b20-031d-4f47-b409-8702b30cc43c"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "bookableresourcebookingexchangesyncidmapping",
+            "EntitySetName": "bookableresourcebookingexchangesyncidmappings",
+            "MetadataId": "668408e3-ae97-4a55-8888-66f69e4f21c0"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "bookableresourcebookingheader",
+            "EntitySetName": "bookableresourcebookingheaders",
+            "MetadataId": "263e488e-e7b2-4514-bbd3-a5271dcb3acb"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "bookableresourcecategory",
+            "EntitySetName": "bookableresourcecategories",
+            "MetadataId": "e17ad177-6d40-46a5-91e5-f048dd24a595"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "bookableresourcecategoryassn",
+            "EntitySetName": "bookableresourcecategoryassns",
+            "MetadataId": "7ed43ef9-3654-41ad-944c-82da896f4da0"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "bookableresourcecharacteristic",
+            "EntitySetName": "bookableresourcecharacteristics",
+            "MetadataId": "327f5aeb-1ef8-46e2-81df-cd2f43e3c051"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "bookableresourcegroup",
+            "EntitySetName": "bookableresourcegroups",
+            "MetadataId": "ccd32c68-526c-441a-8456-e617ce0327f7"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "bookingstatus",
+            "EntitySetName": "bookingstatuses",
+            "MetadataId": "84f92bb8-9783-4329-9720-68acb2f4d59e"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "bot",
+            "EntitySetName": "bots",
+            "MetadataId": "4f5cb400-fa59-4a41-8bde-87a116aa50a6"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "bot_botcomponent",
+            "EntitySetName": "bot_botcomponentset",
+            "MetadataId": "1909de64-9dff-ea11-a815-000d3a598def"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "bot_environmentvariabledefinition",
+            "EntitySetName": "bot_environmentvariabledefinitionset",
+            "MetadataId": "daefc805-4594-eb11-b1ac-000d3a598605"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "botcomponent",
+            "EntitySetName": "botcomponents",
+            "MetadataId": "bd60f77b-da60-493c-8210-ce52c5a66e76"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "botcomponent_botcomponent",
+            "EntitySetName": "botcomponent_botcomponentset",
+            "MetadataId": "8409de64-9dff-ea11-a815-000d3a598def"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "botcomponent_environmentvariabledefinition",
+            "EntitySetName": "botcomponent_environmentvariabledefinitionset",
+            "MetadataId": "c95ac80b-4594-eb11-b1ac-000d3a598605"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "botcomponent_workflow",
+            "EntitySetName": "botcomponent_workflowset",
+            "MetadataId": "b125ee6a-9dff-ea11-a815-000d3a598def"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "bulkdeletefailure",
+            "EntitySetName": "bulkdeletefailures",
+            "MetadataId": "44d10acd-4e6f-432b-a839-6c79b58ce9cf"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "bulkdeleteoperation",
+            "EntitySetName": "bulkdeleteoperations",
+            "MetadataId": "900569d7-bbc7-4835-b55c-6118f03c4623"
+        },
+        {
+            "PrimaryNameAttribute": "subject",
+            "LogicalName": "bulkoperation",
+            "EntitySetName": "bulkoperations",
+            "MetadataId": "b237ecf9-e361-41cd-bce7-52bbd74eba0c"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "bulkoperationlog",
+            "EntitySetName": "bulkoperationlogs",
+            "MetadataId": "7eb3842c-a164-48e3-b35c-7f53cc4e174c"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "businessdatalocalizedlabel",
+            "EntitySetName": "businessdatalocalizedlabels",
+            "MetadataId": "4ba1569e-3c9c-4d9f-99ea-b61fb08d7f97"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "businessprocessflowinstance",
+            "EntitySetName": "businessprocessflowinstances",
+            "MetadataId": "0e253140-308f-4fd0-9342-f367899f8481"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "businessunit",
+            "EntitySetName": "businessunits",
+            "MetadataId": "f01e8baa-c7f5-4ec3-b538-5a3eed8527f6"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "businessunitmap",
+            "EntitySetName": "businessunitmaps",
+            "MetadataId": "f8f9c1bc-bad3-44d5-bdad-9fc8be60f8a8"
+        },
+        {
+            "PrimaryNameAttribute": "articletitle",
+            "LogicalName": "businessunitnewsarticle",
+            "EntitySetName": "businessunitnewsarticles",
+            "MetadataId": "fc90e923-d3c2-4e27-be83-0b020aeee1cb"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "calendar",
+            "EntitySetName": "calendars",
+            "MetadataId": "b16eb406-4dd9-49ee-8efe-9b351bd31f28"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "calendarrule",
+            "EntitySetName": "calendarrules",
+            "MetadataId": "2f4998f1-583e-4206-b49e-a3ac04e2bb6d"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "callbackregistration",
+            "EntitySetName": "callbackregistrations",
+            "MetadataId": "367b1896-6465-4657-a7e7-468dc248f733"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "campaign",
+            "EntitySetName": "campaigns",
+            "MetadataId": "59c9b48d-5578-41f2-9ca2-689e1dac0905"
+        },
+        {
+            "PrimaryNameAttribute": "subject",
+            "LogicalName": "campaignactivity",
+            "EntitySetName": "campaignactivities",
+            "MetadataId": "87e909a7-e378-407e-92f2-2dab2a6b7ca6"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "campaignactivityitem",
+            "EntitySetName": "campaignactivityitems",
+            "MetadataId": "9f1765b6-ec8e-4f87-89b6-871f5a99b6e1"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "campaignitem",
+            "EntitySetName": "campaignitems",
+            "MetadataId": "5f8784c4-b1ba-4099-9fd1-3c876bc05fa2"
+        },
+        {
+            "PrimaryNameAttribute": "subject",
+            "LogicalName": "campaignresponse",
+            "EntitySetName": "campaignresponses",
+            "MetadataId": "a8c1e72a-90ac-46fa-9bf5-465097edd021"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "canvasapp",
+            "EntitySetName": "canvasapps",
+            "MetadataId": "b22e0d48-7e91-46f2-b103-49de5e5869b5"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "canvasappextendedmetadata",
+            "EntitySetName": "canvasappextendedmetadata",
+            "MetadataId": "765cf20c-5cbe-4071-9455-c5c573f48de9"
+        },
+        {
+            "PrimaryNameAttribute": "cardname",
+            "LogicalName": "cardtype",
+            "EntitySetName": "cardtype",
+            "MetadataId": "bb1faa2e-0332-e611-80d5-00155dcf0c03"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "cascadegrantrevokeaccessrecordstracker",
+            "EntitySetName": "cascadegrantrevokeaccessrecordstrackers",
+            "MetadataId": "7172ce18-b512-4d00-b592-f034a213a2e4"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "cascadegrantrevokeaccessversiontracker",
+            "EntitySetName": "cascadegrantrevokeaccessversiontrackers",
+            "MetadataId": "2cc540aa-5231-418c-b028-895666caf583"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "catalog",
+            "EntitySetName": "catalogs",
+            "MetadataId": "ea346f41-af64-4227-a94c-f65c48f16b6a"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "catalogassignment",
+            "EntitySetName": "catalogassignments",
+            "MetadataId": "d909a8db-2e02-41a5-90f1-de80dbf410e6"
+        },
+        {
+            "PrimaryNameAttribute": "title",
+            "LogicalName": "category",
+            "EntitySetName": "categories",
+            "MetadataId": "98b63422-89aa-452a-8a78-3706a9e4690b"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "channelaccessprofile",
+            "EntitySetName": "channelaccessprofiles",
+            "MetadataId": "d7bc29c5-2cee-e411-80d9-00155dcf6500"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "channelaccessprofileentityaccesslevel",
+            "EntitySetName": "channelaccessprofileentityaccesslevels",
+            "MetadataId": "b227fe8f-a978-4ca6-bc14-6be823cccaf6"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "channelaccessprofilerule",
+            "EntitySetName": "channelaccessprofilerules",
+            "MetadataId": "7ff738ed-cbf7-e411-93a4-00219b3e9ee9"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "channelaccessprofileruleitem",
+            "EntitySetName": "channelaccessprofileruleitems",
+            "MetadataId": "855a4feb-77f8-e411-93a4-00219b3e9ee9"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "channelproperty",
+            "EntitySetName": "channelproperties",
+            "MetadataId": "91054a4a-e9cc-42f6-a192-976f004255ad"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "channelpropertygroup",
+            "EntitySetName": "channelpropertygroups",
+            "MetadataId": "3fb9eeb0-d854-41c9-8582-51372207aa41"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "characteristic",
+            "EntitySetName": "characteristics",
+            "MetadataId": "143a656a-0295-4bd1-a122-4490e08a8c47"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "childincidentcount",
+            "EntitySetName": "childincidentcounts",
+            "MetadataId": "ebab110a-018e-44c7-9bce-332c90e2760b"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "clientupdate",
+            "EntitySetName": "clientupdates",
+            "MetadataId": "3b052046-a8e3-4821-9dbb-8212b4deae05"
+        },
+        {
+            "PrimaryNameAttribute": "sourceattributename",
+            "LogicalName": "columnmapping",
+            "EntitySetName": "columnmappings",
+            "MetadataId": "ab188b02-1cef-43d3-a9fd-4907b1ec15c4"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "commitment",
+            "EntitySetName": "commitments",
+            "MetadataId": "9d97b2fd-58c3-4480-8213-c8bf1958666a"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "competitor",
+            "EntitySetName": "competitors",
+            "MetadataId": "983909d6-6ae1-45a7-bd60-1a496d5bee7f"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "competitoraddress",
+            "EntitySetName": "competitoraddresses",
+            "MetadataId": "f699f4b0-b6c6-4f1f-8507-c757f6c44741"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "competitorproduct",
+            "EntitySetName": "competitorproducts",
+            "MetadataId": "724dc8b7-6ffd-4738-8a14-dd55a77a7873"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "competitorsalesliterature",
+            "EntitySetName": "competitorsalesliteratures",
+            "MetadataId": "6d288da2-4a4c-4cd8-a724-727ab46ee232"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "complexcontrol",
+            "EntitySetName": "complexcontrols",
+            "MetadataId": "26bd4c6a-6dfc-48d2-8226-0e972f9b2169"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "connection",
+            "EntitySetName": "connections",
+            "MetadataId": "c7866019-d3d1-40d7-b483-381fcdccffb2"
+        },
+        {
+            "PrimaryNameAttribute": "connectionreferencedisplayname",
+            "LogicalName": "connectionreference",
+            "EntitySetName": "connectionreferences",
+            "MetadataId": "b401d9aa-1c4a-466c-9162-e05ef53ea5f7"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "connectionrole",
+            "EntitySetName": "connectionroles",
+            "MetadataId": "eebdee4a-12c8-4da1-b661-6efa465f6f24"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "connectionroleassociation",
+            "EntitySetName": "connectionroleassociations",
+            "MetadataId": "23222d7a-870c-4eb9-9c8b-32501ab89957"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "connectionroleobjecttypecode",
+            "EntitySetName": "connectionroleobjecttypecodes",
+            "MetadataId": "5dcb6d54-0d8a-4c15-a931-5f0a1dd2b5d7"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "connector",
+            "EntitySetName": "connectors",
+            "MetadataId": "2cc0405d-f0c9-4e92-99e2-4f80ca39903c"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "constraintbasedgroup",
+            "EntitySetName": "constraintbasedgroups",
+            "MetadataId": "8da58755-34fb-415c-891b-5aa20113bfd1"
+        },
+        {
+            "PrimaryNameAttribute": "fullname",
+            "LogicalName": "contact",
+            "EntitySetName": "contacts",
+            "MetadataId": "608861bc-50a4-4c5f-a02c-21fe1943e2cf"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "contactinvoices",
+            "EntitySetName": "contactinvoicescollection",
+            "MetadataId": "0a7a18ac-58e7-4a61-852f-91e39ff4b29d"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "contactleads",
+            "EntitySetName": "contactleadscollection",
+            "MetadataId": "0469b962-1964-4f7c-ac4e-fbc96894b28f"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "contactorders",
+            "EntitySetName": "contactorderscollection",
+            "MetadataId": "b7efa38d-803a-44a1-aea9-a373eb71e090"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "contactquotes",
+            "EntitySetName": "contactquotescollection",
+            "MetadataId": "0a83316a-af1d-45cd-a22c-7ff1281cdb2f"
+        },
+        {
+            "PrimaryNameAttribute": "title",
+            "LogicalName": "contract",
+            "EntitySetName": "contracts",
+            "MetadataId": "741b2843-e4c2-404f-b99d-a786a3871973"
+        },
+        {
+            "PrimaryNameAttribute": "title",
+            "LogicalName": "contractdetail",
+            "EntitySetName": "contractdetails",
+            "MetadataId": "824dd762-b368-4470-945b-2741364194fb"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "contracttemplate",
+            "EntitySetName": "contracttemplates",
+            "MetadataId": "3297bc4c-e8d3-43da-84d7-0b37566308f1"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "conversationtranscript",
+            "EntitySetName": "conversationtranscripts",
+            "MetadataId": "3d2afb12-e4f0-4179-8d1a-0e8acdc5ec15"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "convertrule",
+            "EntitySetName": "convertrules",
+            "MetadataId": "145e132d-0130-4591-ba36-7fbe059df17c"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "convertruleitem",
+            "EntitySetName": "convertruleitems",
+            "MetadataId": "dcd7a339-780f-44f2-9cb9-5e96c50ac611"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "customapi",
+            "EntitySetName": "customapis",
+            "MetadataId": "734f5a12-3ea1-4280-bca2-7c2de1214924"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "customapirequestparameter",
+            "EntitySetName": "customapirequestparameters",
+            "MetadataId": "c97e06ed-9110-4202-80b2-8ec12c913913"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "customapiresponseproperty",
+            "EntitySetName": "customapiresponseproperties",
+            "MetadataId": "f66e3f9b-57b2-4d33-841e-87d951e02586"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "customcontrol",
+            "EntitySetName": "customcontrols",
+            "MetadataId": "4c292731-aee5-4105-b958-c29b28116eea"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "customcontroldefaultconfig",
+            "EntitySetName": "customcontroldefaultconfigs",
+            "MetadataId": "16ea7771-4da6-46c6-a677-41a403afc181"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "customcontrolresource",
+            "EntitySetName": "customcontrolresources",
+            "MetadataId": "5b62060d-c350-4b0c-809a-46ceaa6116cf"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "customeraddress",
+            "EntitySetName": "customeraddresses",
+            "MetadataId": "f51cf246-e2ba-4e33-a22f-87e6edccf3ab"
+        },
+        {
+            "PrimaryNameAttribute": "opportunityroleidname",
+            "LogicalName": "customeropportunityrole",
+            "EntitySetName": "customeropportunityroles",
+            "MetadataId": "3c039ff1-d475-4e31-a1b9-82b338af4089"
+        },
+        {
+            "PrimaryNameAttribute": "customerroleidname",
+            "LogicalName": "customerrelationship",
+            "EntitySetName": "customerrelationships",
+            "MetadataId": "945331a8-5b1d-4a36-ab5a-12966602be54"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "datalakefolder",
+            "EntitySetName": "datalakefolders",
+            "MetadataId": "199e109e-a473-4783-a723-dbf3efac9411"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "datalakefolderpermission",
+            "EntitySetName": "datalakefolderpermissions",
+            "MetadataId": "7a183649-a5f7-45a8-990b-f684d32921ff"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "datalakeworkspace",
+            "EntitySetName": "datalakeworkspaces",
+            "MetadataId": "04e00e1a-69d4-4e55-b046-9ff06616772c"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "datalakeworkspacepermission",
+            "EntitySetName": "datalakeworkspacepermissions",
+            "MetadataId": "2646005a-7dfd-4254-8159-c80bb8f31e0f"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "dataperformance",
+            "EntitySetName": "dataperformances",
+            "MetadataId": "d6876b0d-8b0c-45ec-ae4c-053ab1ed226a"
+        },
+        {
+            "PrimaryNameAttribute": "subject",
+            "LogicalName": "delveactionhub",
+            "EntitySetName": "delveactionhubs",
+            "MetadataId": "45347f74-a8d4-e511-8a95-00219b619656"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "dependency",
+            "EntitySetName": "dependencies",
+            "MetadataId": "c74485f0-38da-11de-9d3f-00188b01e34f"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "dependencyfeature",
+            "EntitySetName": "dependencyfeatures",
+            "MetadataId": "90400fa9-1285-41c8-aea7-7131295f1f95"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "dependencynode",
+            "EntitySetName": "dependencynodes",
+            "MetadataId": "458a4fa0-38df-11de-9d3f-00188b01e34f"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "discount",
+            "EntitySetName": "discounts",
+            "MetadataId": "3fd9fdee-e2a6-47c2-9c21-34c0cac3a777"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "discounttype",
+            "EntitySetName": "discounttypes",
+            "MetadataId": "ba88da0e-f4aa-4208-803d-be19be644100"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "displaystring",
+            "EntitySetName": "displaystrings",
+            "MetadataId": "6b8e65e9-33f4-403b-a645-e35257778798"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "displaystringmap",
+            "EntitySetName": "displaystringmaps",
+            "MetadataId": "c607220a-af3d-4d6a-8422-dba0fb4df106"
+        },
+        {
+            "PrimaryNameAttribute": "dnb_name",
+            "LogicalName": "dnb_businessprofile",
+            "EntitySetName": "dnb_businessprofiles",
+            "MetadataId": "e5515dc5-056e-480e-b17e-4dd5f419de29"
+        },
+        {
+            "PrimaryNameAttribute": "dnb_businessname",
+            "LogicalName": "dnb_contactprofile",
+            "EntitySetName": "dnb_contactprofiles",
+            "MetadataId": "b0e9a6e1-8bfa-47bb-a43f-e5ac9855a615"
+        },
+        {
+            "PrimaryNameAttribute": "dnb_name",
+            "LogicalName": "dnb_dbmatchwatermark",
+            "EntitySetName": "dnb_dbmatchwatermarks",
+            "MetadataId": "7ac60472-f81d-4fda-9051-6ecf0d8e92be"
+        },
+        {
+            "PrimaryNameAttribute": "dnb_name",
+            "LogicalName": "dnb_dboptimizerstatus",
+            "EntitySetName": "dnb_dboptimizerstatuses",
+            "MetadataId": "d57328dc-0eeb-4f88-afb5-0100774aee86"
+        },
+        {
+            "PrimaryNameAttribute": "dnb_name",
+            "LogicalName": "dnb_enrichmentmapping",
+            "EntitySetName": "dnb_enrichmentmappings",
+            "MetadataId": "2f9ea319-cbad-4d4c-bf6f-c7fa40038d95"
+        },
+        {
+            "PrimaryNameAttribute": "dnb_mappingname",
+            "LogicalName": "dnb_matchfield",
+            "EntitySetName": "dnb_matchfields",
+            "MetadataId": "1efb98ef-6252-49f2-95c8-b8ae71f78137"
+        },
+        {
+            "PrimaryNameAttribute": "dnb_name",
+            "LogicalName": "dnb_matchgrade",
+            "EntitySetName": "dnb_matchgrades",
+            "MetadataId": "f517bdbd-9f7f-45d4-ac1d-1fa6f0da0c1c"
+        },
+        {
+            "PrimaryNameAttribute": "dnb_name",
+            "LogicalName": "dnb_settings",
+            "EntitySetName": "dnb_settingses",
+            "MetadataId": "752962bd-f7f0-4dc9-91b6-09fc807aaafe"
+        },
+        {
+            "PrimaryNameAttribute": "title",
+            "LogicalName": "documentindex",
+            "EntitySetName": "documentindexes",
+            "MetadataId": "c5fb211f-ce3d-438f-bc56-3794ec91c7cf"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "documenttemplate",
+            "EntitySetName": "documenttemplates",
+            "MetadataId": "08da1da7-51a6-4d47-a44a-2f7fbef0c491"
+        },
+        {
+            "PrimaryNameAttribute": "docusign_name",
+            "LogicalName": "docusign_accountconfiguration",
+            "EntitySetName": "docusign_accountconfigurations",
+            "MetadataId": "ef72c849-84d7-4d2e-ad84-a05816e9a525"
+        },
+        {
+            "PrimaryNameAttribute": "docusign_blobdescription",
+            "LogicalName": "docusign_blob",
+            "EntitySetName": "docusign_blobs",
+            "MetadataId": "4b9c6e62-a2bb-4c31-9b2b-28ff52dc8656"
+        },
+        {
+            "PrimaryNameAttribute": "docusign_name",
+            "LogicalName": "docusign_bulksendlist",
+            "EntitySetName": "docusign_bulksendlists",
+            "MetadataId": "0ed42ae8-c4e9-48cc-83d7-36515c91eeba"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "docusign_docusign_bulksendlist_contact",
+            "EntitySetName": "docusign_docusign_bulksendlist_contactset",
+            "MetadataId": "56509cfc-02d5-eb11-bacc-00224809e90a"
+        },
+        {
+            "PrimaryNameAttribute": "docusign_name",
+            "LogicalName": "docusign_docusigntemplate",
+            "EntitySetName": "docusign_docusigntemplates",
+            "MetadataId": "b16530cb-d083-4f11-95db-fd962522e410"
+        },
+        {
+            "PrimaryNameAttribute": "docusign_name",
+            "LogicalName": "docusign_entity",
+            "EntitySetName": "docusign_entities",
+            "MetadataId": "5f8f7b7c-c366-406f-b501-c40cef81547c"
+        },
+        {
+            "PrimaryNameAttribute": "docusign_name",
+            "LogicalName": "docusign_request",
+            "EntitySetName": "docusign_requests",
+            "MetadataId": "cfda04bc-b4b6-4d9e-9c07-8b8f150cec8c"
+        },
+        {
+            "PrimaryNameAttribute": "docusign_name",
+            "LogicalName": "docusign_status",
+            "EntitySetName": "docusign_statuses",
+            "MetadataId": "ad34df38-04ea-403b-a4a7-b1958c2a55af"
+        },
+        {
+            "PrimaryNameAttribute": "docusign_name",
+            "LogicalName": "docusign_trace",
+            "EntitySetName": "docusign_traces",
+            "MetadataId": "cd8bc6f7-1c61-49a2-82c0-3026c3d60e7d"
+        },
+        {
+            "PrimaryNameAttribute": "docusign_name",
+            "LogicalName": "docusign_user",
+            "EntitySetName": "docusign_users",
+            "MetadataId": "3b8711b2-3d94-4765-b274-99320153c435"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "duplicaterecord",
+            "EntitySetName": "duplicaterecords",
+            "MetadataId": "fb7a470e-6964-4e5b-9aee-9ac8442d94b4"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "duplicaterule",
+            "EntitySetName": "duplicaterules",
+            "MetadataId": "40283d28-eb4c-46a6-85fc-b621e54ef9b1"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "duplicaterulecondition",
+            "EntitySetName": "duplicateruleconditions",
+            "MetadataId": "863a7e54-2d58-43e9-8e4d-aa8365aa6e07"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "dynamicproperty",
+            "EntitySetName": "dynamicproperties",
+            "MetadataId": "6e440a51-7fe5-4890-b316-e6a5760c331b"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "dynamicpropertyassociation",
+            "EntitySetName": "dynamicpropertyassociations",
+            "MetadataId": "a124c061-3e23-4ce0-824d-80035ea0b6d4"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "dynamicpropertyinstance",
+            "EntitySetName": "dynamicpropertyinstances",
+            "MetadataId": "658a5105-7b4f-4ef6-b517-afde5209566e"
+        },
+        {
+            "PrimaryNameAttribute": "dynamicpropertyoptionname",
+            "LogicalName": "dynamicpropertyoptionsetitem",
+            "EntitySetName": "dynamicpropertyoptionsetitems",
+            "MetadataId": "5283e25a-287d-4513-97c8-1164d722f020"
+        },
+        {
+            "PrimaryNameAttribute": "subject",
+            "LogicalName": "email",
+            "EntitySetName": "emails",
+            "MetadataId": "95ae88b3-cc0c-45ac-a2db-655dceec238b"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "emailhash",
+            "EntitySetName": "emailhashes",
+            "MetadataId": "d52d3fdc-356a-44e0-9c1a-df04cf89435d"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "emailsearch",
+            "EntitySetName": "emailsearches",
+            "MetadataId": "96c8060d-ed63-40b0-8a0c-3db10d857eaa"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "emailserverprofile",
+            "EntitySetName": "emailserverprofiles",
+            "MetadataId": "cb507395-fb05-4597-9290-4679863c1cea"
+        },
+        {
+            "PrimaryNameAttribute": "title",
+            "LogicalName": "emailsignature",
+            "EntitySetName": "emailsignatures",
+            "MetadataId": "40a6ea76-1a38-45ed-b250-9672857dcdff"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "entitlement",
+            "EntitySetName": "entitlements",
+            "MetadataId": "bb42b386-82dd-48cb-82ea-f74be1f3ebf9"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "entitlementchannel",
+            "EntitySetName": "entitlementchannels",
+            "MetadataId": "3779e077-cce3-4eba-8f1b-126a462f914c"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "entitlementcontacts",
+            "EntitySetName": "entitlementcontactscollection",
+            "MetadataId": "2bd1af00-2713-433f-a210-c84a647e2916"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "entitlemententityallocationtypemapping",
+            "EntitySetName": "entitlemententityallocationtypemappings",
+            "MetadataId": "3032b796-264e-42a5-b213-75440b55c442"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "entitlementproducts",
+            "EntitySetName": "entitlementproductscollection",
+            "MetadataId": "5ce36ada-8460-45a8-be8b-d7260880fa4a"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "entitlementtemplate",
+            "EntitySetName": "entitlementtemplates",
+            "MetadataId": "eaa359df-aad0-401d-9d19-052dc336dddc"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "entitlementtemplatechannel",
+            "EntitySetName": "entitlementtemplatechannels",
+            "MetadataId": "229fa1f1-fb79-4136-b496-f5d944ae7518"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "entitlementtemplateproducts",
+            "EntitySetName": "entitlementtemplateproductscollection",
+            "MetadataId": "21deb91c-99af-4240-89e6-41b5af79a12a"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "entity",
+            "EntitySetName": "entities",
+            "MetadataId": "9d0f025b-11ce-40f1-a7f4-a8088f4985aa"
+        },
+        {
+            "PrimaryNameAttribute": "parententitylogicalname",
+            "LogicalName": "entityanalyticsconfig",
+            "EntitySetName": "entityanalyticsconfigs",
+            "MetadataId": "7418d6af-4ef8-4d99-a30e-91ba0cd2f460"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "entitydataprovider",
+            "EntitySetName": "entitydataproviders",
+            "MetadataId": "ddf625c7-a00b-4a20-9f5e-1a363f7d422c"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "entitydatasource",
+            "EntitySetName": "entitydatasources",
+            "MetadataId": "1d1d911f-8491-433e-bc1a-8c9801eb248d"
+        },
+        {
+            "PrimaryNameAttribute": "parententitylogicalname",
+            "LogicalName": "entityimageconfig",
+            "EntitySetName": "entityimageconfigs",
+            "MetadataId": "ca7a8d42-8932-4105-b844-7d1f1fd34d1e"
+        },
+        {
+            "PrimaryNameAttribute": "logicalname",
+            "LogicalName": "entitykey",
+            "EntitySetName": "entitykeys",
+            "MetadataId": "2a4789b5-b166-4226-9470-c6d4a3196024"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "entitymap",
+            "EntitySetName": "entitymaps",
+            "MetadataId": "d19c08a4-b757-4d0a-bcf6-509cae402f7d"
+        },
+        {
+            "PrimaryNameAttribute": "schemaname",
+            "LogicalName": "entityrelationship",
+            "EntitySetName": "entityrelationships",
+            "MetadataId": "98b4b49e-ee82-4d97-ba06-fdc1a12d94c4"
+        },
+        {
+            "PrimaryNameAttribute": "schemaname",
+            "LogicalName": "environmentvariabledefinition",
+            "EntitySetName": "environmentvariabledefinitions",
+            "MetadataId": "d9e543b2-6d6b-4242-a3eb-adbe0bbb7050"
+        },
+        {
+            "PrimaryNameAttribute": "schemaname",
+            "LogicalName": "environmentvariablevalue",
+            "EntitySetName": "environmentvariablevalues",
+            "MetadataId": "99b0429e-2c36-49e3-a123-05894f704b10"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "equipment",
+            "EntitySetName": "equipments",
+            "MetadataId": "a7a0b367-219b-44de-9ee9-239e3b5c7a4e"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "exchangesyncidmapping",
+            "EntitySetName": "exchangesyncidmappings",
+            "MetadataId": "73ae8c09-d2a8-e011-91da-00155d1dd929"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "expanderevent",
+            "EntitySetName": "expanderevents",
+            "MetadataId": "ff98567e-87b9-45a5-ba27-5a753b6ebc8b"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "expiredprocess",
+            "EntitySetName": "expiredprocesses",
+            "MetadataId": "937cd6ba-c7c7-4cbc-9aca-54e4f00da154"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "exportsolutionupload",
+            "EntitySetName": "exportsolutionuploads",
+            "MetadataId": "32e8c86c-d8b7-40a5-90c6-072d5e970606"
+        },
+        {
+            "PrimaryNameAttribute": "fullname",
+            "LogicalName": "externalparty",
+            "EntitySetName": "externalparties",
+            "MetadataId": "59215dac-2fee-e411-80d9-00155dcf6500"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "externalpartyitem",
+            "EntitySetName": "externalpartyitems",
+            "MetadataId": "f53e47cf-4d4f-4cef-9410-9347af70e1a8"
+        },
+        {
+            "PrimaryNameAttribute": "subject",
+            "LogicalName": "fax",
+            "EntitySetName": "faxes",
+            "MetadataId": "58d4edef-1ea8-4796-939b-9c37db3d2deb"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "featurecontrolsetting",
+            "EntitySetName": "featurecontrolsettings",
+            "MetadataId": "a57d98a0-ee27-4a14-ac62-1ee7ef56c2fc"
+        },
+        {
+            "PrimaryNameAttribute": "title",
+            "LogicalName": "feedback",
+            "EntitySetName": "feedback",
+            "MetadataId": "7ef8720f-10a5-4100-b908-51314067e567"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "fieldpermission",
+            "EntitySetName": "fieldpermissions",
+            "MetadataId": "5022978e-f5d4-40d4-a3f9-6c666fec7641"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "fieldsecurityprofile",
+            "EntitySetName": "fieldsecurityprofiles",
+            "MetadataId": "4fa27177-f832-45e2-a756-d3f9b5108e1e"
+        },
+        {
+            "PrimaryNameAttribute": "filename",
+            "LogicalName": "fileattachment",
+            "EntitySetName": "fileattachments",
+            "MetadataId": "76507349-9f5e-4859-a479-cffbb9560e67"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "filtertemplate",
+            "EntitySetName": "filtertemplates",
+            "MetadataId": "9f9035f6-5fdd-4ca3-a70e-ef807d4a1633"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "fixedmonthlyfiscalcalendar",
+            "EntitySetName": "fixedmonthlyfiscalcalendars",
+            "MetadataId": "6e792810-95f0-4c65-bec3-e0edd1b7d362"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "flowmachine",
+            "EntitySetName": "flowmachines",
+            "MetadataId": "088ea82a-835c-47e9-a618-7439fc6e458d"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "flowmachinegroup",
+            "EntitySetName": "flowmachinegroups",
+            "MetadataId": "0df27dbf-818f-43cf-882a-841739585795"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "flowsession",
+            "EntitySetName": "flowsessions",
+            "MetadataId": "e21ca425-c7c2-e911-a81c-000d3afe2b7d"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "globalsearchconfiguration",
+            "EntitySetName": "globalsearchconfigurations",
+            "MetadataId": "dca71cb8-dea9-45d3-8e99-f99553fc501e"
+        },
+        {
+            "PrimaryNameAttribute": "title",
+            "LogicalName": "goal",
+            "EntitySetName": "goals",
+            "MetadataId": "b123b4bd-f013-df11-a16e-00155d7aa40d"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "goalrollupquery",
+            "EntitySetName": "goalrollupqueries",
+            "MetadataId": "91194109-f813-df11-a16e-00155d7aa40d"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "hierarchyrule",
+            "EntitySetName": "hierarchyrules",
+            "MetadataId": "3ce90e58-6f67-4b86-b766-fafb21e9cfb4"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "hierarchysecurityconfiguration",
+            "EntitySetName": "hierarchysecurityconfigurations",
+            "MetadataId": "8e41ecb8-c8b7-436e-9de2-99c316ff00fe"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "holidaywrapper",
+            "EntitySetName": "holidaywrappers",
+            "MetadataId": "84ae4db9-9bca-e711-80f5-00155d70a25c"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "imagedescriptor",
+            "EntitySetName": "imagedescriptors",
+            "MetadataId": "1e692216-6e06-4a4f-b92f-35efdef90c28"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "import",
+            "EntitySetName": "imports",
+            "MetadataId": "d91b0f83-807c-4aac-bd7b-dd4a34f48b63"
+        },
+        {
+            "PrimaryNameAttribute": "data",
+            "LogicalName": "importdata",
+            "EntitySetName": "importdataset",
+            "MetadataId": "6f86a576-34eb-476e-8b80-c33a748aba6e"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "importentitymapping",
+            "EntitySetName": "importentitymappings",
+            "MetadataId": "94335ee8-928e-49a2-ac3b-f81bca68f542"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "importfile",
+            "EntitySetName": "importfiles",
+            "MetadataId": "5aa4f989-c729-484b-8637-6b08858e4663"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "importjob",
+            "EntitySetName": "importjobs",
+            "MetadataId": "87dbadb2-6db5-44de-b0e3-a40fe6ef77df"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "importlog",
+            "EntitySetName": "importlogs",
+            "MetadataId": "ebce8e9b-a8dc-444d-bb89-92c6d1da1e6b"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "importmap",
+            "EntitySetName": "importmaps",
+            "MetadataId": "fd806104-65c3-4619-b5e5-142c0036cb78"
+        },
+        {
+            "PrimaryNameAttribute": "title",
+            "LogicalName": "incident",
+            "EntitySetName": "incidents",
+            "MetadataId": "e3fe4ff2-a630-49bb-a1e9-debc3a076815"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "incidentknowledgebaserecord",
+            "EntitySetName": "incidentknowledgebaserecords",
+            "MetadataId": "4153b66c-a7f4-4182-85d2-c4cdb61bbeb1"
+        },
+        {
+            "PrimaryNameAttribute": "subject",
+            "LogicalName": "incidentresolution",
+            "EntitySetName": "incidentresolutions",
+            "MetadataId": "bceb9f02-968e-4363-beb0-ad7ecdef4908"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "integrationstatus",
+            "EntitySetName": "integrationstatuses",
+            "MetadataId": "aa32d1cc-b6f1-4bba-a5df-d09299f4dd30"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "interactionforemail",
+            "EntitySetName": "interactionforemails",
+            "MetadataId": "958a2604-1823-e611-80d5-00155d211d02"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "internaladdress",
+            "EntitySetName": "internaladdresses",
+            "MetadataId": "4419ea43-3008-4301-957b-ef8a48edbb10"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "internalcatalogassignment",
+            "EntitySetName": "internalcatalogassignments",
+            "MetadataId": "e278b863-cf24-4785-ad3c-32d0cfe5c327"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "interprocesslock",
+            "EntitySetName": "interprocesslocks",
+            "MetadataId": "238ff341-a82f-458d-84a1-9acc16143d89"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "invaliddependency",
+            "EntitySetName": "invaliddependencies",
+            "MetadataId": "b6e9f594-38e3-11de-9d3f-00188b01e34f"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "invoice",
+            "EntitySetName": "invoices",
+            "MetadataId": "4c0e7f31-a9de-45ea-b983-363b946f18c5"
+        },
+        {
+            "PrimaryNameAttribute": "invoicedetailname",
+            "LogicalName": "invoicedetail",
+            "EntitySetName": "invoicedetails",
+            "MetadataId": "8d899ec1-c0e4-4f24-82e2-3aff96a1f0ed"
+        },
+        {
+            "PrimaryNameAttribute": "iprm_name",
+            "LogicalName": "iprm_impartnerconfiguration",
+            "EntitySetName": "iprm_impartnerconfigurations",
+            "MetadataId": "c6c6d88a-a9db-4287-b8bf-f1fcf3c5f6e6"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "isvconfig",
+            "EntitySetName": "isvconfigs",
+            "MetadataId": "84267965-cf26-467e-9f6a-0ff592cc386c"
+        },
+        {
+            "PrimaryNameAttribute": "iv_configurationname",
+            "LogicalName": "iv_insightsconfiguration",
+            "EntitySetName": "iv_insightsconfigurations",
+            "MetadataId": "04e64851-b228-e911-a964-000d3a378ca2"
+        },
+        {
+            "PrimaryNameAttribute": "title",
+            "LogicalName": "kbarticle",
+            "EntitySetName": "kbarticles",
+            "MetadataId": "773a670f-44d3-443a-b356-6a6768cb7f3c"
+        },
+        {
+            "PrimaryNameAttribute": "title",
+            "LogicalName": "kbarticlecomment",
+            "EntitySetName": "kbarticlecomments",
+            "MetadataId": "e3bd897f-57c0-4704-b409-d17086106bf0"
+        },
+        {
+            "PrimaryNameAttribute": "title",
+            "LogicalName": "kbarticletemplate",
+            "EntitySetName": "kbarticletemplates",
+            "MetadataId": "7421c249-8dee-4cef-9616-af4ee865ce9e"
+        },
+        {
+            "PrimaryNameAttribute": "keyvaulturi",
+            "LogicalName": "keyvaultreference",
+            "EntitySetName": "keyvaultreferences",
+            "MetadataId": "3bc6349a-4c35-4b34-a5a6-cb35e890ab87"
+        },
+        {
+            "PrimaryNameAttribute": "title",
+            "LogicalName": "knowledgearticle",
+            "EntitySetName": "knowledgearticles",
+            "MetadataId": "3cd90632-a200-e511-80d2-00155d217c03"
+        },
+        {
+            "PrimaryNameAttribute": "knowledgearticleidname",
+            "LogicalName": "knowledgearticleincident",
+            "EntitySetName": "knowledgearticleincidents",
+            "MetadataId": "8d062aa3-1a78-4466-8c31-64bed842ff46"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "knowledgearticlescategories",
+            "EntitySetName": "KnowledgeArticleCategories",
+            "MetadataId": "c455d8d1-5cb4-40ab-841b-8809b5eb45a4"
+        },
+        {
+            "PrimaryNameAttribute": "knowledgearticleidname",
+            "LogicalName": "knowledgearticleviews",
+            "EntitySetName": "knowledgearticleviews",
+            "MetadataId": "0ce5b43d-5472-489f-98e0-2c0f1d2acf6f"
+        },
+        {
+            "PrimaryNameAttribute": "title",
+            "LogicalName": "knowledgebaserecord",
+            "EntitySetName": "knowledgebaserecords",
+            "MetadataId": "1eda6b9d-8419-e411-8e13-0024e8412450"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "knowledgesearchmodel",
+            "EntitySetName": "knowledgesearchmodels",
+            "MetadataId": "3e397934-16db-446d-9872-bf24aa0593ef"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "languagelocale",
+            "EntitySetName": "languagelocale",
+            "MetadataId": "92735047-2387-4884-9951-84fb4f3d6333"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "languageprovisioningstate",
+            "EntitySetName": "languageprovisioningstates",
+            "MetadataId": "6ca10031-92ce-4483-ab7b-0081f2a2eec1"
+        },
+        {
+            "PrimaryNameAttribute": "fullname",
+            "LogicalName": "lead",
+            "EntitySetName": "leads",
+            "MetadataId": "dc6574cb-92ce-446c-a5d6-885a75107d52"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "leadaddress",
+            "EntitySetName": "leadaddresses",
+            "MetadataId": "f4a83a8e-525e-4406-952b-de07a57dff16"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "leadcompetitors",
+            "EntitySetName": "leadcompetitorscollection",
+            "MetadataId": "0e34dc03-3fb0-412f-aea7-222fea9f2802"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "leadproduct",
+            "EntitySetName": "leadproducts",
+            "MetadataId": "4dfc6ad3-9f82-4f3b-aeb8-b6d5d9e8c14a"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "leadtoopportunitysalesprocess",
+            "EntitySetName": "leadtoopportunitysalesprocesses",
+            "MetadataId": "ad7c2126-980b-469e-a25e-e0b4771a6f9f"
+        },
+        {
+            "PrimaryNameAttribute": "subject",
+            "LogicalName": "letter",
+            "EntitySetName": "letters",
+            "MetadataId": "ebf2fb01-f630-4564-950e-79161bd655c9"
+        },
+        {
+            "PrimaryNameAttribute": "li_name",
+            "LogicalName": "li_configuration",
+            "EntitySetName": "li_configurations",
+            "MetadataId": "4118a0cb-fb6b-4c40-89fd-6bf9b0d7a153"
+        },
+        {
+            "PrimaryNameAttribute": "subject",
+            "LogicalName": "li_inmail",
+            "EntitySetName": "li_inmails",
+            "MetadataId": "0f22c6ee-177b-405e-8615-cd406ad57f3e"
+        },
+        {
+            "PrimaryNameAttribute": "subject",
+            "LogicalName": "li_message",
+            "EntitySetName": "li_messages",
+            "MetadataId": "24bbc8d7-c0c7-4d58-8488-96138cf32759"
+        },
+        {
+            "PrimaryNameAttribute": "subject",
+            "LogicalName": "li_pointdrivepresentationcreated",
+            "EntitySetName": "li_pointdrivepresentationcreateds",
+            "MetadataId": "07560b5d-9544-48e5-9959-9bcb40dc32c5"
+        },
+        {
+            "PrimaryNameAttribute": "subject",
+            "LogicalName": "li_pointdrivepresentationviewed",
+            "EntitySetName": "li_pointdrivepresentationvieweds",
+            "MetadataId": "a5e20e89-d00f-493d-af12-50d1e0fa3f51"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "license",
+            "EntitySetName": "licenses",
+            "MetadataId": "17b9c0c4-fa4e-46a8-8daa-f326033fc8d9"
+        },
+        {
+            "PrimaryNameAttribute": "listname",
+            "LogicalName": "list",
+            "EntitySetName": "lists",
+            "MetadataId": "efd3a52d-04ca-4d36-a54c-2a26a64f5571"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "listmember",
+            "EntitySetName": "listmembers",
+            "MetadataId": "22895330-572a-4114-a704-8317ebc24309"
+        },
+        {
+            "PrimaryNameAttribute": "listoperationprimaryname",
+            "LogicalName": "listoperation",
+            "EntitySetName": "listoperations",
+            "MetadataId": "a91ea830-d5a7-4745-bced-bf7cd256d116"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "localconfigstore",
+            "EntitySetName": "localconfigstores",
+            "MetadataId": "ab1060dc-6697-4264-9536-b86b98626f50"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "lookupmapping",
+            "EntitySetName": "lookupmappings",
+            "MetadataId": "c7d9bccf-c35e-4717-bdc7-c5567435b1bb"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "mailbox",
+            "EntitySetName": "mailboxes",
+            "MetadataId": "71903251-887c-e011-b3dc-00155d7b4422"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "mailboxstatistics",
+            "EntitySetName": "mailboxstatistics",
+            "MetadataId": "6e2ae977-3896-444b-90d3-4802a78b5ef8"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "mailboxtrackingcategory",
+            "EntitySetName": "mailboxtrackingcategories",
+            "MetadataId": "f7ea6dfc-0ceb-4999-b862-6e4737a0b120"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "mailboxtrackingfolder",
+            "EntitySetName": "mailboxtrackingfolders",
+            "MetadataId": "be0bb1a2-9255-4f89-a31d-ef6e19ebc9ca"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "mailmergetemplate",
+            "EntitySetName": "mailmergetemplates",
+            "MetadataId": "ae7fdf89-aa62-490a-95f5-216e8789ada7"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "managedidentity",
+            "EntitySetName": "managedidentities",
+            "MetadataId": "15fdf69f-dfcb-4c1f-8f6d-23e5c2358464"
+        },
+        {
+            "PrimaryNameAttribute": "logicalname",
+            "LogicalName": "managedproperty",
+            "EntitySetName": "managedproperties",
+            "MetadataId": "13ed1ce0-614f-4d9f-b66c-34d7b77518a3"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "marketingformdisplayattributes",
+            "EntitySetName": "marketingformdisplayattributesset",
+            "MetadataId": "a6b110a8-f200-4f52-a0ee-09a40b601089"
+        },
+        {
+            "PrimaryNameAttribute": "mbs_label",
+            "LogicalName": "mbs_pluginprofile",
+            "EntitySetName": "mbs_pluginprofiles",
+            "MetadataId": "129ee0ae-1c6b-4862-91ed-271308364936"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "metadatadifference",
+            "EntitySetName": "metadatadifferences",
+            "MetadataId": "05df9600-a144-49c5-a266-2c716726b94c"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "metric",
+            "EntitySetName": "metrics",
+            "MetadataId": "eea884a0-f513-df11-a16e-00155d7aa40d"
+        },
+        {
+            "PrimaryNameAttribute": "mkt_name",
+            "LogicalName": "mkt_email",
+            "EntitySetName": "mkt_emails",
+            "MetadataId": "f7af380a-f19d-4db3-8336-b2734ed21e02"
+        },
+        {
+            "PrimaryNameAttribute": "mkt_description",
+            "LogicalName": "mkt_interestingmoment",
+            "EntitySetName": "mkt_interestingmoments",
+            "MetadataId": "597d2e89-d0f2-449f-9618-d8e3253ddc02"
+        },
+        {
+            "PrimaryNameAttribute": "mkt_name",
+            "LogicalName": "mkt_marketoapiconfig",
+            "EntitySetName": "mkt_marketoapiconfigs",
+            "MetadataId": "9b408959-e991-48be-8911-fc8a6721b69f"
+        },
+        {
+            "PrimaryNameAttribute": "mkt_name",
+            "LogicalName": "mkt_marketocampaign",
+            "EntitySetName": "mkt_marketocampaigns",
+            "MetadataId": "bc2e81b3-302e-480f-b1ef-d0c74df8f95c"
+        },
+        {
+            "PrimaryNameAttribute": "mkt_name",
+            "LogicalName": "mkt_marketoconfig",
+            "EntitySetName": "mkt_marketoconfigs",
+            "MetadataId": "3f5d4476-3d5f-4353-9b41-d4f9fe2fc81e"
+        },
+        {
+            "PrimaryNameAttribute": "mkt_name",
+            "LogicalName": "mkt_marketoconfigentity",
+            "EntitySetName": "mkt_marketoconfigentities",
+            "MetadataId": "67d903ed-19ac-42ce-b245-80c8ec6d1dac"
+        },
+        {
+            "PrimaryNameAttribute": "mkt_name",
+            "LogicalName": "mkt_marketocustomconfig",
+            "EntitySetName": "mkt_marketocustomconfigs",
+            "MetadataId": "b18b42cf-25b7-46e8-9f9a-c1f14ab9f837"
+        },
+        {
+            "PrimaryNameAttribute": "mkt_subject",
+            "LogicalName": "mkt_marketoemail",
+            "EntitySetName": "mkt_marketoemails",
+            "MetadataId": "b9a78b50-d8fb-41e0-88c5-b0c5080a796f"
+        },
+        {
+            "PrimaryNameAttribute": "mkt_name",
+            "LogicalName": "mkt_marketoemailtemplate",
+            "EntitySetName": "mkt_marketoemailtemplates",
+            "MetadataId": "916d57f7-7e58-4c66-94cf-7e6a63543724"
+        },
+        {
+            "PrimaryNameAttribute": "mkt_operationtype",
+            "LogicalName": "mkt_marketoerrorlog",
+            "EntitySetName": "mkt_marketoerrorlogs",
+            "MetadataId": "a7f691d3-79b7-46f5-8e0a-eb94634bd484"
+        },
+        {
+            "PrimaryNameAttribute": "mkt_name",
+            "LogicalName": "mkt_marketolead",
+            "EntitySetName": "mkt_marketoleads",
+            "MetadataId": "475e94b9-1c82-4ab3-bfe2-a33923d93619"
+        },
+        {
+            "PrimaryNameAttribute": "mkt_name",
+            "LogicalName": "mkt_marketoleadfeed",
+            "EntitySetName": "mkt_marketoleadfeeds",
+            "MetadataId": "52017fd2-dbf9-40ac-b730-486cde470495"
+        },
+        {
+            "PrimaryNameAttribute": "mkt_operationtype",
+            "LogicalName": "mkt_marketolog",
+            "EntitySetName": "mkt_marketologs",
+            "MetadataId": "12481b9d-1759-456a-93a0-9e41a54180b8"
+        },
+        {
+            "PrimaryNameAttribute": "mkt_name",
+            "LogicalName": "mkt_marketomainbestbets",
+            "EntitySetName": "mkt_marketomainbestbetses",
+            "MetadataId": "d50c48cd-3297-4023-9429-1b42cbd7400d"
+        },
+        {
+            "PrimaryNameAttribute": "mkt_name",
+            "LogicalName": "mkt_marketomainemail",
+            "EntitySetName": "mkt_marketomainemails",
+            "MetadataId": "03cd768f-292b-41a0-b84a-629e50616b29"
+        },
+        {
+            "PrimaryNameAttribute": "mkt_name",
+            "LogicalName": "mkt_marketomainwebactivity",
+            "EntitySetName": "mkt_marketomainwebactivities",
+            "MetadataId": "8a135659-4bd7-4fca-96ac-e9094dd0993d"
+        },
+        {
+            "PrimaryNameAttribute": "mkt_name",
+            "LogicalName": "mkt_marketorequestcampaign",
+            "EntitySetName": "mkt_marketorequestcampaigns",
+            "MetadataId": "7adcf6aa-bded-4d2f-9d55-980b487d01a9"
+        },
+        {
+            "PrimaryNameAttribute": "mkt_name",
+            "LogicalName": "mkt_marketosession",
+            "EntitySetName": "mkt_marketosessions",
+            "MetadataId": "eb0004e9-6bb5-46f7-a9a4-350e5d55e8d2"
+        },
+        {
+            "PrimaryNameAttribute": "mkt_name",
+            "LogicalName": "mkt_score",
+            "EntitySetName": "mkt_scores",
+            "MetadataId": "a8c995b1-c971-4242-a626-4520e44f1bc3"
+        },
+        {
+            "PrimaryNameAttribute": "mkt_name",
+            "LogicalName": "mkt_subscribe",
+            "EntitySetName": "mkt_subscribes",
+            "MetadataId": "2d497b79-e289-4423-969d-ff188a98277f"
+        },
+        {
+            "PrimaryNameAttribute": "mkt_name",
+            "LogicalName": "mkt_subscribe_plugin",
+            "EntitySetName": "mkt_subscribe_plugins",
+            "MetadataId": "3daef6dd-4ee1-4265-b7f8-de8bd87583b0"
+        },
+        {
+            "PrimaryNameAttribute": "mkt_page",
+            "LogicalName": "mkt_webactivity",
+            "EntitySetName": "mkt_webactivities",
+            "MetadataId": "2c124146-f987-4a37-944f-5671748d4630"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "mobileofflineprofile",
+            "EntitySetName": "mobileofflineprofiles",
+            "MetadataId": "5d95a551-37f1-417a-8f46-e58ad1781eba"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "mobileofflineprofileitem",
+            "EntitySetName": "mobileofflineprofileitems",
+            "MetadataId": "54c223c9-bf11-419d-a451-dc1b75153460"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "mobileofflineprofileitemassociation",
+            "EntitySetName": "mobileofflineprofileitemassociations",
+            "MetadataId": "d79f6d01-34ff-47f7-9833-a84d8aad58bf"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "monthlyfiscalcalendar",
+            "EntitySetName": "monthlyfiscalcalendars",
+            "MetadataId": "744796e3-cf04-41cd-b424-0a509c2d172a"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_accountkpiitem",
+            "EntitySetName": "msdyn_accountkpiitems",
+            "MetadataId": "6042d105-beab-4ea2-ae0c-91e6fff23c52"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_actioncardregarding",
+            "EntitySetName": "msdyn_actioncardregardings",
+            "MetadataId": "106de525-e0b4-4ab5-8176-5ad11cc7c022"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_actioncardrolesetting",
+            "EntitySetName": "msdyn_actioncardrolesettings",
+            "MetadataId": "19973ffd-e076-4b08-a009-03de23c06d36"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_activityanalysiscleanupstate",
+            "EntitySetName": "msdyn_activityanalysiscleanupstates",
+            "MetadataId": "57f60311-d793-402f-b691-79e2538ded95"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_activityanalysisconfig",
+            "EntitySetName": "msdyn_activityanalysisconfigs",
+            "MetadataId": "14047da5-fdb5-415f-9cc6-7a5edda4c745"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_adaptivecardconfiguration",
+            "EntitySetName": "msdyn_adaptivecardconfigurations",
+            "MetadataId": "79beff8e-c52d-41b5-a03e-b7abf3302d8c"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_aibdataset",
+            "EntitySetName": "msdyn_aibdatasets",
+            "MetadataId": "629fc99c-37d9-455a-bbfe-f4244fb93ba1"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_aibdatasetfile",
+            "EntitySetName": "msdyn_aibdatasetfiles",
+            "MetadataId": "0e753a3f-a72d-4de0-85f0-5c91a4c0e607"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_aibdatasetrecord",
+            "EntitySetName": "msdyn_aibdatasetrecords",
+            "MetadataId": "2fd3a263-144d-46b3-850e-62ca7bea54bc"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_aibdatasetscontainer",
+            "EntitySetName": "msdyn_aibdatasetscontainers",
+            "MetadataId": "85fd28ee-448f-407d-bd44-c08cb666f430"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_aibfile",
+            "EntitySetName": "msdyn_aibfiles",
+            "MetadataId": "747b6fcc-71fd-4dfb-ae47-0d999d4990e7"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_key",
+            "LogicalName": "msdyn_aibfileattacheddata",
+            "EntitySetName": "msdyn_aibfileattacheddatas",
+            "MetadataId": "87052643-f57c-45ec-9ccc-66d32efe1e90"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_aiconfiguration",
+            "EntitySetName": "msdyn_aiconfigurations",
+            "MetadataId": "a5e2d35e-bf99-4936-b337-457507525457"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_aifptrainingdocument",
+            "EntitySetName": "msdyn_aifptrainingdocuments",
+            "MetadataId": "a31e1a85-15b0-47d3-853b-41beb8196114"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_aimodel",
+            "EntitySetName": "msdyn_aimodels",
+            "MetadataId": "3e26b7e8-a3dc-47a9-968a-79f2fd811b99"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_aiodimage",
+            "EntitySetName": "msdyn_aiodimages",
+            "MetadataId": "ab0e9bf8-d6c8-4a80-a665-26da1348d057"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_aiodlabel",
+            "EntitySetName": "msdyn_aiodlabels",
+            "MetadataId": "77b8b98b-dda5-4025-8da6-e13de84e730e"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "msdyn_aiodlabel_msdyn_aiconfiguration",
+            "EntitySetName": "msdyn_aiodlabel_msdyn_aiconfigurationset",
+            "MetadataId": "2290f16f-608a-e911-a82d-000d3a315225"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_aiodtrainingboundingbox",
+            "EntitySetName": "msdyn_aiodtrainingboundingboxes",
+            "MetadataId": "d5702acd-c5a8-44cd-8aca-e38584a7309d"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_aiodtrainingimage",
+            "EntitySetName": "msdyn_aiodtrainingimages",
+            "MetadataId": "cf50f91a-77d9-4a9b-8709-1d08c924bbbe"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_uniquename",
+            "LogicalName": "msdyn_aitemplate",
+            "EntitySetName": "msdyn_aitemplates",
+            "MetadataId": "28601b35-e814-4c8a-b0e9-f201e72e0656"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_analysiscomponent",
+            "EntitySetName": "msdyn_analysiscomponents",
+            "MetadataId": "73be28ed-a382-4728-a3aa-3f728314c7b8"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_analysisjob",
+            "EntitySetName": "msdyn_analysisjobs",
+            "MetadataId": "07f6a9b7-6ed1-4a68-b331-4e6cf117a4fc"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_analysisresult",
+            "EntitySetName": "msdyn_analysisresults",
+            "MetadataId": "136ed6fd-4227-4783-8db9-e4e050d9f73f"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_analysisresultdetail",
+            "EntitySetName": "msdyn_analysisresultdetails",
+            "MetadataId": "716a32c3-f392-4cbd-b061-c6e7fcae7edb"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_analyticsadminsettings",
+            "EntitySetName": "msdyn_analyticsadminsettings",
+            "MetadataId": "d1fe0525-178a-4639-a0d9-019f38b660c7"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_analyticsforcs",
+            "EntitySetName": "msdyn_analyticsforcs",
+            "MetadataId": "d5145903-dfce-42ed-87cd-70563b091e8f"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "msdyn_appconfig_msdyn_channelprovider",
+            "EntitySetName": "msdyn_appconfig_msdyn_channelproviderset",
+            "MetadataId": "e40c8ce3-a316-eb11-a815-000d3a5988c5"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_appconfiguration",
+            "EntitySetName": "msdyn_appconfigurations",
+            "MetadataId": "aa5eaeb1-50b6-4e5f-ba1a-b8054326259f"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "msdyn_appconfiguration_applicationextension",
+            "EntitySetName": "msdyn_appconfiguration_applicationextensionset",
+            "MetadataId": "bd3efcb8-a316-eb11-a815-000d3a5988c5"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "msdyn_appconfiguration_sessiontemplate",
+            "EntitySetName": "msdyn_appconfiguration_sessiontemplateset",
+            "MetadataId": "ed3efcb8-a316-eb11-a815-000d3a5988c5"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "msdyn_appconfiguration_systemuser",
+            "EntitySetName": "msdyn_appconfiguration_systemuserset",
+            "MetadataId": "0349f9be-a316-eb11-a815-000d3a5988c5"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_applicationextension",
+            "EntitySetName": "msdyn_applicationextensions",
+            "MetadataId": "390cf8a2-1f50-49a4-9c6c-5fc43d4ca8b6"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_applicationtabtemplate",
+            "EntitySetName": "msdyn_applicationtabtemplates",
+            "MetadataId": "d093cc37-27ad-4bae-808d-e31e49c3929c"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_assetcategorytemplateassociation",
+            "EntitySetName": "msdyn_assetcategorytemplateassociations",
+            "MetadataId": "77f434da-3da4-4c6a-a6a2-3819ba3cd159"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_assettemplateassociation",
+            "EntitySetName": "msdyn_assettemplateassociations",
+            "MetadataId": "9a2ac7ba-c097-45d8-98e6-ec8f7d74fac8"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_autocapturerule",
+            "EntitySetName": "msdyn_autocapturerules",
+            "MetadataId": "e7a52fb4-7921-4ae7-9fee-fec4447116bf"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_autocapturesettings",
+            "EntitySetName": "msdyn_autocapturesettingses",
+            "MetadataId": "2cf77d4e-bf72-443b-8658-94e9b93279c9"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_EntityLogicalName",
+            "LogicalName": "msdyn_callablecontext",
+            "EntitySetName": "msdyn_callablecontexts",
+            "MetadataId": "fbf21055-948a-4b28-9df7-90854e14470f"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "msdyn_callablecontext_msdyn_playbooktemplate",
+            "EntitySetName": "msdyn_callablecontext_msdyn_playbooktemplateset",
+            "MetadataId": "34f4ba77-e4df-e811-a96d-000d3a3afc58"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_caseenrichment",
+            "EntitySetName": "msdyn_caseenrichments",
+            "MetadataId": "bcb35da7-6c9d-49ba-ac0d-c37c1141bb72"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_casesuggestion",
+            "EntitySetName": "msdyn_casesuggestions",
+            "MetadataId": "916a5a5f-6fff-4d9c-a1cc-beb4930da898"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_casesuggestionrequestpayload",
+            "EntitySetName": "msdyn_casesuggestionrequestpayloads",
+            "MetadataId": "3872fefb-c4b5-4541-adc0-00f64ee86cec"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_casesuggestionsdatasource",
+            "EntitySetName": "msdyn_casesuggestionsdatasources",
+            "MetadataId": "6e9c1c2b-b0bd-4df3-b8d5-795d5550d5d6"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_casetopic",
+            "EntitySetName": "msdyn_casetopics",
+            "MetadataId": "c8660a9f-a6ce-416b-8890-e807537132e2"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_casetopic_incident",
+            "EntitySetName": "msdyn_casetopic_incidents",
+            "MetadataId": "04cf3b0c-6e69-4d75-a3e3-9473f13d65db"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_casetopicsetting",
+            "EntitySetName": "msdyn_casetopicsettings",
+            "MetadataId": "68ccd737-2b31-45c3-bcf8-a8a297b4fe9b"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_casetopicsummary",
+            "EntitySetName": "msdyn_casetopicsummaries",
+            "MetadataId": "9d331087-851a-4c5a-8d6f-a0fd1b3291cf"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_channelprovider",
+            "EntitySetName": "msdyn_channelproviders",
+            "MetadataId": "b40ed2ca-c781-46bf-8946-e7852cb14d1f"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_graphresourcename",
+            "LogicalName": "msdyn_collabgraphresource",
+            "EntitySetName": "msdyn_collabgraphresource",
+            "MetadataId": "87a01d9f-43c2-4886-9506-4645c16b64f3"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_componentlayer",
+            "EntitySetName": "msdyn_componentlayers",
+            "MetadataId": "33f42dfa-0a00-49a6-a556-ee2d3209f88c"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_componentlayerdatasource",
+            "EntitySetName": "msdyn_componentlayerdatasources",
+            "MetadataId": "4f8ad2c9-9733-447c-8295-0c2a93163619"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_connector",
+            "EntitySetName": "msdyn_connectors",
+            "MetadataId": "9db324d7-b173-43fd-979e-d14f0df53922"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_contactkpiitem",
+            "EntitySetName": "msdyn_contactkpiitems",
+            "MetadataId": "bee0f40b-43c7-4164-9f36-aca77efe3a3e"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_customerasset",
+            "EntitySetName": "msdyn_customerassets",
+            "MetadataId": "84c0c6e6-4612-4482-8918-6e4c610ed31c"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_customerassetattachment",
+            "EntitySetName": "msdyn_customerassetattachments",
+            "MetadataId": "4a4606bd-685a-446f-9227-3dcb5a4057d2"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_customerassetcategory",
+            "EntitySetName": "msdyn_customerassetcategories",
+            "MetadataId": "c3c044ad-4e13-46f4-9b87-45c5c8281952"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_dataanalyticsreport",
+            "EntitySetName": "msdyn_dataanalyticsreports",
+            "MetadataId": "a38fe5cb-94c5-4c29-b2fe-37582b72109b"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_dataanalyticsreport_csrmanager",
+            "EntitySetName": "msdyn_dataanalyticsreports_csrmanager",
+            "MetadataId": "bb95934c-5b38-416e-9999-964098408362"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_dataanalyticsreport_ksinsights",
+            "EntitySetName": "msdyn_dataanalyticsreports_ksinsights",
+            "MetadataId": "9e10f1d3-eebd-4da1-b81f-0fb33dda2f16"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_solutionname",
+            "LogicalName": "msdyn_databaseversion",
+            "EntitySetName": "msdyn_databaseversions",
+            "MetadataId": "aaa0aca5-2c36-4e67-a427-ca4eaaf3df5d"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_dataflow",
+            "EntitySetName": "msdyn_dataflows",
+            "MetadataId": "0d1a5000-81de-4dd6-8ed5-452c87c27aa0"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_datainsightsandanalyticsfeature",
+            "EntitySetName": "msdyn_datainsightsandanalyticsfeatures",
+            "MetadataId": "042b1e57-1499-40a0-9934-43d6846c45e1"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_entityrankingrule",
+            "EntitySetName": "msdyn_entityrankingrules",
+            "MetadataId": "20962884-2edd-48d0-8231-47b72a6ebe2d"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_title",
+            "LogicalName": "msdyn_federatedarticle",
+            "EntitySetName": "msdyn_federatedarticles",
+            "MetadataId": "2bd29bf8-f7a2-4962-8a10-d1344afe94c9"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_federatedarticleincident",
+            "EntitySetName": "msdyn_federatedarticleincidents",
+            "MetadataId": "28d8b37e-2ab2-4801-b65c-17f28f2e4064"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_flowcardtype",
+            "EntitySetName": "msdyn_flowcardtypes",
+            "MetadataId": "022d4030-9213-4cba-b835-dc7aeb0a4673"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_forecastconfiguration",
+            "EntitySetName": "msdyn_forecastconfigurations",
+            "MetadataId": "57d6f429-f980-4b05-b4e5-2e2de50db2d7"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_forecastdefinitionname",
+            "LogicalName": "msdyn_forecastdefinition",
+            "EntitySetName": "msdyn_forecastdefinitions",
+            "MetadataId": "9d77b1b7-cd44-40dd-af63-37373279d952"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_forecastname",
+            "LogicalName": "msdyn_forecastinstance",
+            "EntitySetName": "msdyn_forecastinstances",
+            "MetadataId": "9de84dfa-1b81-42ac-b164-7e1e03e61268"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_forecastrecurrence",
+            "EntitySetName": "msdyn_forecastrecurrences",
+            "MetadataId": "9c8f2176-f7bd-43e2-b382-1ebd78549b99"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_functionallocation",
+            "EntitySetName": "msdyn_functionallocations",
+            "MetadataId": "0111ad8f-4b6e-4e71-88e4-1d88bf34ddf8"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_gdprdata",
+            "EntitySetName": "msdyn_gdprdataset",
+            "MetadataId": "58a377e1-667e-45e1-baf3-3760225522b8"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_displayname",
+            "LogicalName": "msdyn_helppage",
+            "EntitySetName": "msdyn_helppages",
+            "MetadataId": "e6dd92a4-06ec-46db-bd3d-19ce96189f13"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_icebreakersconfig",
+            "EntitySetName": "msdyn_icebreakersconfigs",
+            "MetadataId": "d49255a5-23b3-4615-aaa6-2a89be97e3ed"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "msdyn_incident_msdyn_customerasset",
+            "EntitySetName": "msdyn_incident_msdyn_customerassetset",
+            "MetadataId": "4114f346-a49c-ea11-a812-000d3a5a78d3"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_description",
+            "LogicalName": "msdyn_iotalert",
+            "EntitySetName": "msdyn_iotalerts",
+            "MetadataId": "c2159e65-e4f7-4b07-b8e7-62f109b45270"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_iotdevice",
+            "EntitySetName": "msdyn_iotdevices",
+            "MetadataId": "c84cd381-983c-4f67-ae8c-41139bba349b"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_iotdevicecategory",
+            "EntitySetName": "msdyn_iotdevicecategories",
+            "MetadataId": "8e6997b7-9c0b-4e87-b417-1ed43de347bb"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "msdyn_iotdevicecategorycommands",
+            "EntitySetName": "msdyn_iotdevicecategorycommandsset",
+            "MetadataId": "aae9a292-a39c-ea11-a812-000d3a5a78d3"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_iotdevicecommand",
+            "EntitySetName": "msdyn_iotdevicecommands",
+            "MetadataId": "4e8cfa47-6067-4a7a-b632-4294bf75b0c7"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_iotdevicecommanddefinition",
+            "EntitySetName": "msdyn_iotdevicecommanddefinitions",
+            "MetadataId": "bc5c60de-a6c8-48d1-8138-ae753537b450"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "msdyn_iotdevicecommandparameters",
+            "EntitySetName": "msdyn_iotdevicecommandparametersset",
+            "MetadataId": "b8e9a292-a39c-ea11-a812-000d3a5a78d3"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_iotdevicedatahistory",
+            "EntitySetName": "msdyn_iotdevicedatahistory",
+            "MetadataId": "a716ac8c-ad97-46a1-8419-43f9c93656cc"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_iotdeviceproperty",
+            "EntitySetName": "msdyn_iotdeviceproperties",
+            "MetadataId": "bfdc5a1d-58c9-405f-a7db-7c00a1f4f606"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_iotdeviceregistrationhistory",
+            "EntitySetName": "msdyn_iotdeviceregistrationhistories",
+            "MetadataId": "7f9720b9-e008-4c87-a641-3b05238b9024"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_iotdevicevisualizationconfiguration",
+            "EntitySetName": "msdyn_iotdevicevisualizationconfigurations",
+            "MetadataId": "be6abf0e-cdbd-4cd5-9184-1b9f3a535db1"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_modelinputfieldname",
+            "LogicalName": "msdyn_iotfieldmapping",
+            "EntitySetName": "msdyn_iotfieldmappings",
+            "MetadataId": "560b13ae-3878-4dec-9873-05f5d67f72d2"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_iotpropertydefinition",
+            "EntitySetName": "msdyn_iotpropertydefinitions",
+            "MetadataId": "1b3e7c08-5161-4027-82c4-fe16ae357a17"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_iotprovider",
+            "EntitySetName": "msdyn_iotproviders",
+            "MetadataId": "e4e0fa81-69d4-41e8-8ede-c543212348ff"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_iotproviderinstance",
+            "EntitySetName": "msdyn_iotproviderinstances",
+            "MetadataId": "dc65abb1-1907-40e4-a54a-52ac456b5aa0"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_iotsettings",
+            "EntitySetName": "msdyn_iotsettingses",
+            "MetadataId": "2499d3df-7ef6-4a35-8c12-15410a0e35a4"
+        },
+        {
+            "PrimaryNameAttribute": "bpf_name",
+            "LogicalName": "msdyn_iottocaseprocess",
+            "EntitySetName": "msdyn_iottocaseprocesses",
+            "MetadataId": "e002fbbc-b0b2-4a65-ae07-eec3d442c79d"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_kalanguagesetting",
+            "EntitySetName": "msdyn_kalanguagesettings",
+            "MetadataId": "27022e8d-63c2-4838-b282-24b129934379"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_kbenrichment",
+            "EntitySetName": "msdyn_kbenrichments",
+            "MetadataId": "4424bbdb-4ddf-419a-a5ed-6a8722d7833f"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_kmfederatedsearchconfig",
+            "EntitySetName": "msdyn_kmfederatedsearchconfigs",
+            "MetadataId": "2494ef90-1360-45cd-a30b-8a112dd165eb"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_kmpersonalizationsetting",
+            "EntitySetName": "msdyn_kmpersonalizationsettings",
+            "MetadataId": "5b8fcfce-e7ac-4afd-9481-ba5831a04039"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_filename",
+            "LogicalName": "msdyn_knowledgearticleimage",
+            "EntitySetName": "msdyn_knowledgearticleimages",
+            "MetadataId": "3e7c2724-5c26-4648-afd7-c4e3fe1aef91"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_knowledgearticlesuggestion",
+            "EntitySetName": "msdyn_knowledgearticlesuggestions",
+            "MetadataId": "833cb9e5-4647-41a7-8070-bdc26ec3620f"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_knowledgearticlesuggestiondatasource",
+            "EntitySetName": "msdyn_knowledgearticlesuggestiondatasources",
+            "MetadataId": "39916b83-5b59-4b64-8a6a-4e58029677af"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_knowledgearticletemplate",
+            "EntitySetName": "msdyn_knowledgearticletemplates",
+            "MetadataId": "6052b979-ce1b-4888-bd4e-f00a5218d265"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_interactiontype",
+            "LogicalName": "msdyn_knowledgeinteractioninsight",
+            "EntitySetName": "msdyn_knowledgeinteractioninsights",
+            "MetadataId": "01d9697b-6bcc-4f50-a919-4660747d4992"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_knowledgepersonalfilter",
+            "EntitySetName": "msdyn_knowledgepersonalfilters",
+            "MetadataId": "f9ed8e9f-66ca-4e39-8d69-b7bf38f8c664"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_knowledgesearchfilter",
+            "EntitySetName": "msdyn_knowledgesearchfilters",
+            "MetadataId": "360573a0-eaf7-4bf1-9ac4-7ab57c375cb1"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_searchterm",
+            "LogicalName": "msdyn_knowledgesearchinsight",
+            "EntitySetName": "msdyn_knowledgesearchinsights",
+            "MetadataId": "10e6b9e3-178e-4371-b316-d8455f618064"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_leadkpiitem",
+            "EntitySetName": "msdyn_leadkpiitems",
+            "MetadataId": "7f70bca5-3aa0-430f-b381-5ff5c9a190d5"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_leadmodelconfig",
+            "EntitySetName": "msdyn_leadmodelconfigs",
+            "MetadataId": "695d25a2-e95e-4044-848e-c783cd6c9704"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_macrosession",
+            "EntitySetName": "msdyn_macrosessions",
+            "MetadataId": "74d6ad4f-c0b0-4475-a81d-9bc1ed986980"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_migrationtracker",
+            "EntitySetName": "msdyn_migrationtrackers",
+            "MetadataId": "05d5fafc-a74f-436d-a2ac-bdcc71d00fd7"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_modelpreviewstatus",
+            "EntitySetName": "msdyn_modelpreviewstatuses",
+            "MetadataId": "a20bd6ed-d112-497d-8a75-bdde5a29452e"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_primaryname",
+            "LogicalName": "msdyn_mostcontacted",
+            "EntitySetName": "msdyn_mostcontacteds",
+            "MetadataId": "b0d6765e-3caf-448a-a10f-92af21a57787"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_primaryname",
+            "LogicalName": "msdyn_mostcontactedby",
+            "EntitySetName": "msdyn_mostcontactedbies",
+            "MetadataId": "dc7a84b8-a823-4c61-b23b-6c6a0b491429"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "msdyn_msdyn_functionallocation_account",
+            "EntitySetName": "msdyn_msdyn_functionallocation_accountset",
+            "MetadataId": "7fb81adb-a216-eb11-a815-000d3a5988c5"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "msdyn_msdyn_paneconfig_msdyn_appconfig",
+            "EntitySetName": "msdyn_msdyn_paneconfig_msdyn_appconfigset",
+            "MetadataId": "8f179b0d-a416-eb11-a815-000d3a5988c5"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "msdyn_msdyn_prod_actioninputparameter_msdyn_par",
+            "EntitySetName": "msdyn_msdyn_prod_actioninputparameter_msdyn_parset",
+            "MetadataId": "f622f56e-a416-eb11-a815-000d3a5988c5"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "msdyn_msdyn_prod_actionoutputparameter_msdyn_pa",
+            "EntitySetName": "msdyn_msdyn_prod_actionoutputparameter_msdyn_paset",
+            "MetadataId": "5e040a75-a416-eb11-a815-000d3a5988c5"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "msdyn_msdyn_prod_agentscript_msdyn_sessiontempl",
+            "EntitySetName": "msdyn_msdyn_prod_agentscript_msdyn_sessiontemplset",
+            "MetadataId": "66013532-a416-eb11-a815-000d3a5988c5"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_msteamssettingsname",
+            "LogicalName": "msdyn_msteamssetting",
+            "EntitySetName": "msdyn_msteamssettings",
+            "MetadataId": "bee54d5f-844e-487c-b84b-d855d72b631c"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_msteamssettingsname",
+            "LogicalName": "msdyn_msteamssettingsv2",
+            "EntitySetName": "msdyn_msteamssettingsv2",
+            "MetadataId": "ab08e913-9cba-4cba-97ca-92d7f762074c"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_nonrelationalds",
+            "EntitySetName": "msdyn_nonrelationaldses",
+            "MetadataId": "e413e2be-d65e-427f-bf06-ddbae370f7bf"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_notesanalysisconfig",
+            "EntitySetName": "msdyn_notesanalysisconfigs",
+            "MetadataId": "0068e295-893f-4b81-81aa-7f6c36423ddd"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_notificationfield",
+            "EntitySetName": "msdyn_notificationfields",
+            "MetadataId": "a86ece2d-142b-4b2b-97fc-58920488f2be"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_notificationtemplate",
+            "EntitySetName": "msdyn_notificationtemplates",
+            "MetadataId": "1693787f-9605-4f5e-9b10-dbf8609ecb52"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "msdyn_notificationtemplate_notificationfield",
+            "EntitySetName": "msdyn_notificationtemplate_notificationfieldset",
+            "MetadataId": "d71bf6b2-a316-eb11-a815-000d3a5988c5"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_odatav4ds",
+            "EntitySetName": "msdyn_odatav4ds",
+            "MetadataId": "c1cc89d4-ec87-4467-aea5-6cd2992ddc77"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_opportunitykpiitem",
+            "EntitySetName": "msdyn_opportunitykpiitems",
+            "MetadataId": "cb6d31cb-c1a4-495c-a8e2-fc6a15c9d314"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_opportunitymodelconfig",
+            "EntitySetName": "msdyn_opportunitymodelconfigs",
+            "MetadataId": "013da8bf-8ad9-4004-958e-c619d0fdc7ec"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_paneconfiguration",
+            "EntitySetName": "msdyn_paneconfigurations",
+            "MetadataId": "564d1728-0ef2-455c-bc1a-f23e42a0cb3b"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_panetabconfiguration",
+            "EntitySetName": "msdyn_panetabconfigurations",
+            "MetadataId": "2dff2ca0-4887-47ae-8356-96ecf43b1e91"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_panetoolconfiguration",
+            "EntitySetName": "msdyn_panetoolconfigurations",
+            "MetadataId": "55f80921-7c29-4c09-ad52-9e02f857b42c"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_subject",
+            "LogicalName": "msdyn_playbookactivity",
+            "EntitySetName": "msdyn_playbookactivities",
+            "MetadataId": "41cffaa2-79cb-4685-a1d8-5346b4c34ebb"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_attributeLogicalName",
+            "LogicalName": "msdyn_playbookactivityattribute",
+            "EntitySetName": "msdyn_playbookactivityattributes",
+            "MetadataId": "ddc9f705-3463-407c-a0a6-eb88d19004df"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_playbookcategory",
+            "EntitySetName": "msdyn_playbookcategories",
+            "MetadataId": "d88682fb-c14d-4b76-9114-8a5697140eb8"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_playbookinstance",
+            "EntitySetName": "msdyn_playbookinstances",
+            "MetadataId": "08bac9e4-1435-43c9-9e41-305e17c75290"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_playbooktemplate",
+            "EntitySetName": "msdyn_playbooktemplates",
+            "MetadataId": "b3e5006a-6e91-4fbc-994b-af17bafe7b97"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_pminferredtask",
+            "EntitySetName": "msdyn_pminferredtasks",
+            "MetadataId": "4d130d59-6f45-4497-986d-6353ebd1811c"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_pmrecording",
+            "EntitySetName": "msdyn_pmrecordings",
+            "MetadataId": "d181c55f-ad75-4646-8e2a-b870cf2ec4ac"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_postalbum",
+            "EntitySetName": "msdyn_postalbums",
+            "MetadataId": "29eb8372-7b54-4bd0-a330-e0a2bcd345b2"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_entitydisplayname",
+            "LogicalName": "msdyn_postconfig",
+            "EntitySetName": "msdyn_postconfigs",
+            "MetadataId": "5da4c702-421e-4fcf-94f6-bd77df1fb972"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_postruleconfig",
+            "EntitySetName": "msdyn_postruleconfigs",
+            "MetadataId": "5e70c1db-0382-4e75-82f7-245db21b2106"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_predictivemodelconfig",
+            "EntitySetName": "msdyn_predictivemodelconfigs",
+            "MetadataId": "d62e9d6e-8209-4cd6-b281-dbb8046b10b3"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_productivityactioninputparameter",
+            "EntitySetName": "msdyn_productivityactioninputparameters",
+            "MetadataId": "53bd1230-3ea9-4dc0-bbdc-17a6233a499c"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_productivityactionoutputparameter",
+            "EntitySetName": "msdyn_productivityactionoutputparameters",
+            "MetadataId": "bb094fe1-2da0-41e1-b796-70d786997724"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_productivityagentscript",
+            "EntitySetName": "msdyn_productivityagentscripts",
+            "MetadataId": "bd6963df-432f-47c6-8447-4f8ca01095e8"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_productivityagentscriptstep",
+            "EntitySetName": "msdyn_productivityagentscriptsteps",
+            "MetadataId": "21c34dd2-c8a0-442c-aa24-3fd3620033eb"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_productivitymacroactiontemplate",
+            "EntitySetName": "msdyn_productivitymacroactiontemplates",
+            "MetadataId": "4ca76d19-7e7a-46de-8a47-755549cbfa54"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_productivitymacroconnector",
+            "EntitySetName": "msdyn_productivitymacroconnectors",
+            "MetadataId": "841dbd6f-6841-4409-b250-0fbe92d57b64"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_productivitymacrosolutionconfiguration",
+            "EntitySetName": "msdyn_productivitymacrosolutionconfigurations",
+            "MetadataId": "91cfde73-4801-4c11-8a1c-a801424cb478"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_productivityparameterdefinition",
+            "EntitySetName": "msdyn_productivityparameterdefinitions",
+            "MetadataId": "2f690c02-9e3c-4600-9fc9-bff0d46bee5f"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_property",
+            "EntitySetName": "msdyn_properties",
+            "MetadataId": "ef311a6d-666d-4139-b3fd-18eddc6735f3"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_propertyassetassociation",
+            "EntitySetName": "msdyn_propertyassetassociations",
+            "MetadataId": "d36703b0-08f5-4f2e-8520-c5f80d704378"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_propertylog",
+            "EntitySetName": "msdyn_propertylogs",
+            "MetadataId": "da649ade-d2a6-433f-a8f9-42ee42a0f082"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_propertytemplateassociation",
+            "EntitySetName": "msdyn_propertytemplateassociations",
+            "MetadataId": "9ed94d73-a1bf-4688-aa4b-84697197fade"
+        },
+        {
+            "PrimaryNameAttribute": "new_name",
+            "LogicalName": "msdyn_relationshipinsightsunifiedconfig",
+            "EntitySetName": "msdyn_relationshipinsightsunifiedconfigs",
+            "MetadataId": "3027d965-eadb-4c49-862b-0a20ec8d8270"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_richtextfile",
+            "EntitySetName": "msdyn_richtextfiles",
+            "MetadataId": "8ef7dda8-d5c7-40af-bfe8-6f11a5b3d2b5"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_salesinsightssettings",
+            "EntitySetName": "msdyn_salesinsightssettings",
+            "MetadataId": "b720ad36-0574-4084-b76e-edb239e8f1e0"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_serviceconfiguration",
+            "EntitySetName": "msdyn_serviceconfigurations",
+            "MetadataId": "f6d63591-545f-4de9-8116-ad8a85d32b72"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_sessiontemplate",
+            "EntitySetName": "msdyn_sessiontemplates",
+            "MetadataId": "39cae382-7930-440c-94bf-18909ec87a98"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "msdyn_sessiontemplate_applicationtab",
+            "EntitySetName": "msdyn_sessiontemplate_applicationtabset",
+            "MetadataId": "7b3efcb8-a316-eb11-a815-000d3a5988c5"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_version",
+            "LogicalName": "msdyn_siconfig",
+            "EntitySetName": "msdyn_siconfigs",
+            "MetadataId": "cf96089e-2199-4b9b-9350-fb6f60624e96"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_configkey",
+            "LogicalName": "msdyn_sikeyvalueconfig",
+            "EntitySetName": "msdyn_sikeyvalueconfigs",
+            "MetadataId": "dd9d30d8-5212-4046-9312-96c0c9ed4575"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_slakpi",
+            "EntitySetName": "msdyn_slakpis",
+            "MetadataId": "55358b4a-3801-ea11-a81f-000d3ac3043b"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_smartassistconfig",
+            "EntitySetName": "msdyn_smartassistconfigs",
+            "MetadataId": "ef7f5240-f22f-4c8b-a80c-bf68bd8d92db"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "msdyn_smartassistconfig_msdyn_appconfig",
+            "EntitySetName": "msdyn_smartassistconfig_msdyn_appconfigset",
+            "MetadataId": "582481b8-a416-eb11-a815-000d3a5988c5"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_solutioncomponentdatasource",
+            "EntitySetName": "msdyn_solutioncomponentdatasources",
+            "MetadataId": "1e9e0098-bf74-4572-8cfd-e99660b211f3"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_solutioncomponentsummary",
+            "EntitySetName": "msdyn_solutioncomponentsummaries",
+            "MetadataId": "55375acd-a154-4c38-8220-128050aeaad9"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_solutionhealthrule",
+            "EntitySetName": "msdyn_solutionhealthrules",
+            "MetadataId": "6907be22-9298-4c0f-ad0e-49f7dbb05bba"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_solutionhealthruleargument",
+            "EntitySetName": "msdyn_solutionhealthrulearguments",
+            "MetadataId": "806a4e26-b57f-4fab-99d9-3b9fbf177f88"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_solutionhealthruleset",
+            "EntitySetName": "msdyn_solutionhealthrulesets",
+            "MetadataId": "5317274b-0329-4acb-8b74-788c54b1ba24"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_solutionhistory",
+            "EntitySetName": "msdyn_solutionhistories",
+            "MetadataId": "ea51c2a5-4adb-4e96-a456-6430f0070b7a"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_solutionhistorydatasource",
+            "EntitySetName": "msdyn_solutionhistorydatasources",
+            "MetadataId": "7f3b1bc3-be0a-4c85-9dba-d43e76a035ee"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_subject",
+            "LogicalName": "msdyn_suggestedactivity",
+            "EntitySetName": "msdyn_suggestedactivities",
+            "MetadataId": "14838ae0-68e5-4f2e-9180-ca0964bfd9ef"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_suggestedactivitydatasource",
+            "EntitySetName": "msdyn_suggestedactivitydatasources",
+            "MetadataId": "77636fea-1201-4694-88a3-8928435e93d7"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_fullname",
+            "LogicalName": "msdyn_suggestedcontact",
+            "EntitySetName": "msdyn_suggestedcontacts",
+            "MetadataId": "140867ed-75cc-4a23-bf34-ef4ff24f497a"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_suggestedcontactsdatasource",
+            "EntitySetName": "msdyn_suggestedcontactsdatasources",
+            "MetadataId": "1492d6a0-40a5-429e-8578-d6ba546c3157"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_interactiontype",
+            "LogicalName": "msdyn_suggestioninteraction",
+            "EntitySetName": "msdyn_suggestioninteractions",
+            "MetadataId": "33ce9a4b-f374-4cfc-b2ff-3a1e5fefc5cf"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_suggestedentitylogicalname",
+            "LogicalName": "msdyn_suggestionrequestpayload",
+            "EntitySetName": "msdyn_suggestionrequestpayloads",
+            "MetadataId": "86b949cd-9825-4022-ab31-2bb8b885a610"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_suggestionsmodelsummary",
+            "EntitySetName": "msdyn_suggestionsmodelsummaries",
+            "MetadataId": "ec5611dc-7114-4ed4-bc93-7a19dda871cf"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_suggestionssetting",
+            "EntitySetName": "msdyn_suggestionssettings",
+            "MetadataId": "3fe6b4c1-0c6c-430c-aa97-7a323382d001"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_teamname",
+            "LogicalName": "msdyn_teamscollaboration",
+            "EntitySetName": "msdyn_teamscollaborations",
+            "MetadataId": "a94f00cc-e648-40b9-9da2-32ad8fe99d94"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_teamsdialeradminsettings",
+            "EntitySetName": "msdyn_teamsdialeradminsettingset",
+            "MetadataId": "d85f96f4-6dfc-41d9-85b4-38340689295a"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_templateforproperties",
+            "EntitySetName": "msdyn_templateforpropertieses",
+            "MetadataId": "77b7272f-dc6e-4945-a44c-df9ee58d5bb7"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_templateparameter",
+            "EntitySetName": "msdyn_templateparameters",
+            "MetadataId": "baa52a61-8f13-499e-90d0-1c0a915ae8bb"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_displayname",
+            "LogicalName": "msdyn_tour",
+            "EntitySetName": "msdyn_tours",
+            "MetadataId": "27f58ddf-c02b-40ea-bd1c-b269f75553a6"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_unifiedroutingsetuptracker",
+            "EntitySetName": "msdyn_unifiedroutingsetuptrackers",
+            "MetadataId": "47785c71-c106-4a41-87d6-76699fc593fd"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_untrackedappointment",
+            "EntitySetName": "msdyn_untrackedappointments",
+            "MetadataId": "95c0227c-154f-44b6-9ad2-8a18a7e78164"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_summary",
+            "LogicalName": "msdyn_upgraderun",
+            "EntitySetName": "msdyn_upgraderuns",
+            "MetadataId": "4bc87dde-d936-446c-a198-155ef928f321"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_upgradestep",
+            "EntitySetName": "msdyn_upgradesteps",
+            "MetadataId": "b3bfcc25-38c0-4419-a0c6-45164d5c071a"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_summary",
+            "LogicalName": "msdyn_upgradeversion",
+            "EntitySetName": "msdyn_upgradeversions",
+            "MetadataId": "83a23780-a405-42cc-9b8d-ccae2bafaaf5"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_entityname",
+            "LogicalName": "msdyn_wallsavedquery",
+            "EntitySetName": "msdyn_wallsavedqueries",
+            "MetadataId": "a1a84f05-4b47-4554-aeb5-12676c851c36"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_entityname",
+            "LogicalName": "msdyn_wallsavedqueryusersettings",
+            "EntitySetName": "msdyn_wallsavedqueryusersettingses",
+            "MetadataId": "252e226f-3e10-4699-bea8-90efc39b112c"
+        },
+        {
+            "PrimaryNameAttribute": "msdyn_name",
+            "LogicalName": "msdyn_wkwconfig",
+            "EntitySetName": "msdyn_wkwconfigs",
+            "MetadataId": "1011a79d-0061-4da9-af0a-427b2848963c"
+        },
+        {
+            "PrimaryNameAttribute": "msdynce_autonumber",
+            "LogicalName": "msdynce_botcontent",
+            "EntitySetName": "msdynce_botcontents",
+            "MetadataId": "9bcb2cf4-2dac-4850-a35c-432da7efb269"
+        },
+        {
+            "PrimaryNameAttribute": "subject",
+            "LogicalName": "msfp_alert",
+            "EntitySetName": "msfp_alerts",
+            "MetadataId": "d0e6925f-96a1-465e-91ec-ef947f6b65a4"
+        },
+        {
+            "PrimaryNameAttribute": "msfp_name",
+            "LogicalName": "msfp_alertrule",
+            "EntitySetName": "msfp_alertrules",
+            "MetadataId": "e69cf985-c9f8-4969-93d1-efe920ae6b4d"
+        },
+        {
+            "PrimaryNameAttribute": "msfp_name",
+            "LogicalName": "msfp_emailtemplate",
+            "EntitySetName": "msfp_emailtemplates",
+            "MetadataId": "0e0a0a4e-0c90-48a9-b85d-2b6b62142eb6"
+        },
+        {
+            "PrimaryNameAttribute": "msfp_name",
+            "LogicalName": "msfp_fileresponse",
+            "EntitySetName": "msfp_fileresponses",
+            "MetadataId": "e2759ca8-3df1-43c0-a568-b77e2df02304"
+        },
+        {
+            "PrimaryNameAttribute": "msfp_name",
+            "LogicalName": "msfp_localizedemailtemplate",
+            "EntitySetName": "msfp_localizedemailtemplates",
+            "MetadataId": "4af07b93-0c5b-47df-94f0-ea2ed545813d"
+        },
+        {
+            "PrimaryNameAttribute": "msfp_name",
+            "LogicalName": "msfp_project",
+            "EntitySetName": "msfp_projects",
+            "MetadataId": "44075119-fc01-488b-9d81-ac387645755f"
+        },
+        {
+            "PrimaryNameAttribute": "msfp_name",
+            "LogicalName": "msfp_question",
+            "EntitySetName": "msfp_questions",
+            "MetadataId": "f94c2628-eb93-4689-99a4-e91c2d239a2d"
+        },
+        {
+            "PrimaryNameAttribute": "msfp_name",
+            "LogicalName": "msfp_questionresponse",
+            "EntitySetName": "msfp_questionresponses",
+            "MetadataId": "9de6e4de-abaa-4c88-a4ea-058a96544469"
+        },
+        {
+            "PrimaryNameAttribute": "msfp_name",
+            "LogicalName": "msfp_satisfactionmetric",
+            "EntitySetName": "msfp_satisfactionmetrics",
+            "MetadataId": "3aad3595-39e8-45e8-ac91-a00397bdf50f"
+        },
+        {
+            "PrimaryNameAttribute": "msfp_name",
+            "LogicalName": "msfp_survey",
+            "EntitySetName": "msfp_surveies",
+            "MetadataId": "81116c8a-ee79-4b4a-85db-37e85e3f038b"
+        },
+        {
+            "PrimaryNameAttribute": "subject",
+            "LogicalName": "msfp_surveyinvite",
+            "EntitySetName": "msfp_surveyinvites",
+            "MetadataId": "05779ff4-f170-4b6a-b313-1617e2ab1c57"
+        },
+        {
+            "PrimaryNameAttribute": "msfp_name",
+            "LogicalName": "msfp_surveyreminder",
+            "EntitySetName": "msfp_surveyreminders",
+            "MetadataId": "6c65d268-b974-4250-83e8-1d9046fca462"
+        },
+        {
+            "PrimaryNameAttribute": "subject",
+            "LogicalName": "msfp_surveyresponse",
+            "EntitySetName": "msfp_surveyresponses",
+            "MetadataId": "0acced54-aff8-4b29-8e3b-0c29e218612a"
+        },
+        {
+            "PrimaryNameAttribute": "msfp_name",
+            "LogicalName": "msfp_unsubscribedrecipient",
+            "EntitySetName": "msfp_unsubscribedrecipients",
+            "MetadataId": "e1eb4048-8282-4b57-9acc-7050d8f5affb"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "multientitysearch",
+            "EntitySetName": "multientitysearches",
+            "MetadataId": "53160b5c-7632-4a3d-91dc-476ca269d062"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "multientitysearchentities",
+            "EntitySetName": "multientitysearchentitiescollection",
+            "MetadataId": "5b8ddadf-b870-44b8-9306-431d58548310"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "multiselectattributeoptionvalues",
+            "EntitySetName": "multiselectattributeoptionvaluescollection",
+            "MetadataId": "7f6ba863-fa9e-46f0-b8bd-f422967dd470"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "navigationsetting",
+            "EntitySetName": "navigationsettings",
+            "MetadataId": "28f11963-c768-4e52-be72-9f82769e935d"
+        },
+        {
+            "PrimaryNameAttribute": "new_name",
+            "LogicalName": "new_companytags",
+            "EntitySetName": "new_companytagses",
+            "MetadataId": "8b0bd63b-cea7-4135-9bce-0f9b941315d1"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "newprocess",
+            "EntitySetName": "newprocesses",
+            "MetadataId": "140046ca-15ab-4f24-a937-3e8204bd4185"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "notification",
+            "EntitySetName": "notifications",
+            "MetadataId": "34944172-f2c4-4b41-99a6-81564b3a29c1"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "officedocument",
+            "EntitySetName": "officedocuments",
+            "MetadataId": "46f43845-9372-458b-b18f-22374362641f"
+        },
+        {
+            "PrimaryNameAttribute": "title",
+            "LogicalName": "officegraphdocument",
+            "EntitySetName": "officegraphdocuments",
+            "MetadataId": "45e04b88-2ee3-e411-a1ed-00219b3e91e8"
+        },
+        {
+            "PrimaryNameAttribute": "commandname",
+            "LogicalName": "offlinecommanddefinition",
+            "EntitySetName": "offlinecommanddefinitions",
+            "MetadataId": "e7040620-9cb0-443d-ad1c-43fd42ec28e7"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "opportunity",
+            "EntitySetName": "opportunities",
+            "MetadataId": "30b0cd7e-0081-42e1-9a48-688442277fae"
+        },
+        {
+            "PrimaryNameAttribute": "subject",
+            "LogicalName": "opportunityclose",
+            "EntitySetName": "opportunitycloses",
+            "MetadataId": "dc22c553-5e16-45d3-8842-d142bef3877e"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "opportunitycompetitors",
+            "EntitySetName": "opportunitycompetitorscollection",
+            "MetadataId": "18eb9672-3070-478c-be5b-e0324acb1188"
+        },
+        {
+            "PrimaryNameAttribute": "opportunityproductname",
+            "LogicalName": "opportunityproduct",
+            "EntitySetName": "opportunityproducts",
+            "MetadataId": "8a4283a8-eef3-4915-9e20-055dc136663d"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "opportunitysalesprocess",
+            "EntitySetName": "opportunitysalesprocesses",
+            "MetadataId": "6109cfa4-f87c-4a75-bb61-cbd1ccb40338"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "optionset",
+            "EntitySetName": "optionsets",
+            "MetadataId": "80910f4a-0f8d-4098-9bdd-cea51aaad39f"
+        },
+        {
+            "PrimaryNameAttribute": "subject",
+            "LogicalName": "orderclose",
+            "EntitySetName": "ordercloses",
+            "MetadataId": "89fefcf4-6eec-4bb4-bfb0-87dfb9bb9930"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "organization",
+            "EntitySetName": "organizations",
+            "MetadataId": "e1bd1119-6e9d-45a4-bc15-12051e65a0bd"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "organizationdatasyncsubscription",
+            "EntitySetName": "organizationdatasyncsubscriptions",
+            "MetadataId": "16340045-ac89-402b-acde-5ba99a617857"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "organizationdatasyncsubscriptionentity",
+            "EntitySetName": "organizationdatasyncsubscriptionentities",
+            "MetadataId": "756a8e91-3a0f-472f-a79c-d0f851564a1b"
+        },
+        {
+            "PrimaryNameAttribute": "displayname",
+            "LogicalName": "organizationsetting",
+            "EntitySetName": "organizationsettings",
+            "MetadataId": "e78f170d-a262-42fd-88b2-328935c3aa62"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "organizationstatistic",
+            "EntitySetName": "organizationstatistics",
+            "MetadataId": "b96a4113-d5a7-470f-963e-e421d6a2ff15"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "organizationui",
+            "EntitySetName": "organizationuis",
+            "MetadataId": "d502d3ca-6ef4-406c-8bc3-c3c9de070505"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "orginsightsmetric",
+            "EntitySetName": "orginsightsmetrics",
+            "MetadataId": "9a2ae977-3896-444b-90d3-4802a78b5ef8"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "orginsightsnotification",
+            "EntitySetName": "orginsightsnotifications",
+            "MetadataId": "e0341110-40ab-4bac-aee2-df96fedefb1c"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "owner",
+            "EntitySetName": "owners",
+            "MetadataId": "7ea20f33-8a1a-4ebc-8f06-1e2bd9fa0b77"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "ownermapping",
+            "EntitySetName": "ownermappings",
+            "MetadataId": "37b56e80-7493-4eb1-b845-49ca0dc13e45"
+        },
+        {
+            "PrimaryNameAttribute": "packageuniquename",
+            "LogicalName": "package",
+            "EntitySetName": "packages",
+            "MetadataId": "7b1ea650-a42d-4018-bf14-1949536c8540"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "package_solution",
+            "EntitySetName": "package_solutionset",
+            "MetadataId": "785d631d-af06-eb11-a812-000d3a5988c5"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "partnerapplication",
+            "EntitySetName": "partnerapplications",
+            "MetadataId": "a030cb7a-84b1-4589-ba21-09764965e730"
+        },
+        {
+            "PrimaryNameAttribute": "entityname",
+            "LogicalName": "pdfsetting",
+            "EntitySetName": "pdfsettings",
+            "MetadataId": "7f1abc2d-bb52-451d-85b7-85a1b9d88ba2"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "personaldocumenttemplate",
+            "EntitySetName": "personaldocumenttemplates",
+            "MetadataId": "2c5a4778-c84d-43d3-981e-e07599d65884"
+        },
+        {
+            "PrimaryNameAttribute": "subject",
+            "LogicalName": "phonecall",
+            "EntitySetName": "phonecalls",
+            "MetadataId": "21538890-1e54-4171-aca8-7ec97a9c652c"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "phonetocaseprocess",
+            "EntitySetName": "phonetocaseprocesses",
+            "MetadataId": "6e5d8ab9-7517-4044-a991-539e99e1c34c"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "picklistmapping",
+            "EntitySetName": "picklistmappings",
+            "MetadataId": "599edf51-04df-4262-848c-767a067c3f04"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "pluginassembly",
+            "EntitySetName": "pluginassemblies",
+            "MetadataId": "a082a3da-e001-485a-b3e6-c7bdc272bb5a"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "pluginpackage",
+            "EntitySetName": "pluginpackages",
+            "MetadataId": "307c2e89-8a71-eb11-bb2b-000d3a6ea556"
+        },
+        {
+            "PrimaryNameAttribute": "typename",
+            "LogicalName": "plugintracelog",
+            "EntitySetName": "plugintracelogs",
+            "MetadataId": "e5ccda81-e811-4a39-bb1d-3b963c1feca3"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "plugintype",
+            "EntitySetName": "plugintypes",
+            "MetadataId": "19c3d508-f870-43a6-8703-aa35812a4c96"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "plugintypestatistic",
+            "EntitySetName": "plugintypestatistics",
+            "MetadataId": "5965a037-fa31-49ba-8cfb-3630cb81d8db"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "position",
+            "EntitySetName": "positions",
+            "MetadataId": "9e750f35-13ae-e311-80c2-00155d9dac1a"
+        },
+        {
+            "PrimaryNameAttribute": "text",
+            "LogicalName": "post",
+            "EntitySetName": "posts",
+            "MetadataId": "f65acfb0-ff92-4fa3-82e2-e99d5a66c97b"
+        },
+        {
+            "PrimaryNameAttribute": "text",
+            "LogicalName": "postcomment",
+            "EntitySetName": "postcomments",
+            "MetadataId": "fb32f7cb-7696-11e0-a0f5-1cc1de634cfe"
+        },
+        {
+            "PrimaryNameAttribute": "regardingobjectidname",
+            "LogicalName": "postfollow",
+            "EntitySetName": "postfollows",
+            "MetadataId": "84a5c837-6210-11e0-834f-1cc1de634cfe"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "postlike",
+            "EntitySetName": "postlikes",
+            "MetadataId": "b5fa3433-7692-11e0-a0f5-1cc1de634cfe"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "postregarding",
+            "EntitySetName": "postregardings",
+            "MetadataId": "0a487440-6169-11e0-834f-1cc1de634cfe"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "postrole",
+            "EntitySetName": "postroles",
+            "MetadataId": "3163fcae-60aa-11e0-834f-1cc1de634cfe"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "ppt_account_ppt_oem",
+            "EntitySetName": "ppt_account_ppt_oemset",
+            "MetadataId": "9a57875e-2444-e911-a82f-000d3a315a07"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "ppt_account_ppt_productfamily",
+            "EntitySetName": "ppt_account_ppt_productfamilyset",
+            "MetadataId": "43c2136b-2444-e911-a82f-000d3a315a07"
+        },
+        {
+            "PrimaryNameAttribute": "subject",
+            "LogicalName": "ppt_accountapprovaltask",
+            "EntitySetName": "ppt_accountapprovaltasks",
+            "MetadataId": "9c2dd4c3-073a-e911-a96e-000d3a37839b"
+        },
+        {
+            "PrimaryNameAttribute": "ppt_name",
+            "LogicalName": "ppt_accountlegalentity",
+            "EntitySetName": "ppt_accountlegalentities",
+            "MetadataId": "da24b0a0-ef99-408a-8b94-7c3c0bb27a16"
+        },
+        {
+            "PrimaryNameAttribute": "ppt_name",
+            "LogicalName": "ppt_addresstranslation",
+            "EntitySetName": "ppt_addresstranslations",
+            "MetadataId": "9ac26aee-b5a4-e911-a834-000d3a315a07"
+        },
+        {
+            "PrimaryNameAttribute": "ppt_name",
+            "LogicalName": "ppt_agreement",
+            "EntitySetName": "ppt_agreements",
+            "MetadataId": "ab1b9d81-60c6-e811-a95e-000d3a378ca2"
+        },
+        {
+            "PrimaryNameAttribute": "ppt_name",
+            "LogicalName": "ppt_broadvertical",
+            "EntitySetName": "ppt_broadverticals",
+            "MetadataId": "63e797e3-b9c3-42b0-a194-4afb29646755"
+        },
+        {
+            "PrimaryNameAttribute": "ppt_name",
+            "LogicalName": "ppt_buildcomponent",
+            "EntitySetName": "ppt_buildcomponents",
+            "MetadataId": "b158a07b-927f-41ae-9da5-559179939fd4"
+        },
+        {
+            "PrimaryNameAttribute": "ppt_name",
+            "LogicalName": "ppt_classbookingcredit",
+            "EntitySetName": "ppt_classbookingcredits",
+            "MetadataId": "ec57f49a-5aac-4cbb-8faf-ff90900cc3cc"
+        },
+        {
+            "PrimaryNameAttribute": "ppt_name",
+            "LogicalName": "ppt_contactconnections",
+            "EntitySetName": "ppt_contactconnectionses",
+            "MetadataId": "3b776148-c133-e911-a96e-000d3a37839b"
+        },
+        {
+            "PrimaryNameAttribute": "ppt_name",
+            "LogicalName": "ppt_contract",
+            "EntitySetName": "ppt_contracts",
+            "MetadataId": "4b6609e3-da4f-e911-a830-000d3a3157f7"
+        },
+        {
+            "PrimaryNameAttribute": "ppt_name",
+            "LogicalName": "ppt_currencysort",
+            "EntitySetName": "ppt_currencysorts",
+            "MetadataId": "b8be36e7-a386-421e-8bc8-d53237cda776"
+        },
+        {
+            "PrimaryNameAttribute": "bpf_name",
+            "LogicalName": "ppt_entuityopportunityflow",
+            "EntitySetName": "ppt_entuityopportunityflows",
+            "MetadataId": "9d6d9311-c90d-4b86-975e-8103da3ea3f8"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "ppt_incident_competitor",
+            "EntitySetName": "ppt_incident_competitorset",
+            "MetadataId": "4f1c42a4-65d4-eb11-bacc-00224809ee74"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "ppt_incident_incumbent",
+            "EntitySetName": "ppt_incident_incumbentset",
+            "MetadataId": "991c42a4-65d4-eb11-bacc-00224809ee74"
+        },
+        {
+            "PrimaryNameAttribute": "ppt_description",
+            "LogicalName": "ppt_integrationlog",
+            "EntitySetName": "ppt_integrationlogs",
+            "MetadataId": "f721008f-bcfe-483e-af6a-18909e716c65"
+        },
+        {
+            "PrimaryNameAttribute": "ppt_name",
+            "LogicalName": "ppt_invoicetemplate",
+            "EntitySetName": "ppt_invoicetemplates",
+            "MetadataId": "592d27b3-e03e-47a3-a78b-9b7344db6a4f"
+        },
+        {
+            "PrimaryNameAttribute": "ppt_name",
+            "LogicalName": "ppt_legalentity",
+            "EntitySetName": "ppt_legalentities",
+            "MetadataId": "a70b2bcf-9e9c-4b57-9beb-61940044205c"
+        },
+        {
+            "PrimaryNameAttribute": "ppt_name",
+            "LogicalName": "ppt_managedservice",
+            "EntitySetName": "ppt_managedservices",
+            "MetadataId": "0e95a424-0e73-e911-a834-000d3a315241"
+        },
+        {
+            "PrimaryNameAttribute": "subject",
+            "LogicalName": "ppt_marketingtouchpoint",
+            "EntitySetName": "ppt_marketingtouchpoints",
+            "MetadataId": "93fe55e0-4c44-e911-a82f-000d3a315a07"
+        },
+        {
+            "PrimaryNameAttribute": "ppt_name",
+            "LogicalName": "ppt_naicscode",
+            "EntitySetName": "ppt_naicscodes",
+            "MetadataId": "9a352bca-8cc5-e811-a960-000d3a378dd3"
+        },
+        {
+            "PrimaryNameAttribute": "ppt_name",
+            "LogicalName": "ppt_oem",
+            "EntitySetName": "ppt_oems",
+            "MetadataId": "7d3e7ccc-1d44-e911-a82f-000d3a315a07"
+        },
+        {
+            "PrimaryNameAttribute": "ppt_name",
+            "LogicalName": "ppt_opp_managedsvc",
+            "EntitySetName": "ppt_opp_managedsvcs",
+            "MetadataId": "0152cf5d-b223-4c39-a019-10882e167d77"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "ppt_opportunity_incumbent",
+            "EntitySetName": "ppt_opportunity_incumbentset",
+            "MetadataId": "42e2a6c7-878b-e811-a955-000d3a37870e"
+        },
+        {
+            "PrimaryNameAttribute": "ppt_name",
+            "LogicalName": "ppt_opportunity_managedp_temp",
+            "EntitySetName": "ppt_opportunity_managedp_temps",
+            "MetadataId": "ece49720-715a-4808-beaa-44ff2c52ca70"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "ppt_opportunity_managedservice",
+            "EntitySetName": "ppt_opportunity_managedserviceset",
+            "MetadataId": "9f88e282-0e73-e911-a834-000d3a315241"
+        },
+        {
+            "PrimaryNameAttribute": "subject",
+            "LogicalName": "ppt_opportunityapprovaltask",
+            "EntitySetName": "ppt_opportunityapprovaltasks",
+            "MetadataId": "48ae0f59-dfce-eb11-bacc-000d3a5a263c"
+        },
+        {
+            "PrimaryNameAttribute": "bpf_name",
+            "LogicalName": "ppt_opportunitycebpf",
+            "EntitySetName": "ppt_opportunitycebpfs",
+            "MetadataId": "74dc1952-63d8-41a5-af5a-35ce70e0f5b8"
+        },
+        {
+            "PrimaryNameAttribute": "ppt_name",
+            "LogicalName": "ppt_order",
+            "EntitySetName": "ppt_orders",
+            "MetadataId": "526a8cb3-ee02-e911-a961-000d3a378ca2"
+        },
+        {
+            "PrimaryNameAttribute": "subject",
+            "LogicalName": "ppt_presalestask",
+            "EntitySetName": "ppt_presalestasks",
+            "MetadataId": "1b159453-ba41-4bc1-b3b8-d5e4824d2174"
+        },
+        {
+            "PrimaryNameAttribute": "ppt_name",
+            "LogicalName": "ppt_productfamily",
+            "EntitySetName": "ppt_productfamilies",
+            "MetadataId": "41709a10-2344-e911-a82f-000d3a315a07"
+        },
+        {
+            "PrimaryNameAttribute": "ppt_name",
+            "LogicalName": "ppt_pursuitteam",
+            "EntitySetName": "ppt_pursuitteams",
+            "MetadataId": "b495427f-4ac6-e811-a95e-000d3a378ca2"
+        },
+        {
+            "PrimaryNameAttribute": "ppt_name",
+            "LogicalName": "ppt_quote",
+            "EntitySetName": "ppt_quotes",
+            "MetadataId": "88829831-85c6-e811-a95e-000d3a378ca2"
+        },
+        {
+            "PrimaryNameAttribute": "ppt_name",
+            "LogicalName": "ppt_runworkflow",
+            "EntitySetName": "ppt_runworkflows",
+            "MetadataId": "1827ce32-873e-e911-a971-000d3a37839b"
+        },
+        {
+            "PrimaryNameAttribute": "ppt_name",
+            "LogicalName": "ppt_sales_region",
+            "EntitySetName": "ppt_sales_regions",
+            "MetadataId": "413012a3-abc1-e811-a95c-000d3a3780dd"
+        },
+        {
+            "PrimaryNameAttribute": "subject",
+            "LogicalName": "ppt_salestrainingtask",
+            "EntitySetName": "ppt_salestrainingtasks",
+            "MetadataId": "2c69bfe2-5664-424e-ae27-a64b6ce72351"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "ppt_systemuser_territory",
+            "EntitySetName": "ppt_systemuser_territoryset",
+            "MetadataId": "53bb2178-948e-eb11-b1ae-000d3a59869b"
+        },
+        {
+            "PrimaryNameAttribute": "ppt_name",
+            "LogicalName": "ppt_territoryalignment",
+            "EntitySetName": "ppt_territoryalignments",
+            "MetadataId": "b61d18b7-f761-e911-a831-000d3a315241"
+        },
+        {
+            "PrimaryNameAttribute": "ppt_name",
+            "LogicalName": "ppt_usecase",
+            "EntitySetName": "ppt_usecases",
+            "MetadataId": "cbed736b-03c7-4bb3-b72c-164851461da5"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "pricelevel",
+            "EntitySetName": "pricelevels",
+            "MetadataId": "e995200c-5fe8-4843-8325-80bd2a429d1e"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "principalattributeaccessmap",
+            "EntitySetName": "principalattributeaccessmaps",
+            "MetadataId": "5358a6e8-96c9-de11-9a56-00137299e1c2"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "principalentitymap",
+            "EntitySetName": "principalentitymaps",
+            "MetadataId": "f0dd452c-f7ec-43e8-84b6-8f2f8881ddc8"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "principalobjectaccess",
+            "EntitySetName": "principalobjectaccessset",
+            "MetadataId": "92355f2a-7f6e-4b9a-8294-7b9b88cb663a"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "principalobjectaccessreadsnapshot",
+            "EntitySetName": "principalobjectaccessreadsnapshots",
+            "MetadataId": "f50308a8-b972-4247-a31f-7d7fdf97d4fc"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "principalobjectattributeaccess",
+            "EntitySetName": "principalobjectattributeaccessset",
+            "MetadataId": "e931255f-bbd0-de11-b297-00155d8bf603"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "principalsyncattributemap",
+            "EntitySetName": "principalsyncattributemaps",
+            "MetadataId": "764b3e8c-db4b-44de-9d99-eb66b4a78c80"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "privilege",
+            "EntitySetName": "privileges",
+            "MetadataId": "79f9f3e4-a285-4a7f-b4fb-be96f03df3ae"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "privilegeobjecttypecodes",
+            "EntitySetName": "privilegeobjecttypecodesset",
+            "MetadataId": "4aefc30d-0a4e-458f-9eb1-d828e2c0d6a8"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "processsession",
+            "EntitySetName": "processsessions",
+            "MetadataId": "8c4505e6-1258-4072-a5c0-714847ab1cca"
+        },
+        {
+            "PrimaryNameAttribute": "stagename",
+            "LogicalName": "processstage",
+            "EntitySetName": "processstages",
+            "MetadataId": "d4266731-55c5-4767-9f49-bb0447f6cfbc"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "processstageparameter",
+            "EntitySetName": "processstageparameters",
+            "MetadataId": "a8643d87-4ae9-4b42-98e6-7b712bbeac88"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "processtrigger",
+            "EntitySetName": "processtriggers",
+            "MetadataId": "81c04c93-b7ad-49b7-adc8-1f4b68e95898"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "product",
+            "EntitySetName": "products",
+            "MetadataId": "aaf9be65-10c2-415d-8c19-fb1489021330"
+        },
+        {
+            "PrimaryNameAttribute": "productidname",
+            "LogicalName": "productassociation",
+            "EntitySetName": "productassociations",
+            "MetadataId": "2f8ec4ea-91c0-495d-bc35-6f8b5ea5cc0c"
+        },
+        {
+            "PrimaryNameAttribute": "productidname",
+            "LogicalName": "productpricelevel",
+            "EntitySetName": "productpricelevels",
+            "MetadataId": "3c63dc0a-1fef-4d07-a399-5045f4dbb114"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "productsalesliterature",
+            "EntitySetName": "productsalesliteratures",
+            "MetadataId": "146c4cb2-a840-4666-bf7a-f96859adfa9d"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "productsubstitute",
+            "EntitySetName": "productsubstitutes",
+            "MetadataId": "b387f6e3-9860-4cb4-a2fc-2aa54f3e56a5"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "provisionlanguageforuser",
+            "EntitySetName": "provisionlanguageforusers",
+            "MetadataId": "391e632d-3885-4b54-99a1-42daf4142105"
+        },
+        {
+            "PrimaryNameAttribute": "friendlyname",
+            "LogicalName": "publisher",
+            "EntitySetName": "publishers",
+            "MetadataId": "fcd2b9c5-4a53-4083-880d-16da4be49ac3"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "publisheraddress",
+            "EntitySetName": "publisheraddresses",
+            "MetadataId": "24622a75-2b15-40c3-a9ad-54c05c607aff"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "quarterlyfiscalcalendar",
+            "EntitySetName": "quarterlyfiscalcalendars",
+            "MetadataId": "9d5314c7-5c28-497d-b1ea-b2ee30198ed1"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "queue",
+            "EntitySetName": "queues",
+            "MetadataId": "ca8f4305-eaad-4cd8-8e34-bd2aaa8c1657"
+        },
+        {
+            "PrimaryNameAttribute": "title",
+            "LogicalName": "queueitem",
+            "EntitySetName": "queueitems",
+            "MetadataId": "cd7432ec-9b1a-46ec-a869-152a890e7c2b"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "queueitemcount",
+            "EntitySetName": "queueitemcounts",
+            "MetadataId": "7ca480f8-945b-4443-a953-dbf730cdcda8"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "queuemembercount",
+            "EntitySetName": "queuemembercounts",
+            "MetadataId": "1aaa2280-bc5f-488a-ae55-9e51cbe75432"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "queuemembership",
+            "EntitySetName": "queuememberships",
+            "MetadataId": "3dfd8aba-50a1-4126-b79f-49f7251a063e"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "quote",
+            "EntitySetName": "quotes",
+            "MetadataId": "107a7272-ebb3-469a-be46-76036d858623"
+        },
+        {
+            "PrimaryNameAttribute": "subject",
+            "LogicalName": "quoteclose",
+            "EntitySetName": "quotecloses",
+            "MetadataId": "f58ee955-da78-4e95-8608-01e0092fd684"
+        },
+        {
+            "PrimaryNameAttribute": "quotedetailname",
+            "LogicalName": "quotedetail",
+            "EntitySetName": "quotedetails",
+            "MetadataId": "68b92c2b-4bfd-43f2-b183-0f0e8b49639c"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "ratingmodel",
+            "EntitySetName": "ratingmodels",
+            "MetadataId": "6d24f8d3-ad83-4146-a10f-c6df2c9e0823"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "ratingvalue",
+            "EntitySetName": "ratingvalues",
+            "MetadataId": "59a0082d-681d-497d-a239-a2402f03c048"
+        },
+        {
+            "PrimaryNameAttribute": "title",
+            "LogicalName": "recommendeddocument",
+            "EntitySetName": "recommendeddocuments",
+            "MetadataId": "b005a747-f7cb-e511-8e7e-00219b619656"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "recordcountsnapshot",
+            "EntitySetName": "recordcountsnapshots",
+            "MetadataId": "18ad7789-a8e1-4b05-a67a-39489f1086db"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "recurrencerule",
+            "EntitySetName": "recurrencerules",
+            "MetadataId": "07ce9134-ab80-4955-8d3d-2c9db190c324"
+        },
+        {
+            "PrimaryNameAttribute": "subject",
+            "LogicalName": "recurringappointmentmaster",
+            "EntitySetName": "recurringappointmentmasters",
+            "MetadataId": "e4796c89-bd47-4413-a5ff-92959ac3a3e0"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "relationship",
+            "EntitySetName": "relationships",
+            "MetadataId": "05bc0aad-3dae-426b-a4ac-7cf6b89290d2"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "relationshipattribute",
+            "EntitySetName": "relationshipattributes",
+            "MetadataId": "b9aa9a11-ee34-4083-8fbd-efdc5045d623"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "relationshiprole",
+            "EntitySetName": "relationshiproles",
+            "MetadataId": "33e62135-900b-4d8f-91fb-99b77f4fea87"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "relationshiprolemap",
+            "EntitySetName": "relationshiprolemaps",
+            "MetadataId": "e4295804-d8d7-4f47-b09d-9166c982bc4e"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "replicationbacklog",
+            "EntitySetName": "replicationbacklogs",
+            "MetadataId": "6e58eade-89ea-40a8-9f3a-3d54c1d1dedd"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "report",
+            "EntitySetName": "reports",
+            "MetadataId": "fdc8b608-418c-4967-891f-333c5d137312"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "reportcategory",
+            "EntitySetName": "reportcategories",
+            "MetadataId": "9fffd74b-e669-47e3-bd37-7c0d2cb6904d"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "reportentity",
+            "EntitySetName": "reportentities",
+            "MetadataId": "a02dd468-4f3e-49f8-99cb-409b5576c25f"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "reportlink",
+            "EntitySetName": "reportlinks",
+            "MetadataId": "c021b5b8-163a-4c72-9809-44b4cf1fee6d"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "reportvisibility",
+            "EntitySetName": "reportvisibilities",
+            "MetadataId": "8e5240d5-8553-4c80-ac0a-91a1e9237b52"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "resource",
+            "EntitySetName": "resources",
+            "MetadataId": "2b7c9352-dec6-4d10-8708-8ecfb3fdd726"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "resourcegroup",
+            "EntitySetName": "resourcegroups",
+            "MetadataId": "743a9252-84c3-4151-8419-c7ce33d71763"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "resourcegroupdatasource",
+            "EntitySetName": "resourcegroupdatasources",
+            "MetadataId": "94b6424b-14fb-4892-b517-de493810bb0b"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "resourcegroupexpansion",
+            "EntitySetName": "resourcegroupexpansions",
+            "MetadataId": "e061e83b-0590-42ed-a6e7-260b0ab83377"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "resourcespec",
+            "EntitySetName": "resourcespecs",
+            "MetadataId": "afdd8741-98aa-4465-bd47-a613e3bf8d2d"
+        },
+        {
+            "PrimaryNameAttribute": "revokeinheritedaccessrecordstracker",
+            "LogicalName": "revokeinheritedaccessrecordstracker",
+            "EntitySetName": "revokeinheritedaccessrecordstrackers",
+            "MetadataId": "d2827dc7-78f4-ea11-a81c-000d3a4a4423"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "ribbonclientmetadata",
+            "EntitySetName": "ribbonclientmetadata",
+            "MetadataId": "547f404d-e7c7-42d4-9b7d-b44659a117a5"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "ribboncommand",
+            "EntitySetName": "ribboncommands",
+            "MetadataId": "7d2166cb-1116-4090-a2f3-ff8a97e1019e"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "ribboncontextgroup",
+            "EntitySetName": "ribboncontextgroups",
+            "MetadataId": "7d2166cb-1115-4090-a2f3-ff8a97e1019e"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "ribboncustomization",
+            "EntitySetName": "ribboncustomizations",
+            "MetadataId": "62dc69de-8286-408c-8868-24540d06f47b"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "ribbondiff",
+            "EntitySetName": "ribbondiffs",
+            "MetadataId": "7d2166cb-1130-4090-a2f3-ff8a97e1019e"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "ribbonmetadatatoprocess",
+            "EntitySetName": "RibbonMetadataSetToProcess",
+            "MetadataId": "afbd6ab3-13a9-4bd6-80ed-4c71f4e0e980"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "ribbonrule",
+            "EntitySetName": "ribbonrules",
+            "MetadataId": "7d2166cb-1117-4090-a2f3-ff8a97e1019e"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "ribbontabtocommandmap",
+            "EntitySetName": "ribbontabtocommandmaps",
+            "MetadataId": "7d2166cb-1113-4090-a2f3-ff8a97e1019e"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "role",
+            "EntitySetName": "roles",
+            "MetadataId": "42dd5681-6a4a-47f2-8169-5efede47689e"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "roleprivileges",
+            "EntitySetName": "roleprivilegescollection",
+            "MetadataId": "e141c620-de95-4cf8-b01e-e3a4cbd895db"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "roletemplate",
+            "EntitySetName": "roletemplates",
+            "MetadataId": "58294352-0071-4b30-beb7-02f703cbba49"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "roletemplateprivileges",
+            "EntitySetName": "roletemplateprivilegescollection",
+            "MetadataId": "07489d49-98e8-489d-b68c-207cc7ce28bf"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "rollupfield",
+            "EntitySetName": "rollupfields",
+            "MetadataId": "c70886de-f513-df11-a16e-00155d7aa40d"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "rollupjob",
+            "EntitySetName": "rollupjobs",
+            "MetadataId": "62f3541c-bdbd-4f3f-9690-40fbec9d04e1"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "rollupproperties",
+            "EntitySetName": "rolluppropertiescollection",
+            "MetadataId": "18546eb2-90a5-4e86-a3ff-1553aef22b94"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "routingrule",
+            "EntitySetName": "routingrules",
+            "MetadataId": "811ed93f-b6be-e211-b29e-00219b669420"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "routingruleitem",
+            "EntitySetName": "routingruleitems",
+            "MetadataId": "214931a4-b6be-e211-b29e-00219b669420"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "runtimedependency",
+            "EntitySetName": "runtimedependencies",
+            "MetadataId": "9cf7e91f-4f74-4726-9220-b05268d4c91d"
+        },
+        {
+            "PrimaryNameAttribute": "sales_name",
+            "LogicalName": "sales_linkedin_configuration",
+            "EntitySetName": "sales_linkedin_configurations",
+            "MetadataId": "92eadae2-24c6-44c5-a961-cbf208c48848"
+        },
+        {
+            "PrimaryNameAttribute": "sales_linkedin_objectid",
+            "LogicalName": "sales_linkedin_profileassociations",
+            "EntitySetName": "sales_linkedin_profileassociationset",
+            "MetadataId": "d62a32bf-9463-4e1f-80e6-bf63c243ace7"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "salesliterature",
+            "EntitySetName": "salesliteratures",
+            "MetadataId": "803dd4b5-9565-46d6-81f1-1d55f1a82600"
+        },
+        {
+            "PrimaryNameAttribute": "title",
+            "LogicalName": "salesliteratureitem",
+            "EntitySetName": "salesliteratureitems",
+            "MetadataId": "d9181672-e751-4beb-9a0f-50d2578649de"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "salesorder",
+            "EntitySetName": "salesorders",
+            "MetadataId": "38ded7b5-9ec6-4e77-919a-c408023a4db4"
+        },
+        {
+            "PrimaryNameAttribute": "salesorderdetailname",
+            "LogicalName": "salesorderdetail",
+            "EntitySetName": "salesorderdetails",
+            "MetadataId": "cfe9fca6-0f11-4466-a639-33ea27370100"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "salesprocessinstance",
+            "EntitySetName": "salesprocessinstances",
+            "MetadataId": "86cda3d7-a63f-4e2a-b598-cd92e0749770"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "savedorginsightsconfiguration",
+            "EntitySetName": "savedorginsightsconfigurations",
+            "MetadataId": "b27b8120-8493-4237-bb35-b450877d460a"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "savedquery",
+            "EntitySetName": "savedqueries",
+            "MetadataId": "09d937ab-664d-4869-b9cd-d52bf11eb3de"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "savedqueryvisualization",
+            "EntitySetName": "savedqueryvisualizations",
+            "MetadataId": "7ada6319-1ea7-4ed5-85d7-2a97013ff2c0"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "sdkmessage",
+            "EntitySetName": "sdkmessages",
+            "MetadataId": "0da6aba6-574f-434f-bb22-95da51f19b40"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "sdkmessagefilter",
+            "EntitySetName": "sdkmessagefilters",
+            "MetadataId": "0e9a355e-480a-42bf-80a7-a0432106506b"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "sdkmessagepair",
+            "EntitySetName": "sdkmessagepairs",
+            "MetadataId": "cd91a2b6-d761-4911-9645-3cf787720800"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "sdkmessageprocessingstep",
+            "EntitySetName": "sdkmessageprocessingsteps",
+            "MetadataId": "eff65459-0684-41f0-b166-aa6a29b7050b"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "sdkmessageprocessingstepimage",
+            "EntitySetName": "sdkmessageprocessingstepimages",
+            "MetadataId": "65fa198f-6a95-4ade-b73f-a3331b943daa"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "sdkmessageprocessingstepsecureconfig",
+            "EntitySetName": "sdkmessageprocessingstepsecureconfigs",
+            "MetadataId": "72524974-f3f1-4272-82fc-1172b07ce5a4"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "sdkmessagerequest",
+            "EntitySetName": "sdkmessagerequests",
+            "MetadataId": "5eaf2ac8-9b43-4794-996f-820ce1fcf5d1"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "sdkmessagerequestfield",
+            "EntitySetName": "sdkmessagerequestfields",
+            "MetadataId": "f032b93f-7d38-4549-911b-90c6f55f9ced"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "sdkmessageresponse",
+            "EntitySetName": "sdkmessageresponses",
+            "MetadataId": "b8bbda5d-4910-4781-9543-a3eebc52fd7e"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "sdkmessageresponsefield",
+            "EntitySetName": "sdkmessageresponsefields",
+            "MetadataId": "e041018c-8d53-406e-9a41-d19f3e2b59e4"
+        },
+        {
+            "PrimaryNameAttribute": "userquery",
+            "LogicalName": "searchtelemetry",
+            "EntitySetName": "searchtelemetries",
+            "MetadataId": "d718b166-513a-4ce8-b0c5-90dfdfdb85a6"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "semiannualfiscalcalendar",
+            "EntitySetName": "semiannualfiscalcalendars",
+            "MetadataId": "22169f19-48f6-42ff-b12d-bcc0280bf428"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "service",
+            "EntitySetName": "services",
+            "MetadataId": "8f9d8c85-8523-4017-8afb-002661a8ddbb"
+        },
+        {
+            "PrimaryNameAttribute": "subject",
+            "LogicalName": "serviceappointment",
+            "EntitySetName": "serviceappointments",
+            "MetadataId": "b9399b55-f032-4104-a8ca-6b0f9a083e32"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "servicecontractcontacts",
+            "EntitySetName": "servicecontractcontactscollection",
+            "MetadataId": "e7bdf74c-d882-4f71-a89f-bcc496fb4a18"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "serviceendpoint",
+            "EntitySetName": "serviceendpoints",
+            "MetadataId": "7e55cfcc-1f2d-4cd6-9952-272cca534ed9"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "serviceplan",
+            "EntitySetName": "serviceplans",
+            "MetadataId": "d6b1d15c-733f-45a2-871c-24dd1aee18b2"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "serviceplanappmodules",
+            "EntitySetName": "serviceplanappmodulesset",
+            "MetadataId": "65ac1628-da2e-ea11-a813-000d3a5986cc"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "serviceplanmapping",
+            "EntitySetName": "serviceplanmappings",
+            "MetadataId": "ccfd6086-db3f-4107-b893-63b485335a3c"
+        },
+        {
+            "PrimaryNameAttribute": "displayname",
+            "LogicalName": "settingdefinition",
+            "EntitySetName": "settingdefinitions",
+            "MetadataId": "4d657e65-2180-4b0d-833a-e33f8263a8cd"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "sharedobjectsforread",
+            "EntitySetName": "sharedobjectsforread",
+            "MetadataId": "669cd29a-434a-48d7-878e-b436218a102c"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "sharepointdata",
+            "EntitySetName": "sharepointdatacollection",
+            "MetadataId": "28607e67-a962-435e-8262-f0b97a3cd6eb"
+        },
+        {
+            "PrimaryNameAttribute": "fullname",
+            "LogicalName": "sharepointdocument",
+            "EntitySetName": "sharepointdocuments",
+            "MetadataId": "df40ce13-715d-495d-892e-0bbe2cf15acd"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "sharepointdocumentlocation",
+            "EntitySetName": "sharepointdocumentlocations",
+            "MetadataId": "3298c11a-224d-425d-a58e-dd0713ed87e2"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "sharepointsite",
+            "EntitySetName": "sharepointsites",
+            "MetadataId": "e279559e-31ba-4bdf-8d24-b6f51341bf68"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "similarityrule",
+            "EntitySetName": "similarityrules",
+            "MetadataId": "23d6d050-ebf2-e411-93a4-00219b3e9ee9"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "site",
+            "EntitySetName": "sites",
+            "MetadataId": "fe123477-e0c0-458e-ad50-a79ed5fff928"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "sitemap",
+            "EntitySetName": "sitemaps",
+            "MetadataId": "5b5a9f9c-c011-4389-b925-66cefc8694a3"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "sla",
+            "EntitySetName": "slas",
+            "MetadataId": "93253f1a-c0b6-427b-a90d-ae3691c5e6d6"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "slaitem",
+            "EntitySetName": "slaitems",
+            "MetadataId": "75a352f6-72ae-4a75-846d-31b013df97d8"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "slakpiinstance",
+            "EntitySetName": "slakpiinstances",
+            "MetadataId": "d3b2e805-9969-49d2-bd7a-5c06e505735d"
+        },
+        {
+            "PrimaryNameAttribute": "subject",
+            "LogicalName": "socialactivity",
+            "EntitySetName": "socialactivities",
+            "MetadataId": "e0a50003-7062-42ab-8a74-95eeec03c13e"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "socialinsightsconfiguration",
+            "EntitySetName": "socialinsightsconfigurations",
+            "MetadataId": "c18b8120-8493-4237-bb35-b450877d460a"
+        },
+        {
+            "PrimaryNameAttribute": "profilename",
+            "LogicalName": "socialprofile",
+            "EntitySetName": "socialprofiles",
+            "MetadataId": "abca28be-1051-e311-b214-00155d2d9600"
+        },
+        {
+            "PrimaryNameAttribute": "friendlyname",
+            "LogicalName": "solution",
+            "EntitySetName": "solutions",
+            "MetadataId": "3ffa7e2c-9d9c-4923-bf59-645d04c10063"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "solutioncomponent",
+            "EntitySetName": "solutioncomponents",
+            "MetadataId": "357a748c-78ec-40a6-9694-35af375a1c6b"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "solutioncomponentattributeconfiguration",
+            "EntitySetName": "solutioncomponentattributeconfigurations",
+            "MetadataId": "d5033a3b-0179-40dc-adfe-074015056338"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "solutioncomponentbatchconfiguration",
+            "EntitySetName": "solutioncomponentbatchconfigurations",
+            "MetadataId": "9b7af4fc-3668-4756-973f-8cd8e1b2d886"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "solutioncomponentconfiguration",
+            "EntitySetName": "solutioncomponentconfigurations",
+            "MetadataId": "a772d79d-f1fb-47ff-ac94-177302f77d74"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "solutioncomponentdefinition",
+            "EntitySetName": "solutioncomponentdefinitions",
+            "MetadataId": "1ed62e84-67c4-4183-86eb-6aafae1b31db"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "solutioncomponentrelationshipconfiguration",
+            "EntitySetName": "solutioncomponentrelationshipconfigurations",
+            "MetadataId": "04b03e20-b430-45aa-90e9-d26c15bdcdc1"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "solutionhistorydata",
+            "EntitySetName": "solutionhistories",
+            "MetadataId": "42227ece-725a-4d6e-a115-9f85cd17bfd1"
+        },
+        {
+            "PrimaryNameAttribute": "spath_name",
+            "LogicalName": "spath_salesnavigator",
+            "EntitySetName": "spath_salesnavigators",
+            "MetadataId": "c31540be-b006-4f3d-bf26-ea74183ba2dd"
+        },
+        {
+            "PrimaryNameAttribute": "spath_name",
+            "LogicalName": "spath_servicepathconfiguration",
+            "EntitySetName": "spath_servicepathconfigurations",
+            "MetadataId": "ed205dca-b755-4360-9ca9-3ef1b6879a37"
+        },
+        {
+            "PrimaryNameAttribute": "spath_name",
+            "LogicalName": "spath_spquotes",
+            "EntitySetName": "spath_spquoteses",
+            "MetadataId": "80e00f0a-9b97-47a3-b59c-f168f4213921"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "sqlencryptionaudit",
+            "EntitySetName": "sqlencryptionaudits",
+            "MetadataId": "a432a131-47ac-42de-b44e-1dbf119aee28"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "stagesolutionupload",
+            "EntitySetName": "stagesolutionuploads",
+            "MetadataId": "82a4b301-06cf-4713-b067-d676d824f717"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "statusmap",
+            "EntitySetName": "statusmaps",
+            "MetadataId": "750fa577-e2db-4cca-b870-36db33111d8e"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "stringmap",
+            "EntitySetName": "stringmaps",
+            "MetadataId": "d610a64a-f68e-437b-a56f-1f7e796c1bc0"
+        },
+        {
+            "PrimaryNameAttribute": "title",
+            "LogicalName": "subject",
+            "EntitySetName": "subjects",
+            "MetadataId": "cdc3f520-0248-431b-8edb-3da1b78c1a66"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "subscription",
+            "EntitySetName": "subscriptions",
+            "MetadataId": "ba982470-5ae5-4dff-808a-eae5edea6ebb"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "subscriptionclients",
+            "EntitySetName": "subscriptionclientsset",
+            "MetadataId": "49749cfc-b8ad-44e1-ba2d-48272c2cf008"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "subscriptionmanuallytrackedobject",
+            "EntitySetName": "subscriptionmanuallytrackedobjects",
+            "MetadataId": "2b26f472-25e9-4b62-aa79-abaf2522d3a7"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "subscriptionstatisticsoffline",
+            "EntitySetName": "subscriptionstatisticsofflineset",
+            "MetadataId": "af207686-2b48-4b81-aa19-42894c0d0fb2"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "subscriptionstatisticsoutlook",
+            "EntitySetName": "subscriptionstatisticsoutlookset",
+            "MetadataId": "15d2f2fd-78eb-47bd-995a-3b7efbfacd42"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "subscriptionsyncentryoffline",
+            "EntitySetName": "subscriptionsyncentriesoffline",
+            "MetadataId": "9dceed2b-9513-4a14-b09e-c176a6f1d9c3"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "subscriptionsyncentryoutlook",
+            "EntitySetName": "subscriptionsyncentriesoutlook",
+            "MetadataId": "0ca2c46b-3ac5-4b7a-88c4-1502501fb8a3"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "subscriptionsyncinfo",
+            "EntitySetName": "subscriptionsyncinfos",
+            "MetadataId": "b7fb12e9-88de-406f-a69e-297a671c3993"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "subscriptiontrackingdeletedobject",
+            "EntitySetName": "subscriptiontrackingdeletedobjects",
+            "MetadataId": "773934dd-920d-4482-98cd-4894e168ec40"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "suggestioncardtemplate",
+            "EntitySetName": "suggestioncardtemplates",
+            "MetadataId": "b2a47a17-b5fc-e611-80d4-00155d42b26e"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "syncattributemapping",
+            "EntitySetName": "syncattributemappings",
+            "MetadataId": "02f866a7-646e-4730-a599-6f22f7773327"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "syncattributemappingprofile",
+            "EntitySetName": "syncattributemappingprofiles",
+            "MetadataId": "02491122-e11d-4933-8791-6e3bea557960"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "syncerror",
+            "EntitySetName": "syncerrors",
+            "MetadataId": "1f16be2a-ebe2-45c6-b24c-7ddeb4dfa1a0"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "systemapplicationmetadata",
+            "EntitySetName": "systemapplicationmetadatacollection",
+            "MetadataId": "7a642771-ff29-e211-971f-00155da91f02"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "systemform",
+            "EntitySetName": "systemforms",
+            "MetadataId": "40d4e465-14ec-44c0-8050-308ed41de828"
+        },
+        {
+            "PrimaryNameAttribute": "fullname",
+            "LogicalName": "systemuser",
+            "EntitySetName": "systemusers",
+            "MetadataId": "60696d5d-4d78-4712-b4e0-6cbef3df4906"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "systemuserauthorizationchangetracker",
+            "EntitySetName": "systemuserauthorizationchangetrackers",
+            "MetadataId": "b46a5c30-39fc-40b5-b4d8-20f1c3e1467b"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "systemuserbusinessunitentitymap",
+            "EntitySetName": "systemuserbusinessunitentitymaps",
+            "MetadataId": "aeb0ff97-1390-4c20-a3af-fbab63db91b9"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "systemuserlicenses",
+            "EntitySetName": "systemuserlicensescollection",
+            "MetadataId": "ad9318cd-5108-44c4-a1ee-09d12d7baffb"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "systemusermanagermap",
+            "EntitySetName": "systemusermanagermaps",
+            "MetadataId": "1b188a9b-c109-4080-8184-910cc495746d"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "systemuserprincipals",
+            "EntitySetName": "systemuserprincipalsset",
+            "MetadataId": "68a2fd79-ac36-416d-ae2f-7568ee422e8f"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "systemuserprofiles",
+            "EntitySetName": "systemuserprofilescollection",
+            "MetadataId": "63c6fc0f-5cf6-4bb8-90db-edec6b2aeeb2"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "systemuserroles",
+            "EntitySetName": "systemuserrolescollection",
+            "MetadataId": "d7b0d05f-5437-4b5a-91dd-157cda393c98"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "systemusersyncmappingprofiles",
+            "EntitySetName": "systemusersyncmappingprofilescollection",
+            "MetadataId": "69da1399-d45f-4ed3-b4ad-176777b9aa06"
+        },
+        {
+            "PrimaryNameAttribute": "subject",
+            "LogicalName": "task",
+            "EntitySetName": "tasks",
+            "MetadataId": "78e45d5e-f22b-4e20-813f-6cd2a3777968"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "team",
+            "EntitySetName": "teams",
+            "MetadataId": "eff432f7-2508-44cf-971a-cbe44562dc68"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "teammembership",
+            "EntitySetName": "teammemberships",
+            "MetadataId": "0bdae053-5d8f-4b0e-a8bb-33fdd484db4a"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "teammobileofflineprofilemembership",
+            "EntitySetName": "teammobileofflineprofilememberships",
+            "MetadataId": "6e1383e2-1cde-4e91-98eb-07f724d34103"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "teamprofiles",
+            "EntitySetName": "teamprofilescollection",
+            "MetadataId": "de90cbbc-e6fd-470c-b823-254446278386"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "teamroles",
+            "EntitySetName": "teamrolescollection",
+            "MetadataId": "18da5410-f8f4-4c9d-8e35-aac046e6d327"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "teamsyncattributemappingprofiles",
+            "EntitySetName": "teamsyncattributemappingprofilescollection",
+            "MetadataId": "4732dd26-2932-4ae2-b516-bc653cadfa3b"
+        },
+        {
+            "PrimaryNameAttribute": "teamtemplatename",
+            "LogicalName": "teamtemplate",
+            "EntitySetName": "teamtemplates",
+            "MetadataId": "4904681a-8b9d-e211-86ad-00155db725a1"
+        },
+        {
+            "PrimaryNameAttribute": "title",
+            "LogicalName": "template",
+            "EntitySetName": "templates",
+            "MetadataId": "b71c0a4c-b9b6-4e12-a02e-94feba67eade"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "territory",
+            "EntitySetName": "territories",
+            "MetadataId": "8ff0290d-50c1-48f6-9070-cd0758bdc602"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "textanalyticsentitymapping",
+            "EntitySetName": "textanalyticsentitymappings",
+            "MetadataId": "638e29d0-6f03-e511-80d0-00155d42d66e"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "theme",
+            "EntitySetName": "themes",
+            "MetadataId": "9dd0cfe8-ca52-e411-80c6-00155d206d09"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "timestampdatemapping",
+            "EntitySetName": "timestampdatemappings",
+            "MetadataId": "069954fc-b72f-4b02-af90-45558cb2f039"
+        },
+        {
+            "PrimaryNameAttribute": "userinterfacename",
+            "LogicalName": "timezonedefinition",
+            "EntitySetName": "timezonedefinitions",
+            "MetadataId": "0e98ffda-9104-4f68-863d-4127d7e28029"
+        },
+        {
+            "PrimaryNameAttribute": "userinterfacename",
+            "LogicalName": "timezonelocalizedname",
+            "EntitySetName": "timezonelocalizednames",
+            "MetadataId": "d30d9975-d477-4ea4-82b0-74bcd5f06a60"
+        },
+        {
+            "PrimaryNameAttribute": "timezoneruleversionnumber",
+            "LogicalName": "timezonerule",
+            "EntitySetName": "timezonerules",
+            "MetadataId": "ee5d098e-1c42-49de-9212-a01a51551ba5"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "topic",
+            "EntitySetName": "topics",
+            "MetadataId": "483f2897-6d0b-e511-80d1-00155d433957"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "topichistory",
+            "EntitySetName": "topichistories",
+            "MetadataId": "5e44d764-7682-4062-b43e-5e28a0492b47"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "topicmodel",
+            "EntitySetName": "topicmodels",
+            "MetadataId": "793abe61-93f4-e411-80fc-00155dd99f01"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "topicmodelconfiguration",
+            "EntitySetName": "topicmodelconfigurations",
+            "MetadataId": "68a1576a-6a03-e511-80d3-00155db754f6"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "topicmodelexecutionhistory",
+            "EntitySetName": "topicmodelexecutionhistories",
+            "MetadataId": "f0e86152-980a-e511-80d0-00155d42aa65"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "traceassociation",
+            "EntitySetName": "traceassociations",
+            "MetadataId": "49130910-a35a-4f68-ba52-f211ceba2a68"
+        },
+        {
+            "PrimaryNameAttribute": "text",
+            "LogicalName": "tracelog",
+            "EntitySetName": "tracelogs",
+            "MetadataId": "202dcb1a-6890-41cb-8525-5d991974e385"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "traceregarding",
+            "EntitySetName": "traceregardings",
+            "MetadataId": "4013ea6b-d48c-496a-8b48-9265ac9e2bab"
+        },
+        {
+            "PrimaryNameAttribute": "currencyname",
+            "LogicalName": "transactioncurrency",
+            "EntitySetName": "transactioncurrencies",
+            "MetadataId": "5f2e7ae7-d327-49b5-a343-61d48f1bcd28"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "transformationmapping",
+            "EntitySetName": "transformationmappings",
+            "MetadataId": "8ae1180f-28e1-496e-ad27-5b357df1d976"
+        },
+        {
+            "PrimaryNameAttribute": "data",
+            "LogicalName": "transformationparametermapping",
+            "EntitySetName": "transformationparametermappings",
+            "MetadataId": "fe852b12-8274-456d-9f8d-654ebf012e19"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "translationprocess",
+            "EntitySetName": "translationprocesses",
+            "MetadataId": "f8c293fc-f598-4bb4-9e8e-8cff7a2a8ec7"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "unresolvedaddress",
+            "EntitySetName": "unresolvedaddresses",
+            "MetadataId": "129a6abf-a224-436b-a05a-511928c80bb9"
+        },
+        {
+            "PrimaryNameAttribute": "subject",
+            "LogicalName": "untrackedemail",
+            "EntitySetName": "untrackedemails",
+            "MetadataId": "c000abde-7474-4013-8887-203e3c9ab55f"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "uom",
+            "EntitySetName": "uoms",
+            "MetadataId": "02d5dd55-4cbb-4147-9534-1de9bac6d760"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "uomschedule",
+            "EntitySetName": "uomschedules",
+            "MetadataId": "a317d38b-b2d5-4663-9a06-44611f27ed50"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "userapplicationmetadata",
+            "EntitySetName": "userapplicationmetadatacollection",
+            "MetadataId": "945f78db-032a-e211-971f-00155da91f02"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "userentityinstancedata",
+            "EntitySetName": "userentityinstancedataset",
+            "MetadataId": "f9c6a2a9-974e-4899-849d-f19715d43aab"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "userentityuisettings",
+            "EntitySetName": "userentityuisettingsset",
+            "MetadataId": "dcc617bd-0922-4c64-ade1-1a4361efb56e"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "userfiscalcalendar",
+            "EntitySetName": "userfiscalcalendars",
+            "MetadataId": "df2a6415-a40f-4ee1-ba24-407711fac7b5"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "userform",
+            "EntitySetName": "userforms",
+            "MetadataId": "ca6c722f-76c9-4b19-aa01-be44955d686b"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "usermapping",
+            "EntitySetName": "usermappings",
+            "MetadataId": "3539ddaa-2555-e411-80cf-00155d211b05"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "usermobileofflineprofilemembership",
+            "EntitySetName": "usermobileofflineprofilememberships",
+            "MetadataId": "7edbb62a-a91f-4a3f-8cd6-a461d1971614"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "userquery",
+            "EntitySetName": "userqueries",
+            "MetadataId": "a269f502-ea98-4f6d-9e8c-16b78598b60a"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "userqueryvisualization",
+            "EntitySetName": "userqueryvisualizations",
+            "MetadataId": "6d142bdb-3bbe-4ded-955c-f700c3cd6b90"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "usersearchfacet",
+            "EntitySetName": "usersearchfacets",
+            "MetadataId": "55c0b160-036d-4c47-809b-e9a4617b8926"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "usersettings",
+            "EntitySetName": "usersettingscollection",
+            "MetadataId": "c08f6212-5638-4d84-903f-9643afdd8219"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "virtualentitymetadata",
+            "EntitySetName": "virtualentitymetadatas",
+            "MetadataId": "2b47a5ef-8f2a-4d1e-926f-09660ddee777"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "virtualresourcegroupresource",
+            "EntitySetName": "virtualresourcegroupresources",
+            "MetadataId": "f1b1f8c5-5f0b-4601-8d85-2a6596c4b51f"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "webresource",
+            "EntitySetName": "webresourceset",
+            "MetadataId": "7e4c24bb-76e3-48fd-b5cd-586a2688db44"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "webwizard",
+            "EntitySetName": "webwizards",
+            "MetadataId": "3edf2c37-2bf8-4b36-9e2d-7a71ca398809"
+        },
+        {
+            "PrimaryNameAttribute": "entityname",
+            "LogicalName": "wizardaccessprivilege",
+            "EntitySetName": "wizardaccessprivileges",
+            "MetadataId": "e43b3a0c-39bd-4a4c-b52c-519add7a633c"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "wizardpage",
+            "EntitySetName": "wizardpages",
+            "MetadataId": "80e6b238-b80f-4f3d-93b9-4d5b04947225"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "workflow",
+            "EntitySetName": "workflows",
+            "MetadataId": "e5c40599-99d3-453d-8594-8d55e29a9579"
+        },
+        {
+            "PrimaryNameAttribute": "name",
+            "LogicalName": "workflowbinary",
+            "EntitySetName": "workflowbinaries",
+            "MetadataId": "118dd4bf-4cd0-e911-a81c-000d3af74121"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "workflowdependency",
+            "EntitySetName": "workflowdependencies",
+            "MetadataId": "53268b70-604a-4586-b572-7fc3d1aaeb99"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "workflowlog",
+            "EntitySetName": "workflowlogs",
+            "MetadataId": "39bbea35-9bee-4152-94ba-121ac79131db"
+        },
+        {
+            "PrimaryNameAttribute": null,
+            "LogicalName": "workflowwaitsubscription",
+            "EntitySetName": "workflowwaitsubscriptions",
+            "MetadataId": "2afb3820-185c-4a4b-8a60-26ce664e4b1f"
+        }
+    ]
+}

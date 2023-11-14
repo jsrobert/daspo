@@ -5,7 +5,7 @@ import configureStore, { history } from './store';
 import './index.css';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
-import 'office-ui-fabric-core/dist/css/fabric.min.css';
+import '@fluentui/react/dist/css/fabric.min.css';
 
 const store = configureStore({});
 

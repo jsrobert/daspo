@@ -1,5 +1,5 @@
 import { withRouter } from 'react-router-dom';
-import { DetailsList, DetailsListLayoutMode, Selection, SelectionMode, IColumn, IDetailsListProps, IDetailsListState } from 'office-ui-fabric-react/lib/DetailsList';
+import { DetailsList, DetailsListLayoutMode, Selection, SelectionMode, IColumn, IDetailsListProps, IDetailsListState } from '@fluentui/react/lib/DetailsList';
 import { DetailListDocument } from '../components/entities/DetailListDocument';
 import * as actions from '../actions/DetailListDocument';
 import { IDetailListDocumentState, IQueryListState, IQueryListProps } from '../model/DetailsList';

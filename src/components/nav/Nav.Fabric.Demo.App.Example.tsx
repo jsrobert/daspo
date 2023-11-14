@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Nav, INavProps, INavLinkGroup, INavLink } from 'office-ui-fabric-react/lib/Nav';
+import { Nav, INavProps, INavLinkGroup, INavLink } from '@fluentui/react/lib/Nav';
 
 const AppDefinition = {
   appTitle: 'Fabric - React',

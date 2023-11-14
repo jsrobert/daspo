@@ -1,4 +1,4 @@
-import { INavProps, INavState, Nav } from 'office-ui-fabric-react/lib/Nav';
+import { INavProps, INavState, Nav } from '@fluentui/react/lib/Nav';
 import * as React from 'react';
 import './Nav.Basic.Example.scss';
 

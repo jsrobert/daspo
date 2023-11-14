@@ -19,8 +19,8 @@ import {
     createTheme,
     MessageBarType,
     IMessageBarProps,
-} from 'office-ui-fabric-react'
-import { TeamsCustomizations } from 'office-ui-fabric-react/lib/customizations/TeamsCustomizations'
+} from '@fluentui/react'
+// import { TeamsCustomizations } from '@fluentui/react/lib/common/'
 import { AnyMxRecord } from 'dns'
 
 // tslint:disable-next-line: no-var-requires

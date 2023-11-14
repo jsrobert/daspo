@@ -1,4 +1,4 @@
-import { CommandBar, ICommandBarProps, ICommandBarItemProps, ICommandBarData } from 'office-ui-fabric-react/lib/CommandBar';
+import { CommandBar, ICommandBarProps, ICommandBarItemProps, ICommandBarData } from '@fluentui/react/lib/CommandBar';
 import { AnyAction } from 'redux';
 
 export type CommandBarProps = CommandBarValueProps & CommandBarActionProps;

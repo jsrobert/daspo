@@ -1,4 +1,4 @@
-import { IColumn, IDetailsListState, IDetailsListProps } from 'office-ui-fabric-react/lib/DetailsList';
+import { IColumn, IDetailsListState, IDetailsListProps } from '@fluentui/react/lib/DetailsList';
 
 export interface IDetailListDocumentState extends IDetailsListState {
   columns: IColumn[];

@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { Nav, INavLink, INavProps, INavState, INav, INavLinkGroup, INavStyles, INavStyleProps } from 'office-ui-fabric-react/lib/Nav';
-import { Link } from 'office-ui-fabric-react/lib/Link';
+import { Nav, INavLink, INavProps, INavState, INav, INavLinkGroup, INavStyles, INavStyleProps } from '@fluentui/react/lib/Nav';
+import { Link } from '@fluentui/react/lib/Link';
 import { IconNames } from '../constants/IconNames';
 import * as NavData from './Navigation.json';
 

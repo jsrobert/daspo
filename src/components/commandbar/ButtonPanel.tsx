@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Link, RouteComponentProps } from 'react-router-dom';
-import {Grid, GridCell, IGridProps} from 'office-ui-fabric-react/lib/Grid';
-import {Button, ButtonType, DefaultButton, ActionButton} from 'office-ui-fabric-react/lib/Button';
-import { TextField, MaskedTextField } from 'office-ui-fabric-react/lib/TextField';
+import {Grid, GridCell, IGridProps} from '@fluentui/react/lib/Grid';
+import {Button, ButtonType, DefaultButton, ActionButton} from '@fluentui/react/lib/Button';
+import { TextField, MaskedTextField } from '@fluentui/react/lib/TextField';
 import { MessageBarActionType, AddMessage } from '../../actions/MessageBarBasic';
 import { isElementVisible } from '@uifabric/utilities';
 import {CommandBarProps, CommandBarState} from '../../model/CommandBar';

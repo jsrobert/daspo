@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Nav, INavProps, INavLink, INavLinkGroup } from 'office-ui-fabric-react/lib/Nav';
+import { Nav, INavProps, INavLink, INavLinkGroup } from '@fluentui/react/lib/Nav';
 import './Nav.Basic.Example.scss';
 
 export class NavBasicExample extends React.Component<any, any> {

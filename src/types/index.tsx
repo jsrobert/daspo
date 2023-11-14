@@ -1,4 +1,4 @@
-import { IDetailsGroupDividerProps } from "office-ui-fabric-react/lib/DetailsList";
+import { IDetailsGroupDividerProps } from "@fluentui/react/lib/DetailsList";
 
 
 

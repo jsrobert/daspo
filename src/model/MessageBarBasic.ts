@@ -1,5 +1,5 @@
 import { AddMessage, ShowMessage, ClearMessage } from '../actions/MessageBarBasic'
-import { IMessageBarProps } from 'office-ui-fabric-react/lib/MessageBar';
+import { IMessageBarProps } from '@fluentui/react/lib/MessageBar';
 
 // export default interface MessageBarMessage {
 //     messageIndex?: number;

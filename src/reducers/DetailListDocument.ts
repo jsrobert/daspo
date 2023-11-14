@@ -8,7 +8,7 @@ import {
     LoadData
 } from '../actions/DetailListDocument'
 import { IQueryListState } from '../model/DetailsList'
-import { DetailsList, DetailsListLayoutMode, Selection, SelectionMode, IColumn, IDetailsListProps, IDetailsListState } from 'office-ui-fabric-react/lib/DetailsList';
+import { DetailsList, DetailsListLayoutMode, Selection, SelectionMode, IColumn, IDetailsListProps, IDetailsListState } from '@fluentui/react/lib/DetailsList';
 // import merge from 'lodash/merge'
 // import { routerReducer as routing } from 'react-router-redux'
 // import { combineReducers } from 'redux'

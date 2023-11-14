@@ -1,6 +1,6 @@
 import * as React from 'react';
-import * as DC from 'office-ui-fabric-react/lib/DocumentCard';
-import { IDocumentCardProps, DocumentCard, DocumentCardPreview, DocumentCardTitle, DocumentCardActivity } from 'office-ui-fabric-react/lib/DocumentCard';
+import * as DC from '@fluentui/react/lib/DocumentCard';
+import { IDocumentCardProps, DocumentCard, DocumentCardPreview, DocumentCardTitle, DocumentCardActivity } from '@fluentui/react/lib/DocumentCard';
 
 export class DocumentCardExample extends React.Component<any, any> {
     constructor(props: IDocumentCardProps) {

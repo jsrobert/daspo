@@ -1,8 +1,8 @@
 // @codepen
 import * as React from 'react';
-import { PrimaryButton, DefaultButton } from 'office-ui-fabric-react/lib/Button';
-import { ChoiceGroup } from 'office-ui-fabric-react/lib/ChoiceGroup';
-import { Panel, PanelType } from 'office-ui-fabric-react/lib/Panel';
+import { PrimaryButton, DefaultButton } from '@fluentui/react/lib/Button';
+import { ChoiceGroup } from '@fluentui/react/lib/ChoiceGroup';
+import { Panel, PanelType } from '@fluentui/react/lib/Panel';
 
 export class PanelSmallRightExample extends React.Component<
   {},

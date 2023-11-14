@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { TextField } from 'office-ui-fabric-react/lib/TextField';
+import { TextField } from '@fluentui/react/lib/TextField';
 import {
     DetailsList,
     DetailsListLayoutMode,
@@ -7,10 +7,10 @@ import {
     IColumn,
     IDetailsList,
     IDetailsListProps,
-} from 'office-ui-fabric-react/lib/DetailsList';
-import { MarqueeSelection } from 'office-ui-fabric-react/lib/MarqueeSelection';
-import { Checkbox } from 'office-ui-fabric-react/lib/Checkbox';
-// import { createRef } from 'office-ui-fabric-react/lib/Utilities';
+} from '@fluentui/react/lib/DetailsList';
+import { MarqueeSelection } from '@fluentui/react/lib/MarqueeSelection';
+import { Checkbox } from '@fluentui/react/lib/Checkbox';
+// import { createRef } from '@fluentui/react/lib/Utilities';
 
 const defaultItems: any[] = [];
 
